@@ -478,36 +478,24 @@
   <div class="cap">The canonical value stays underneath and stays readable &mdash; a change is stored <b>above</b> it, never over it. Scope decides the layer: <b>just me</b> is personal, <b>my team</b> is the desk, <b>the whole agency</b> is the agency&rsquo;s position and <b>goes to a lead for review</b>, because an advisor can propose that position but not set it. A reason is required, and the line above the button says what will happen before it happens.</div>
 </section>
 
-<!-- ─── loop 7 ─── -->
-<!-- 28 -->
-<section class="slide is-statement" data-note="This is the one to invite questions on. Do not soften it.">
-  <span class="eyebrow">What I got wrong</span>
-  <p class="said">A screen that said the advisor decides, and then decided for them.</p>
-  <p class="after">I wrote the principle, argued for it against a faster implementation, and put it
-  in the product's own copy. Then I shipped a version of the resolve sheet where only one of the
-  three values could actually be kept.</p>
+<!-- ─── the mistake, anchored to a screen they have already used ─── -->
+<section class="slide is-split" data-note="Invite questions on this one. Do not soften it and do not rush it. They used this exact sheet twenty minutes ago, so start there: this is the screen, and the first version of it did the opposite of what it says. Say that I wrote the principle, argued for it against a faster implementation, and then broke it myself in the one place it was written down.">
+  <div class="art shot"><img src="assets/screens/06-resolve.png" alt="The resolve sheet: three sources, each keepable, with a required reason."></div>
+  <div class="words">
+    <span class="step came-back">What I got wrong</span>
+    <h3>You used this sheet earlier. The first version of it let you keep only one of the three.</h3>
+    <p>I wrote the principle: when sources disagree, show all of them and make a person choose. I argued for it against a faster implementation. I put it in the product&rsquo;s own words &mdash; <strong>&ldquo;Three sources disagree. The product will not pick one.&rdquo;</strong></p>
+    <p>Then I shipped a sheet where only one of the three could actually be kept. <strong>The screen said the advisor decides, and then decided for them.</strong></p>
+  </div>
 </section>
 
-<!-- 29 -->
-<section class="slide is-statement" data-note="The deeper miss. Owning this unprompted is worth more than the original fix.">
-  <span class="eyebrow">What came back, twice</span>
-  <p class="said">I fixed what the screen offered. I did not check what it committed.</p>
-  <p class="after">All three values are selectable now, and keeping one requires a written reason. But
-  the store still records that the conflict was resolved without recording which value was kept — so
-  the product asks for a justification and discards it. Checking the affordance is not the same as
-  checking the commit, and I learned that after I had already written the lesson down.</p>
-</section>
-
-<!-- 30 -->
-<section class="slide is-statement" data-note="Close the loop section. Then move to reflection.">
+<section class="slide is-statement" data-note="The deeper miss, and the one worth owning unprompted. The fix was trivial; noticing was not. Then move to reflection.">
   <span class="eyebrow">What I took from it</span>
-  <p class="said">A principle in a document does not enforce itself.</p>
-  <p class="after">And the place it fails is the screen that claims it most loudly. I now check the
-  screens that state a principle first, rather than last — and I check what they commit, not only
-  what they offer.</p>
+  <p class="said">I checked what the screen offered. I never checked what it committed.</p>
+  <p class="after">The fix was not hard. All three are selectable, the reason is required, and it is stored with the value and the name of whoever chose it. What took longer was noticing that I had reviewed the affordance and never the write &mdash; that a screen can offer the right three options and still record none of them.</p>
+  <p class="after"><strong>A principle in a document does not enforce itself.</strong> The screen that states one most loudly is the one to check first, and the thing to check is what it commits.</p>
 </section>
 
-<!-- 31 -->
 <section class="slide is-split" data-note="Two minutes. Do not add a third item. Then hand over for questions.">
   <div class="art shot"><img src="assets/screens/15-traveller.png" alt="The traveller profile, the least proven surface in the product."></div>
   <div class="words">
