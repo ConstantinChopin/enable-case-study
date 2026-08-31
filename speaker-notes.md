@@ -1,6 +1,6 @@
 # Enable — speaker notes
 
-Thirty-four slides. Roughly **six minutes** front, **twenty** live in the prototype,
+Thirty-eight slides. Roughly **six minutes** front, **twenty** live in the prototype,
 **twelve** back. The live section has its own script in `demo-script.md`.
 
 Press `N` on localhost to see the per-slide note on screen. This document is the
@@ -90,10 +90,30 @@ Ten seconds. Do not read the names.
 > On the right is one record out of the directory, running. Every field carries
 > where it came from and when."
 
-The record is live — you can scroll it. The other surfaces are what you open in
-the demo.
+The record is live — you can scroll it.
 
-### 11 · How we worked
+### 11–14 · The surfaces
+
+One slide each, so your arrow keys walk them. Ten to fifteen seconds apiece — this
+is a look at the shape of the product, not a tour. The numbers match the diagram on
+the previous slide.
+
+> **Ask** — "The door people expect. It answers out of the model rather than the web,
+> and every line is cited to a record it can name."
+>
+> **The briefing** — "The morning screen. What changed overnight, what expires soon,
+> what is waiting on somebody. This is the one the agency lead asked for by name."
+>
+> **The itinerary** — "The work in progress. Nothing here is re-keyed — a rate on an
+> itinerary is the same value the record holds, not a copy of it."
+>
+> **The traveller** — "Who the work is for. Every preference with a source and a
+> date, and what the product suggests kept visibly separate from what a person
+> confirmed."
+
+Then: "All four read from the same model. That is the whole idea."
+
+### 19 · How we worked
 
 This is the constraint that explains the whole method. Do not apologise for having
 no Figma files — this is the reason.
@@ -109,7 +129,7 @@ no Figma files — this is the reason.
 > workable. My job was to take what came out of those calls and shape it into
 > journeys that made sense to use."
 
-### 12 · What the calls produced
+### 16 · What the calls produced
 
 Read the first two aloud. Point at the third. Read the agency lead's line slowly —
 **that is the brief you were given, and you followed it.**
@@ -123,7 +143,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 >
 > So we built them somewhere to look."
 
-### 13–14 · The first build
+### 17–18 · The first build
 
 > "A conversational interface over the agency's own documents — Notion, Google
 > Drive, exports out of their intranet — and results as cards.
@@ -135,7 +155,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 > what was needed was the agency's own negotiated terms. The model was making too
 > many errors to be used."
 
-### 15 · Retrieval was never the problem
+### 19 · Retrieval was never the problem
 
 **The intellectual move of the project. Say the headline, then stop.**
 
@@ -150,7 +170,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 > So the data model came before any screen, and chat became one door among several
 > rather than the product."
 
-### 16 · Permission in the data model
+### 20 · Permission in the data model
 
 **This is the engineering argument, and it is what separates this from a RAG demo.**
 
@@ -170,7 +190,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 >
 > The sharing panel on the left is that model showing up on a screen."
 
-### 17–18 · What changed
+### 21–22 · What changed
 
 > **For the advisors** — "Client request to a personalised first proposal. Time
 > saved on daily administrative work. And the ratio that makes those hours
@@ -186,11 +206,11 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 are advisor-reported, which are the agency's own figures. See the open questions
 at the end of this file.
 
-### 19 · Handoff
+### 23 · Handoff
 
 > "Rather than describe it, let me use it."
 
-Switch windows. `demo-script.md` from here. Come back to slide 20.
+Switch windows. `demo-script.md` from here. Come back to slide 24.
 
 ---
 
@@ -206,13 +226,13 @@ Protect J2. It is the longest and the most important.
 
 ## BACK — twelve minutes
 
-### 20 · The map
+### 24 · The map
 
 > "Three design challenges. Every one of them we got wrong first. Each runs the same
 > beats — the first attempt, what came back from the desk, and where we landed.
 > After the three there is one more thing, which is a mistake of mine nobody caught."
 
-### 21–24 · Challenge 1 — getting records right on the way in
+### 25–28 · Challenge 1 — getting records right on the way in
 
 > "First, how the work arrives. An advisor forwards a rate sheet into the vault, or
 > an administrator connects a portal, and the extractor proposes records off the
@@ -237,7 +257,7 @@ Protect J2. It is the longest and the most important.
 > copy. And when a document is silent, that is recorded as silence. An absent answer
 > is not a no."
 
-### 25–27 · Challenge 2 — showing a conflict instead of hiding it
+### 29–31 · Challenge 2 — showing a conflict instead of hiding it
 
 > "Three systems said three different things about one commission rate. So we built
 > a ranking rule to settle it automatically.
@@ -250,7 +270,7 @@ Protect J2. It is the longest and the most important.
 > date, and how many others agree with it. The choice is stored at the agency layer,
 > with the reason, so the same conflict is never re-litigated."
 
-### 28–29 · Challenge 3 — a workspace, not a website
+### 32–33 · Challenge 3 — a workspace, not a website
 
 > "We built the layout every comparable tool in this category uses — a left rail, and
 > the conflict on its own page. It worked.
@@ -267,7 +287,7 @@ Protect J2. It is the longest and the most important.
 > The cost was about seventy pixels of height, permanently, and a pattern rare
 > enough here that it only reads as considered if it behaves well."
 
-### 30–32 · What I got wrong
+### 34–36 · What I got wrong
 
 **Do not soften this. It is the strongest thing in the deck.**
 
@@ -280,11 +300,11 @@ Protect J2. It is the longest and the most important.
 > the model, or in a test, or it will be true on the day you write it and false a
 > month later."
 
-### 33 · Reflection
+### 37 · Reflection
 
 > "What I would challenge if I picked it up again."
 
-### 34 · Questions
+### 38 · Questions
 
 Stop talking. Ten minutes.
 
@@ -294,9 +314,9 @@ Stop talking. Ten minutes.
 
 1. **The metrics on 17 and 18.** Say the method for each figure or cut it. Any
    number you cannot source is worse than no number in front of these two.
-2. **"There is no authority"** on slide 26 has no source in the evidence pack. Either
+2. **"There is no authority"** on slide 30 has no source in the evidence pack. Either
    place it or drop the quotation marks and own it as your line.
-3. **The quotes on slide 12** are attributed by role because that is all the
+3. **The quotes on slide 16** are attributed by role because that is all the
    transcripts carry. If you know which advisor said which, name them.
 4. **Both repos are public.** The deck and the app.
 5. If you present from the deployed deck, the live record on slide 10 needs the app's
