@@ -55,6 +55,7 @@
 <section class="slide is-title" data-note="They have just seen four projects. This is the pivot: name yourself, name the one you are here to talk about, and go. Ten seconds.">
   <span class="eyebrow">Case study · Product design</span>
   <h1>Enable</h1>
+  <div class="sub">A single source of truth for luxury travel.</div>
   <div class="who">Constantin Chopin · Founding product designer · 2025–2026</div>
 </section>
 
@@ -184,32 +185,60 @@
 </section>
 
 <!-- 7b — what came out of the calls -->
-<section class="slide" data-note="Do not read all four. Read the email one and the room-name one aloud, point at the other two, then say: every one of these is dated and attributed, and the last one is the one I want to follow all the way through.">
+<section class="slide is-mid" data-note="Do not read all four. Read the email one and the room-name one aloud, point at the other two, then say: every one of these is dated and attributed, and the last one is the one I want to follow all the way through.">
   <span class="eyebrow">What the calls produced</span>
-  <h2 style="margin-top:20px;max-width:30ch">Advisors do not report problems. They describe their Tuesday, and you work out what it costs them.</h2>
+  <h2 style="margin-top:20px;max-width:34ch">Four things advisors told us, and what we built because of them.</h2>
   <div class="said-grid">
     <div>
       <q>Sometimes we read our email, sometimes we don&rsquo;t. And it&rsquo;s always the one time we might not.</q>
       <div class="when">Advisor &middot; 30 April</div>
-      <div class="then">Rate changes were arriving by email. This is why the advisories had to live inside the product.</div>
+      <div class="then">So we stopped sending notices to the inbox and put them on the record itself, where the work already happens.</div>
     </div>
     <div>
       <q>Literally every single time I do a booking I am looking at the website at the same time&hellip; sometimes I even look at the square footage.</q>
       <div class="when">Advisor &middot; 21 May</div>
-      <div class="then">Two sources, same room, different names, both look official. So the record shows both and asks a person to choose.</div>
+      <div class="then">So the record shows every source it has and refuses to pick between them. A person chooses, and their reason is kept.</div>
     </div>
     <div>
       <q>Twenty per cent commission until June&hellip; I&rsquo;ve never seen them do that before&hellip; obsolete come July 1st.</q>
       <div class="when">Advisor &middot; 23 April</div>
-      <div class="then">Some of what an advisor knows stops being true on a specific day. Terms needed an end date, not just a value.</div>
+      <div class="then">So a commission carries the day it stops being true, and the product says so before the day arrives rather than after.</div>
     </div>
     <div class="is-lead">
       <q>We want sharing appropriate data, but we want to make sure we&rsquo;re not sharing sensitive data&hellip; as far as client data.</q>
       <div class="when">The agency lead &middot; 30 April</div>
-      <div class="then"><b>This one contradicted a decision we had already made and shipped. It is the next slide.</b></div>
+      <div class="then"><b>This one contradicted a decision we had already made and shipped, so it gets the slide after next.</b></div>
     </div>
   </div>
 </section>
+
+<!-- ─── the first build, before the challenges ─── -->
+<!-- 11 -->
+<section class="slide is-full" data-note="The obvious build. Everyone in the room has approved one of these.">
+  <div class="head"><span class="step made">The first build</span><h3>Chat over a pile of documents, results as cards.</h3></div>
+  <div class="art shot"><img src="assets/plates/v1-home.png" alt="The first build: a dark chat interface beside a shelf of image cards."></div>
+  <div class="cap">June 2025. It demoed well — the conversation flowed and the shelf filled up.</div>
+</section>
+
+<!-- 12 -->
+<section class="slide is-full" data-note="Slow down. Let them read the card fields and the citations themselves. Point, and wait.">
+  <div class="head"><span class="step came-back">What came back</span><h3>The cards had nothing underneath them.</h3></div>
+  <div class="art shot"><img src="assets/plates/v1-answer.png" alt="An answer about cherry blossom season cited to Reddit and Wikipedia, beside cards whose fields read Hotel name, Location, Description."></div>
+  <div class="cap"><b>Hotel name. Location. Description.</b> Asked for a Japan itinerary it returned
+  cherry-blossom festivals, cited to Reddit and Wikipedia, when what was needed was the agency's own
+  negotiated terms.</div>
+</section>
+
+<!-- 13 -->
+<section class="slide is-statement" data-note="The intellectual move of the whole project. Say it slowly.">
+  <span class="eyebrow">What we changed</span>
+  <p class="said">Retrieval was never the problem.</p>
+  <p class="after">The knowledge already existed and was already accurate — it was sitting unread in
+  inboxes and portals. What was missing was structure, a source on every fact, and a permission
+  attached to it. So the data model came before any screen, and chat became one door among several
+  rather than the product.</p>
+</section>
+
 
 <!-- 7c — one signal traced from call to decision to feature -->
 <section class="slide is-split is-wide" data-note="This is the answer to how a call becomes a feature. The point is not that we changed our mind — it is that we had written down, a month earlier, what would make us change it. Land on that. Then point at the sheet: three tiers, and money gated separately from all three.">
@@ -301,44 +330,24 @@
 <!-- ══════════════════ BACK — twelve minutes ══════════════════ -->
 
 <!-- 10 -->
-<section class="slide is-statement" data-note="Reset the frame. They have now seen it work; this is how it got there.">
+<section class="slide is-mid" data-note="Read the six aloud, slowly. This is the map for the rest of the session. Say that each one runs the same three beats, and that they will see the first attempt before they see the answer.">
   <span class="eyebrow">The rest of the time</span>
-  <p class="said">Seven things we built, and then rebuilt.</p>
-  <p class="after">Each one is the same shape: what we made, what came back, and what we made
-  instead.</p>
-</section>
-
-<!-- ─── loop 1 ─── -->
-<!-- 11 -->
-<section class="slide is-full" data-note="The obvious build. Everyone in the room has approved one of these.">
-  <div class="head"><span class="step made">What we made</span><h3>Chat over a pile of documents, results as cards.</h3></div>
-  <div class="art shot"><img src="assets/plates/v1-home.png" alt="The first build: a dark chat interface beside a shelf of image cards."></div>
-  <div class="cap">June 2025. It demoed well — the conversation flowed and the shelf filled up.</div>
-</section>
-
-<!-- 12 -->
-<section class="slide is-full" data-note="Slow down. Let them read the card fields and the citations themselves. Point, and wait.">
-  <div class="head"><span class="step came-back">What came back</span><h3>The cards had nothing underneath them.</h3></div>
-  <div class="art shot"><img src="assets/plates/v1-answer.png" alt="An answer about cherry blossom season cited to Reddit and Wikipedia, beside cards whose fields read Hotel name, Location, Description."></div>
-  <div class="cap"><b>Hotel name. Location. Description.</b> Asked for a Japan itinerary it returned
-  cherry-blossom festivals, cited to Reddit and Wikipedia, when what was needed was the agency's own
-  negotiated terms.</div>
-</section>
-
-<!-- 13 -->
-<section class="slide is-statement" data-note="The intellectual move of the whole project. Say it slowly.">
-  <span class="eyebrow">What we made next</span>
-  <p class="said">Retrieval was never the problem.</p>
-  <p class="after">The knowledge already existed and was already accurate — it was sitting unread in
-  inboxes and portals. What was missing was structure, a source on every fact, and a permission
-  attached to it. So the data model came before any screen, and chat became one door among several
-  rather than the product.</p>
+  <h2 style="margin-top:20px;max-width:30ch">Six design challenges. Every one of them we got wrong first.</h2>
+  <ol class="challenges">
+    <li><b>Controlling what gets ingested</b><span>The agency wanted to approve every field on every record before it existed.</span></li>
+    <li><b>Facts that stop being true</b><span>A rate, a closure, a commission &mdash; each with a day it expires, and nobody watching for it.</span></li>
+    <li><b>Saying how far to trust a value</b><span>The product knew how sure it was. It had no honest way to tell an advisor.</span></li>
+    <li><b>When the sources disagree</b><span>Three systems, three commission rates, and no authority to settle it.</span></li>
+    <li><b>Where a decision belongs</b><span>We built the layout every tool in this category uses, and it fought the work.</span></li>
+    <li><b>Holding the product to its own rule</b><span>We wrote down that the advisor decides, then shipped a screen that decided for them.</span></li>
+  </ol>
+  <div class="cap challenge-foot">Each one runs the same three beats: <b>the first attempt, what came back from the desk, and where we landed.</b></div>
 </section>
 
 <!-- ─── loop 2 ─── -->
 <!-- 14 -->
 <section class="slide is-full" data-note="They asked for this. We built exactly it. Do not mock the request — it was reasonable.">
-  <div class="head"><span class="step made">What we made</span><h3>They asked to check every field by hand.</h3></div>
+  <div class="head"><span class="step made">Challenge 1 · first attempt</span><h3>They asked to check every field by hand.</h3></div>
   <div class="art shot"><img src="assets/plates/form.png" alt="The first review interface: field 11 of 87, record 3 of 214."></div>
   <div class="cap"><b>Field 11 of 87. Record 3 of 214.</b> A completely reasonable request from people
   whose business depends on the terms being right.</div>
@@ -346,7 +355,7 @@
 
 <!-- 15 -->
 <section class="slide is-statement" data-note="ATTRIBUTION NEEDED — who said this, and when. Replace with the real line if you have it.">
-  <span class="eyebrow">What came back</span>
+  <span class="eyebrow">Challenge 1 · what came back</span>
   <p class="said">It worked, and nobody was ever going to finish it.</p>
   <p class="after">A review that exhausting does not happen. And a review that does not happen is
   worse than no review at all, because everybody assumes it did.</p>
@@ -356,8 +365,8 @@
 <section class="slide is-split" data-note="They saw this live. Point at the two held rows — that is the part that matters.">
   <div class="art shot"><img src="assets/screens/13-admin-sereno.png" alt="The extraction review: each field with its position in the source and a confirm action."></div>
   <div class="words">
-    <span class="step next">What we made next</span>
-    <h3>We kept the rule and changed its shape.</h3>
+    <span class="step next">Challenge 1 · where we landed</span>
+    <h3>We kept the check, and made it something a person could actually finish.</h3>
     <ol>
       <li>A fixed list of questions a travel designer actually needs answered, rather than every field in the schema.</li>
       <li>Each proposed answer arrives as one card: the claim, the quoted line, the page.</li>
@@ -370,7 +379,7 @@
 <!-- ─── loop 3 ─── -->
 <!-- 17 -->
 <section class="slide is-statement" data-note="The obvious design. Say why it was obvious before you say why it was wrong.">
-  <span class="eyebrow">What we made</span>
+  <span class="eyebrow">Challenge 2 · first attempt</span>
   <p class="said">Advisories with an end date.</p>
   <p class="after">A notice tells an advisor about a temporary change — a renovation, a paused
   benefit, a new rate. Somebody has to clean these up, so we gave them an expiry.</p>
@@ -378,7 +387,7 @@
 
 <!-- 18 -->
 <section class="slide is-full" data-note="This is the sharpest single moment in the deck. Let the screenshot sit before you speak.">
-  <div class="head"><span class="step came-back">What came back</span><h3>An advisor told a client a spa was open. It had been closed six weeks.</h3></div>
+  <div class="head"><span class="step came-back">Challenge 2 · what came back</span><h3>An advisor told a client a spa was open. It had been closed six weeks.</h3></div>
   <div class="art shot"><img src="assets/screens/01-v1-ask-spa.png" alt="The March build answering that the spa is open, with a citation and a badge saying the answer met its contract."></div>
   <div class="cap">The source was real. The citation pointed at the right document. A notice about the
   closure had an end date, the date passed, the notice removed itself — and the product went back to
@@ -389,7 +398,7 @@
 <section class="slide is-split" data-note="Name the trade-off out loud: more noise, no silent errors. We took that every time.">
   <div class="art shot"><img src="assets/screens/02-v2-ask-spa.png" alt="The current build answering that the spa is closed, carrying the active notice above the answer."></div>
   <div class="words">
-    <span class="step next">What we made next</span>
+    <span class="step next">Challenge 2 · where we landed</span>
     <h3>The end date came off.</h3>
     <p>An advisor closes a notice by hand, and the product asks them to confirm it is still true when
     it goes stale.</p>
@@ -406,7 +415,7 @@
 <!-- ─── loop 4 ─── -->
 <!-- 20 -->
 <section class="slide is-statement" data-note="Be careful here. Do not claim user research you cannot source. The argument is from verifiability.">
-  <span class="eyebrow">What we made</span>
+  <span class="eyebrow">Challenge 3 · first attempt</span>
   <p class="said">A confidence percentage on every extracted value.</p>
   <p class="after">It seemed like the honest thing — showing the machine's uncertainty rather than
   hiding it.</p>
@@ -414,7 +423,7 @@
 
 <!-- 21 -->
 <section class="slide is-statement" data-note="This is the reframe. Precise about the wrong thing.">
-  <span class="eyebrow">What came back</span>
+  <span class="eyebrow">Challenge 3 · what came back</span>
   <p class="said">It was precise about the wrong thing.</p>
   <p class="after">It looked like a measurement of whether the value was correct. It was really a
   measurement of how sure the extraction was about its own reading — and a single opaque number
@@ -425,8 +434,8 @@
 <section class="slide is-split" data-note="Decomposed rather than removed. That distinction is the whole answer if they push.">
   <div class="art shot"><img src="assets/screens/06-resolve.png" alt="The resolve sheet: three values, each with source, date, agreement count and a plain-language label."></div>
   <div class="words">
-    <span class="step next">What we made next</span>
-    <h3>We broke the signal into parts an advisor can verify.</h3>
+    <span class="step next">Challenge 3 · where we landed</span>
+    <h3>We took the number away and gave them things they could check instead.</h3>
     <ol>
       <li>A count of how many sources agree — a fact we can point at.</li>
       <li>A written label in words they already use: <strong>signed terms</strong>, <strong>superseded rate</strong>, <strong>uncorroborated</strong>.</li>
@@ -438,7 +447,7 @@
 <!-- ─── loop 5 ─── -->
 <!-- 23 -->
 <section class="slide is-statement" data-note="Half a day of work. Say that — it makes the refusal cost something.">
-  <span class="eyebrow">What we made</span>
+  <span class="eyebrow">Challenge 4 · first attempt</span>
   <p class="said">A ranking rule, to settle conflicts automatically.</p>
   <p class="after">Take the most recently signed document, or the most-corroborated value, and show
   that. Half a day of work, and right most of the time.</p>
@@ -446,7 +455,7 @@
 
 <!-- 24 -->
 <section class="slide is-statement" data-note="ATTRIBUTION NEEDED — who pushed back here and in what session. Do not use a quote you cannot place.">
-  <span class="eyebrow">What came back</span>
+  <span class="eyebrow">Challenge 4 · what came back</span>
   <p class="said">There is no authority. <em>The authority is the advisor, and the sources they trust.</em></p>
   <p class="attrib">Design-partner session — attribution to confirm</p>
   <p class="after">Ranking would have been quietly wrong at exactly the rate our source ordering was
@@ -457,8 +466,8 @@
 <section class="slide is-split" data-note="They saw this live. Point at where the value goes — one decision, three places.">
   <div class="art"><img src="assets/figures/fig-01-conflict.svg" alt="One field, three sources, the advisor choosing, the value stored at the owning layer."></div>
   <div class="words">
-    <span class="step next">What we made next</span>
-    <h3>Show all three, and require a person.</h3>
+    <span class="step next">Challenge 4 · where we landed</span>
+    <h3>We show all three values, and a person has to choose.</h3>
     <p>Every value keeps its source, its date, and how many others agree with it. The advisor
     chooses, and the choice is stored at the agency layer so the same conflict is never
     re-litigated.</p>
@@ -473,7 +482,7 @@
 <!-- ─── loop 6 ─── -->
 <!-- 26 -->
 <section class="slide is-full" data-note="Every comparable tool in this category uses a left rail. Say that.">
-  <div class="head"><span class="step made">What we made</span><h3>A left rail, and the conflict on its own page.</h3></div>
+  <div class="head"><span class="step made">Challenge 5 · first attempt</span><h3>A left rail, and the conflict on its own page.</h3></div>
   <div class="art shot"><img src="assets/plates/leftrail-conflict.png" alt="The earlier design: a left sidebar and the commission conflict on a dedicated page."></div>
   <div class="cap">The pattern every comparable tool in this industry uses. It worked.</div>
 </section>
@@ -482,8 +491,8 @@
 <section class="slide is-split" data-note="Two arguments: width, and how advisors actually move. Name the cost — 70px of height.">
   <div class="art shot"><img src="assets/screens/06-resolve.png" alt="The later design: a bottom dock, with the conflict as a sheet over the record."></div>
   <div class="words">
-    <span class="step next">What we made next</span>
-    <h3>Navigation moved to the bottom, and the decision moved onto the record.</h3>
+    <span class="step next">Challenge 5 · where we landed</span>
+    <h3>We stopped building a dashboard and started building a workspace.</h3>
     <ol>
       <li>The rail cost about 230 pixels of width permanently, on the screens that most need it — a record with three layers and a provenance column.</li>
       <li>Advisors did not move section to section like a website. They moved workspace to workspace, all day, in a loop.</li>
@@ -496,7 +505,7 @@
 <!-- ─── loop 7 ─── -->
 <!-- 28 -->
 <section class="slide is-statement" data-note="This is the one to invite questions on. Do not soften it.">
-  <span class="eyebrow">What we made</span>
+  <span class="eyebrow">Challenge 6 · first attempt</span>
   <p class="said">A screen that said the advisor decides, and then decided for them.</p>
   <p class="after">I wrote the principle, argued for it against a faster implementation, and put it
   in the product's own copy. Then I shipped a version of the resolve sheet where only one of the
@@ -505,7 +514,7 @@
 
 <!-- 29 -->
 <section class="slide is-statement" data-note="The deeper miss. Owning this unprompted is worth more than the original fix.">
-  <span class="eyebrow">What came back, and then came back again</span>
+  <span class="eyebrow">Challenge 6 · what came back, twice</span>
   <p class="said">I fixed what the screen offered. I did not check what it committed.</p>
   <p class="after">All three values are selectable now, and keeping one requires a written reason. But
   the store still records that the conflict was resolved without recording which value was kept — so
@@ -515,7 +524,7 @@
 
 <!-- 30 -->
 <section class="slide is-statement" data-note="Close the loop section. Then move to reflection.">
-  <span class="eyebrow">What I took from it</span>
+  <span class="eyebrow">Challenge 6 · where we landed</span>
   <p class="said">A principle in a document does not enforce itself.</p>
   <p class="after">And the place it fails is the screen that claims it most loudly. I now check the
   screens that state a principle first, rather than last — and I check what they commit, not only

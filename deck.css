@@ -457,3 +457,26 @@ body.settled #help { opacity: 0; }
 .chain li:first-child em { top: 5px; }
 .chain li b { display: block; font-weight: 500; font-size: 18.5px; line-height: 1.4; color: var(--ink); }
 .chain li span { display: block; margin-top: 7px; font-size: 16px; line-height: 1.5; color: var(--ink-3); max-width: 62ch; }
+
+/* ── the six challenges, as the map for the second half ─────────────── */
+
+.challenges {
+  margin-top: 38px; list-style: none; counter-reset: ch;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 20px 60px;
+  border-top: 1px solid var(--line-2); padding-top: 28px;
+}
+.challenges li { counter-increment: ch; position: relative; padding-left: 34px; }
+.challenges li::before {
+  content: counter(ch); position: absolute; left: 0; top: 2px;
+  font-family: var(--mono); font-size: 12px; color: var(--ink-4);
+  border: 1px solid var(--line-2); border-radius: 50%;
+  width: 22px; height: 22px; display: grid; place-items: center;
+}
+.challenges li b { display: block; font-weight: 500; font-size: 19px; line-height: 1.35; color: var(--ink); }
+.challenges li span { display: block; margin-top: 5px; font-size: 16px; line-height: 1.45; color: var(--ink-3); max-width: 40ch; }
+
+.challenge-foot { margin-top: 34px; font-size: 19px; line-height: 1.45; color: var(--ink-3); }
+.challenge-foot b { color: var(--ink-2); font-weight: 600; }
+
+/* a text-only slide, held on the vertical centre rather than hung from the top */
+.is-mid { justify-content: center; }
