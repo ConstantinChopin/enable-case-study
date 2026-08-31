@@ -180,6 +180,47 @@ strong { color: var(--ink); font-weight: 600; }
 .tiles.t2 { grid-template-columns: repeat(2, auto); --tile: 592px; }  /* 2 × 1 */
 .tiles.t1 { grid-template-columns: auto;            --tile: 640px; }  /* 1     */
 
+
+/* ── landscape screenshots, contained not cropped ────────────────────────
+   A UI screenshot loses its meaning when it is cropped square, so these sit
+   in a fixed box and fit inside it. Specificity has to beat the generic
+   fit-to-frame rule on ".is-full .art img". */
+
+.grid4, .duo {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+.grid4 { grid-template-columns: repeat(2, 520px); gap: 20px 28px; }
+.duo   { grid-template-columns: repeat(2, 690px); gap: 30px; }
+
+.grid4 figure, .duo figure { display: flex; flex-direction: column; min-width: 0; }
+
+.grid4 .box, .duo .box {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--paper-2);
+  border-radius: 5px;
+  box-shadow: inset 0 0 0 1px rgba(23, 23, 26, 0.09);
+  overflow: hidden;
+}
+.grid4 .box { height: 264px; }
+.duo .box   { height: 536px; }
+
+.is-full .art .grid4 img,
+.is-full .art .duo img {
+  max-width: 100%; max-height: 100%;
+  width: auto; height: auto;
+  display: block;
+}
+
+.grid4 figcaption, .duo figcaption {
+  margin-top: 9px;
+  font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.09em; text-transform: uppercase;
+  color: var(--ink-3);
+}
+
 /* ── split ───────────────────────────────────────────────────────────── */
 
 .is-split { flex-direction: row; gap: 52px; align-items: center; padding: 58px 72px; }
@@ -308,3 +349,39 @@ body.notes #notes { display: block; }
   transition: opacity 600ms ease; pointer-events: none;
 }
 body.settled #help { opacity: 0; }
+
+/* ── the design partner, as people ────────────────────────────────────────
+   Anonymising a partner protects nothing they have not already published,
+   and it makes real work read as invented. Names and faces they publish
+   themselves; no contact details. */
+
+.people {
+  display: grid;
+  grid-template-columns: repeat(6, 210px);
+  gap: 22px;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+.people figure { display: flex; flex-direction: column; min-width: 0; }
+.is-full .art .people img {
+  width: 210px; height: 210px;
+  max-width: none; max-height: none;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  box-shadow: inset 0 0 0 1px rgba(23, 23, 26, 0.09);
+}
+.people .more {
+  width: 210px; height: 210px;
+  border: 1px dashed var(--line-2);
+  border-radius: 4px;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 4px;
+}
+.people .more b { font-size: 38px; font-weight: 400; letter-spacing: -0.03em; }
+.people .more span { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-3); }
+.people figcaption { margin-top: 12px; }
+.people .nm { display: block; font-size: 17px; line-height: 1.25; }
+.people .rl { display: block; margin-top: 3px; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
