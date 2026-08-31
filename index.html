@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enable — case study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="deck.css">
+</head>
+<body>
+
+<div id="progress"></div>
+<div id="help">← → move · F fullscreen</div>
+
+<div id="stage">
+
+<!-- ══════════════════ FRONT — six minutes ══════════════════ -->
+
+<!-- 1 -->
+<section class="slide is-title" data-note="Thirty seconds. Name, what you do, and go. Do not read the subtitle aloud.">
+  <span class="eyebrow">Case study · Product design</span>
+  <h1>Enable</h1>
+  <p class="sub">A knowledge platform for luxury travel agencies, built so an advisor can put an
+  answer in front of a client without checking it first.</p>
+  <div class="who">Constantin Chopin · Founding product designer · 2025–2026</div>
+</section>
+
+<!-- 2 -->
+<section class="slide is-full" data-note="Click through. Do not explain each one — name the company and the surface and move. Ten seconds a slide at most.">
+  <div class="head"><h3>Before this</h3><span class="eyebrow">Range</span></div>
+  <div class="art">
+    <div class="ph">
+      <span class="tag">Assets needed</span>
+      <b>Three to five screenshots of prior work</b>
+      <p>Replika, Parable, Pendulum, Lightnote, Page Nineteen. One image each, named, clicked
+      through in about thirty seconds. Avi asks for this by name — show it, do not say it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3 -->
+<section class="slide is-split" data-note="This is the problem in one image. Point at the middle: nothing lives there. Sixty seconds.">
+  <div class="art"><img src="assets/figures/fig-06-landscape.svg" alt="Six categories of tool arranged around an open centre."></div>
+  <div class="words">
+    <span class="eyebrow">The problem</span>
+    <h3>Six categories of tool, and none of them holds the whole thing.</h3>
+    <ol>
+      <li>Itinerary builders hold the trip. Booking systems hold the reservation. CRMs hold the client. Consortium portals hold the terms.</li>
+      <li>The agency's intranet had been pressed into service as a suite it was never meant to be.</li>
+      <li>Nothing sat in the middle, so every advisor rebuilt the same picture by hand, every time.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 4 -->
+<section class="slide is-split" data-note="Where we chose to build, and why. Do not walk all eleven stages — name the wedge and move.">
+  <div class="art"><img src="assets/figures/fig-04-wedge.svg" alt="Eleven stages of the advisor sales cycle, with six source systems read and written at every stage."></div>
+  <div class="words">
+    <span class="eyebrow">Where we built</span>
+    <h3>Eleven stages, and every one of them touches all six.</h3>
+    <ol>
+      <li>Advisors are trained on an eleven-stage cycle, first lead to post-travel review.</li>
+      <li>We built the opening stretch, up to the proposal. That is where the knowledge work concentrates and where nobody else was building.</li>
+      <li>To place one hotel an advisor trades three things against each other: the right property, what the client gets on arrival, and what the advisor is paid.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 5 -->
+<section class="slide is-statement" data-note="Say it plainly and pause. This is what they bought — not answers, the engine.">
+  <span class="eyebrow">What the agency bought</span>
+  <p class="said">Not answers. One place that could absorb the mess and turn it into records.</p>
+  <p class="after">Rate sheets as PDFs. Inventories as half-structured spreadsheets. Terms buried in
+  forwarded email. Out the other side: one record per thing, with the source, the position in that
+  source, and the date on every field.</p>
+</section>
+
+<!-- 6 -->
+<section class="slide is-full" data-note="PLACEHOLDER — waiting on your screenshots. A real source document beside the record it became.">
+  <div class="head"><h3>The transformation</h3><span class="eyebrow">The engine</span></div>
+  <div class="art">
+    <div class="ph">
+      <span class="tag">Assets needed</span>
+      <b>A source document, and the record it became</b>
+      <p>A rate sheet or DMC spreadsheet on one side; the structured record with a source on every
+      field on the other. This is the slide that carries the whole claim.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7 -->
+<section class="slide is-split" data-note="The constraint that explains everything about how this was made. Do not apologise for having no Figma — this is the reason.">
+  <div class="art"><img src="assets/figures/fig-07-workshop.svg" alt="Four repositories: production, dev, design system and prototype, with Claude Code running the iterations."></div>
+  <div class="words">
+    <span class="eyebrow">The constraint</span>
+    <h3>Two user calls a week. Shipping weekly, sometimes twice.</h3>
+    <ol>
+      <li>Design ahead of code could not hold that pace. The first build is what happens when it tries.</li>
+      <li>So the iteration surface became working software. Four repositories, with the prototype using the design system as a live dependency.</li>
+      <li>The roadmap held the decisions. <strong>The prototype was the specification.</strong> There was always something an advisor could use on Thursday.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 8 -->
+<section class="slide" data-note="Avi says: do not need exact numbers, do need how you got to them. Say the method out loud for each.">
+  <span class="eyebrow">What changed</span>
+  <h2 style="margin-top:20px">Measured with the design partner, over eight months of weekly sessions.</h2>
+  <div class="figs">
+    <div>
+      <div class="n">10–15h</div>
+      <div class="w">Client request to a personalised first proposal</div>
+      <div class="h">Down from a measured baseline. The target we set at the start was twenty.</div>
+      <div class="s">Verify method before presenting</div>
+    </div>
+    <div>
+      <div class="n">~1h / day</div>
+      <div class="w">Administrative time returned per advisor</div>
+      <div class="h">Mostly manual reconciliation of rule changes arriving by email.</div>
+      <div class="s">Advisor-reported, not logged</div>
+    </div>
+    <div>
+      <div class="n">Committed</div>
+      <div class="w">The agency moved its structured knowledge into Enable</div>
+      <div class="h">They connected their drive and their email first, then committed. An agency does not do that for a feature list.</div>
+      <div class="s">Signed usage contract</div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 -->
+<section class="slide is-switch" data-note="Switch windows now. Script is in demo-script.md. Twenty minutes. Come back to slide 10.">
+  <span class="eyebrow">Now, live</span>
+  <h2>Rather than describe it, let me use it.</h2>
+  <ul>
+    <li><b>The day arrives</b>The briefing, and a chase the product will not send by itself</li>
+    <li><b>A record</b>Provenance, a disagreement, and who is allowed to see it</li>
+    <li><b>Ingestion</b>A spreadsheet in, a confirmed record out</li>
+    <li><b>Ask</b>An answer, and a refusal</li>
+  </ul>
+</section>
+
+<!-- ══════════════════ BACK — twelve minutes ══════════════════ -->
+
+<!-- 10 -->
+<section class="slide is-statement" data-note="Reset the frame. They have now seen it work; this is how it got there.">
+  <span class="eyebrow">The rest of the time</span>
+  <p class="said">Seven things we built, and then rebuilt.</p>
+  <p class="after">Each one is the same shape: what we made, what came back, and what we made
+  instead.</p>
+</section>
+
+<!-- ─── loop 1 ─── -->
+<!-- 11 -->
+<section class="slide is-full" data-note="The obvious build. Everyone in the room has approved one of these.">
+  <div class="head"><span class="step made">What we made</span><h3>Chat over a pile of documents, results as cards.</h3></div>
+  <div class="art shot"><img src="assets/plates/v1-home.png" alt="The first build: a dark chat interface beside a shelf of image cards."></div>
+  <div class="cap">June 2025. It demoed well — the conversation flowed and the shelf filled up.</div>
+</section>
+
+<!-- 12 -->
+<section class="slide is-full" data-note="Slow down. Let them read the card fields and the citations themselves. Point, and wait.">
+  <div class="head"><span class="step came-back">What came back</span><h3>The cards had nothing underneath them.</h3></div>
+  <div class="art shot"><img src="assets/plates/v1-answer.png" alt="An answer about cherry blossom season cited to Reddit and Wikipedia, beside cards whose fields read Hotel name, Location, Description."></div>
+  <div class="cap"><b>Hotel name. Location. Description.</b> Asked for a Japan itinerary it returned
+  cherry-blossom festivals, cited to Reddit and Wikipedia, when what was needed was the agency's own
+  negotiated terms.</div>
+</section>
+
+<!-- 13 -->
+<section class="slide is-statement" data-note="The intellectual move of the whole project. Say it slowly.">
+  <span class="eyebrow">What we made next</span>
+  <p class="said">Retrieval was never the problem.</p>
+  <p class="after">The knowledge already existed and was already accurate — it was sitting unread in
+  inboxes and portals. What was missing was structure, a source on every fact, and a permission
+  attached to it. So the data model came before any screen, and chat became one door among several
+  rather than the product.</p>
+</section>
+
+<!-- ─── loop 2 ─── -->
+<!-- 14 -->
+<section class="slide is-full" data-note="They asked for this. We built exactly it. Do not mock the request — it was reasonable.">
+  <div class="head"><span class="step made">What we made</span><h3>They asked to check every field by hand.</h3></div>
+  <div class="art shot"><img src="assets/plates/form.png" alt="The first review interface: field 11 of 87, record 3 of 214."></div>
+  <div class="cap"><b>Field 11 of 87. Record 3 of 214.</b> A completely reasonable request from people
+  whose business depends on the terms being right.</div>
+</section>
+
+<!-- 15 -->
+<section class="slide is-statement" data-note="ATTRIBUTION NEEDED — who said this, and when. Replace with the real line if you have it.">
+  <span class="eyebrow">What came back</span>
+  <p class="said">It worked, and nobody was ever going to finish it.</p>
+  <p class="after">A review that exhausting does not happen. And a review that does not happen is
+  worse than no review at all, because everybody assumes it did.</p>
+</section>
+
+<!-- 16 -->
+<section class="slide is-split" data-note="They saw this live. Point at the two held rows — that is the part that matters.">
+  <div class="art shot"><img src="assets/screens/13-admin-sereno.png" alt="The extraction review: each field with its position in the source and a confirm action."></div>
+  <div class="words">
+    <span class="step next">What we made next</span>
+    <h3>We kept the rule and changed its shape.</h3>
+    <ol>
+      <li>A fixed list of questions a travel designer actually needs answered, rather than every field in the schema.</li>
+      <li>Each proposed answer arrives as one card: the claim, the quoted line, the page.</li>
+      <li>Two rows here are <strong>held rather than offered</strong> — a converted figure with no source currency, and boilerplate copy. Held rows have no confirm button.</li>
+      <li>When a document is silent, that is recorded as silence. An absent answer is not a no.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ─── loop 3 ─── -->
+<!-- 17 -->
+<section class="slide is-statement" data-note="The obvious design. Say why it was obvious before you say why it was wrong.">
+  <span class="eyebrow">What we made</span>
+  <p class="said">Advisories with an end date.</p>
+  <p class="after">A notice tells an advisor about a temporary change — a renovation, a paused
+  benefit, a new rate. Somebody has to clean these up, so we gave them an expiry.</p>
+</section>
+
+<!-- 18 -->
+<section class="slide is-full" data-note="This is the sharpest single moment in the deck. Let the screenshot sit before you speak.">
+  <div class="head"><span class="step came-back">What came back</span><h3>An advisor told a client a spa was open. It had been closed six weeks.</h3></div>
+  <div class="art shot"><img src="assets/screens/01-v1-ask-spa.png" alt="The March build answering that the spa is open, with a citation and a badge saying the answer met its contract."></div>
+  <div class="cap">The source was real. The citation pointed at the right document. A notice about the
+  closure had an end date, the date passed, the notice removed itself — and the product went back to
+  reporting the last thing it knew, <b>with full confidence.</b></div>
+</section>
+
+<!-- 19 -->
+<section class="slide is-split" data-note="Name the trade-off out loud: more noise, no silent errors. We took that every time.">
+  <div class="art shot"><img src="assets/screens/02-v2-ask-spa.png" alt="The current build answering that the spa is closed, carrying the active notice above the answer."></div>
+  <div class="words">
+    <span class="step next">What we made next</span>
+    <h3>The end date came off.</h3>
+    <p>An advisor closes a notice by hand, and the product asks them to confirm it is still true when
+    it goes stale.</p>
+    <div class="stamp">
+      <em>Product decision log · 31 March 2026</em>
+      <span>Temporary advisories: no auto-expire. Advisories stay active until manually closed.
+      Build a stale-advisory review nudge.</span>
+    </div>
+    <p style="margin-top:22px"><strong>The cost:</strong> more noise, and a review queue. We took the
+    annoying failure over the invisible one every time this came up.</p>
+  </div>
+</section>
+
+<!-- ─── loop 4 ─── -->
+<!-- 20 -->
+<section class="slide is-statement" data-note="Be careful here. Do not claim user research you cannot source. The argument is from verifiability.">
+  <span class="eyebrow">What we made</span>
+  <p class="said">A confidence percentage on every extracted value.</p>
+  <p class="after">It seemed like the honest thing — showing the machine's uncertainty rather than
+  hiding it.</p>
+</section>
+
+<!-- 21 -->
+<section class="slide is-statement" data-note="This is the reframe. Precise about the wrong thing.">
+  <span class="eyebrow">What came back</span>
+  <p class="said">It was precise about the wrong thing.</p>
+  <p class="after">It looked like a measurement of whether the value was correct. It was really a
+  measurement of how sure the extraction was about its own reading — and a single opaque number
+  gives an advisor nothing to check. It asks for trust instead of offering evidence.</p>
+</section>
+
+<!-- 22 -->
+<section class="slide is-split" data-note="Decomposed rather than removed. That distinction is the whole answer if they push.">
+  <div class="art shot"><img src="assets/screens/06-resolve.png" alt="The resolve sheet: three values, each with source, date, agreement count and a plain-language label."></div>
+  <div class="words">
+    <span class="step next">What we made next</span>
+    <h3>We broke the signal into parts an advisor can verify.</h3>
+    <ol>
+      <li>A count of how many sources agree — a fact we can point at.</li>
+      <li>A written label in words they already use: <strong>signed terms</strong>, <strong>superseded rate</strong>, <strong>uncorroborated</strong>.</li>
+      <li>Where a comparison genuinely helps, a bar carries it without putting a decimal on it.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ─── loop 5 ─── -->
+<!-- 23 -->
+<section class="slide is-statement" data-note="Half a day of work. Say that — it makes the refusal cost something.">
+  <span class="eyebrow">What we made</span>
+  <p class="said">A ranking rule, to settle conflicts automatically.</p>
+  <p class="after">Take the most recently signed document, or the most-corroborated value, and show
+  that. Half a day of work, and right most of the time.</p>
+</section>
+
+<!-- 24 -->
+<section class="slide is-statement" data-note="ATTRIBUTION NEEDED — who pushed back here and in what session. Do not use a quote you cannot place.">
+  <span class="eyebrow">What came back</span>
+  <p class="said">There is no authority. <em>The authority is the advisor, and the sources they trust.</em></p>
+  <p class="attrib">Design-partner session — attribution to confirm</p>
+  <p class="after">Ranking would have been quietly wrong at exactly the rate our source ordering was
+  wrong, and nobody would ever have known which answers.</p>
+</section>
+
+<!-- 25 -->
+<section class="slide is-split" data-note="They saw this live. Point at where the value goes — one decision, three places.">
+  <div class="art"><img src="assets/figures/fig-01-conflict.svg" alt="One field, three sources, the advisor choosing, the value stored at the owning layer."></div>
+  <div class="words">
+    <span class="step next">What we made next</span>
+    <h3>Show all three, and require a person.</h3>
+    <p>Every value keeps its source, its date, and how many others agree with it. The advisor
+    chooses, and the choice is stored at the agency layer so the same conflict is never
+    re-litigated.</p>
+    <div class="stamp">
+      <em>Product decision log · 31 March 2026</em>
+      <span>Show all, advisor resolves. When sources conflict, display every value and let the
+      advisor pick. No auto-resolution.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ─── loop 6 ─── -->
+<!-- 26 -->
+<section class="slide is-full" data-note="Every comparable tool in this category uses a left rail. Say that.">
+  <div class="head"><span class="step made">What we made</span><h3>A left rail, and the conflict on its own page.</h3></div>
+  <div class="art shot"><img src="assets/plates/leftrail-conflict.png" alt="The earlier design: a left sidebar and the commission conflict on a dedicated page."></div>
+  <div class="cap">The pattern every comparable tool in this industry uses. It worked.</div>
+</section>
+
+<!-- 27 -->
+<section class="slide is-split" data-note="Two arguments: width, and how advisors actually move. Name the cost — 70px of height.">
+  <div class="art shot"><img src="assets/screens/06-resolve.png" alt="The later design: a bottom dock, with the conflict as a sheet over the record."></div>
+  <div class="words">
+    <span class="step next">What we made next</span>
+    <h3>Navigation moved to the bottom, and the decision moved onto the record.</h3>
+    <ol>
+      <li>The rail cost about 230 pixels of width permanently, on the screens that most need it — a record with three layers and a provenance column.</li>
+      <li>Advisors did not move section to section like a website. They moved workspace to workspace, all day, in a loop.</li>
+      <li>Resolving a rate stopped being its own page. The decision only makes sense while you can still see the fields it sits among.</li>
+    </ol>
+    <p><strong>The cost:</strong> about 70 pixels of height, permanently, and a pattern rare enough in this category that it only reads as considered if it behaves well.</p>
+  </div>
+</section>
+
+<!-- ─── loop 7 ─── -->
+<!-- 28 -->
+<section class="slide is-statement" data-note="This is the one to invite questions on. Do not soften it.">
+  <span class="eyebrow">What we made</span>
+  <p class="said">A screen that said the advisor decides, and then decided for them.</p>
+  <p class="after">I wrote the principle, argued for it against a faster implementation, and put it
+  in the product's own copy. Then I shipped a version of the resolve sheet where only one of the
+  three values could actually be kept.</p>
+</section>
+
+<!-- 29 -->
+<section class="slide is-statement" data-note="The deeper miss. Owning this unprompted is worth more than the original fix.">
+  <span class="eyebrow">What came back, and then came back again</span>
+  <p class="said">I fixed what the screen offered. I did not check what it committed.</p>
+  <p class="after">All three values are selectable now, and keeping one requires a written reason. But
+  the store still records that the conflict was resolved without recording which value was kept — so
+  the product asks for a justification and discards it. Checking the affordance is not the same as
+  checking the commit, and I learned that after I had already written the lesson down.</p>
+</section>
+
+<!-- 30 -->
+<section class="slide is-statement" data-note="Close the loop section. Then move to reflection.">
+  <span class="eyebrow">What I took from it</span>
+  <p class="said">A principle in a document does not enforce itself.</p>
+  <p class="after">And the place it fails is the screen that claims it most loudly. I now check the
+  screens that state a principle first, rather than last — and I check what they commit, not only
+  what they offer.</p>
+</section>
+
+<!-- 31 -->
+<section class="slide is-split" data-note="Two minutes. Do not add a third item. Then hand over for questions.">
+  <div class="art shot"><img src="assets/screens/15-traveller.png" alt="The traveller profile, the least proven surface in the product."></div>
+  <div class="words">
+    <span class="eyebrow">Reflection</span>
+    <h3>What I would challenge if I picked it up again.</h3>
+    <ol>
+      <li>The resolve flow puts real work on the advisor and does not scale. At ten times the records it needs batching and thresholds — without quietly reintroducing the ranking we removed.</li>
+      <li>The traveller side is the least proven thing here. The surfaces are built; the extraction that feeds them was an outline when I rolled off.</li>
+      <li>I would read the permission model as an adversary rather than a user. Both leaks I found were of that kind, and I found them late.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- 32 -->
+<section class="slide is-title" data-note="Stop talking. Ten minutes for questions.">
+  <span class="eyebrow">Thank you</span>
+  <h1>Questions.</h1>
+  <div class="who">Constantin Chopin</div>
+</section>
+
+</div>
+
+<div id="notes"><span class="k">Presenter</span><span id="note-text"></span></div>
+
+<script>
+(function () {
+  var stage  = document.getElementById('stage');
+  var slides = Array.prototype.slice.call(stage.querySelectorAll('.slide'));
+  var bar    = document.getElementById('progress');
+  var noteEl = document.getElementById('note-text');
+  var i = 0;
+  /* Presenter notes are for rehearsal. They name gaps and staging decisions, so they
+     are available while working locally and inert anywhere the deck is published. */
+  var LOCAL = ['localhost', '127.0.0.1', '[::1]', ''].indexOf(location.hostname) !== -1;
+
+  slides.forEach(function (s, n) {
+    var t = document.createElement('div');
+    t.className = 'num';
+    t.textContent = (n + 1) + ' / ' + slides.length;
+    s.appendChild(t);
+  });
+
+  /* Scale the fixed 1600×900 stage to whatever window it is shown in. */
+  function fit() {
+    var k = Math.min(window.innerWidth / 1600, window.innerHeight / 900);
+    stage.style.transform = 'translate(-50%, -50%) scale(' + k + ')';
+  }
+  window.addEventListener('resize', fit);
+  fit();
+
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach(function (s, k) { s.classList.toggle('is-on', k === i); });
+    bar.style.width = ((i + 1) / slides.length * 100) + '%';
+    noteEl.textContent = slides[i].dataset.note || '—';
+    if (location.hash !== '#' + (i + 1)) history.replaceState(null, '', '#' + (i + 1));
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); show(i + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); show(i - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); show(0); }
+    else if (e.key === 'End') { e.preventDefault(); show(slides.length - 1); }
+    else if (e.key === 'n' || e.key === 'N') { if (LOCAL) document.body.classList.toggle('notes'); }
+    else if (e.key === 'f' || e.key === 'F') {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen();
+    }
+  });
+
+  stage.addEventListener('click', function (e) {
+    show(e.clientX < window.innerWidth / 2 ? i - 1 : i + 1);
+  });
+
+  setTimeout(function () { document.body.classList.add('settled'); }, 4000);
+
+  var start = parseInt((location.hash || '#1').slice(1), 10);
+  show(isNaN(start) ? 0 : start - 1);
+})();
+</script>
+
+</body>
+</html>

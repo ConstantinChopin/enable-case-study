@@ -1,0 +1,1144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enable — case study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="case.css">
+</head>
+<body>
+
+<nav class="rail" aria-label="Acts">
+  <div class="rail-mark">
+    <b>Enable</b>
+    <span>Case study · Constantin Chopin</span>
+  </div>
+
+  <div class="rail-acts">
+    <a class="rail-act" href="#act-1"><span class="n">01</span><span class="label">A wrong answer</span></a>
+    <a class="rail-act" href="#act-2"><span class="n">02</span><span class="label">What the work was</span></a>
+    <a class="rail-act" href="#act-3"><span class="n">03</span><span class="label">The first build</span></a>
+    <a class="rail-act" href="#act-4"><span class="n">04</span><span class="label">One question, followed</span></a>
+    <a class="rail-act" href="#act-5"><span class="n">05</span><span class="label">Five decisions</span></a>
+    <a class="rail-act" href="#act-6"><span class="n">06</span><span class="label">How it was built</span></a>
+    <a class="rail-act" href="#act-7"><span class="n">07</span><span class="label">What changed</span></a>
+    <a class="rail-act" href="#act-8"><span class="n">08</span><span class="label">What I'd do differently</span></a>
+    <a class="rail-act" href="#appendix"><span class="n">—</span><span class="label">The other surfaces</span></a>
+  </div>
+
+  <div class="rail-foot">
+    <kbd>←</kbd> <kbd>→</kbd> move between acts<br>
+    <kbd>1</kbd>–<kbd>8</kbd> jump to an act<br>
+    <kbd>P</kbd> presenter notes
+  </div>
+</nav>
+
+<main>
+
+<!-- ══ masthead ══════════════════════════════════════════════════════ -->
+<header class="masthead">
+  <span class="mono">Case study · Product design · 2025–2026</span>
+  <h1>Enable</h1>
+  <p class="standfirst">
+    A knowledge platform for luxury travel agencies, built so that an advisor can put
+    an answer in front of a client without checking it first.
+  </p>
+
+  <dl class="facts">
+    <div class="fact">
+      <dt class="mono">Role</dt>
+      <dd>Founding product designer. The only designer on the team.</dd>
+    </div>
+    <div class="fact">
+      <dt class="mono">When</dt>
+      <dd>May 2025 to June 2026. Six months full time, then part time.</dd>
+    </div>
+    <div class="fact">
+      <dt class="mono">Team</dt>
+      <dd>Six people: CEO, fractional CTO, technical product manager, two engineers, me. Plus a design-partner agency of about fifty advisors.</dd>
+    </div>
+    <div class="fact">
+      <dt class="mono">Built with</dt>
+      <dd>Next.js and TypeScript front end, Python extraction services, a design system built and operated with Claude Code.</dd>
+    </div>
+  </dl>
+
+  <p class="disclosure">
+    <b>About what you are looking at.</b> The production product belongs to the company and is
+    under NDA, so I have rebuilt the flows I designed as working software I can drive in front of
+    you. Every hotel, advisor, traveller and figure on screen is invented. The design decisions,
+    the flows, the states and the interface are the ones I made during the engagement. Where
+    something was designed but never built, the screen says so.
+  </p>
+</header>
+
+<!-- ══ act 1 ═════════════════════════════════════════════════════════ -->
+<section class="act" id="act-1">
+  <div class="act-head">
+    <span class="mono act-num">Act one <span class="budget">2 min</span></span>
+    <h2 class="act-title">An answer that was wrong, and looked completely right.</h2>
+    <p class="act-lede">
+      I want to start here, because everything else in this case study is an attempt to stop
+      this screen from existing.
+    </p>
+  </div>
+
+  <div class="prose">
+    <p>
+      An advisor at our design-partner agency had a client on the phone asking whether the spa at
+      a hotel in Paris was open. She asked our product before she answered. The product told her
+      the spa was open, gave the hours, showed the document it had read, and marked the answer as
+      meeting the quality bar we had written for it.
+    </p>
+    <p>
+      The spa had been closed for six weeks.
+    </p>
+    <p>
+      Nothing had broken. The source was real. The citation pointed at the right document. The
+      hours had been correct on the day that document was written. What had happened was smaller
+      and worse than a bug. Somebody had posted a notice about the closure, the notice had an end
+      date on it, that date had passed, and the notice had removed itself. With the notice gone,
+      the product went back to reporting the last thing it had been told, with full confidence.
+    </p>
+  </div>
+
+  <div class="pair">
+    <figure class="pair-item">
+      <span class="tag is-wrong">March build · wrong</span>
+      <div class="shot"><img src="assets/screens/01-v1-ask-spa.png" alt="The March build answering that the spa is open, with a citation and a green badge reading answer contract met."></div>
+      <figcaption class="caption">
+        The answer the advisor got. <b>“The spa is open, 07:00–21:00 daily.”</b> A numbered
+        citation, a real source, and a badge saying the answer met our own contract. All of it
+        true except the answer.
+      </figcaption>
+    </figure>
+    <figure class="pair-item">
+      <span class="tag is-right">Current build · correct</span>
+      <div class="shot"><img src="assets/screens/02-v2-ask-spa.png" alt="The current build answering that the spa is closed to 15 September, with the active notice shown above the answer."></div>
+      <figcaption class="caption">
+        The same question in the build we shipped. The active notice sits above the answer, the
+        answer carries it, and the badge changes to say so. <b>Notices no longer end by
+        themselves; a person closes them.</b>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="prose block">
+    <p>
+      That is the whole difference, and almost everything else in this case study is what it took
+      to get there. Not building a notice system — that part is small. Getting to a model of the
+      data where an answer can know what it does not know, and an interface where that shows up in
+      front of someone who is mid-sentence with a client.
+    </p>
+  </div>
+
+  <p class="note">
+    <b>Drive this live.</b> Open <code>/ask</code>, click “Is the spa at Maison Léandre open?”, then press <b>V</b> to flip builds. Stills are the fallback if the server stalls. No industry context yet — go straight into Act 2.
+  </p>
+</section>
+
+<!-- ══ act 2 ═════════════════════════════════════════════════════════ -->
+<section class="act" id="act-2">
+  <div class="act-head">
+    <span class="mono act-num">Act two <span class="budget">2 min</span></span>
+    <h2 class="act-title">What an advisor is actually doing when they book a hotel.</h2>
+  </div>
+
+  <div class="prose">
+    <p>
+      Luxury travel runs on independent advisors, most of them contractors attached to a host
+      agency. To put one hotel into one client's trip, an advisor is playing three things against
+      each other: whether the property is right for this particular client, what the client gets
+      on arrival, and what the advisor gets paid.
+    </p>
+    <p>
+      Those three move together, and usually against each other. Book the same room through a
+      consortium programme and the commission goes up but the client loses the breakfast and the
+      hotel credit. Book direct and the client gains those and the commission drops. The terms
+      behind that trade change through the season, arrive by email, and live in four different
+      systems: the property in one, the client in a CRM, the trip in an itinerary tool, and the
+      negotiated terms in a partner portal.
+    </p>
+    <p>
+      No single system holds all four, so the trade gets made blind. Advisors leave commission on
+      the table, and clients get less than the same booking could have carried.
+    </p>
+  </div>
+
+  <div class="counts">
+    <div class="count">
+      <span class="fig">25–35h</span>
+      <div class="what">Working hours per complex booking, done by hand</div>
+      <div class="how">Reconstructed with advisors in working sessions, walking through bookings they had just completed.</div>
+      <div class="src">Design-partner sessions · n≈12 advisors</div>
+    </div>
+    <div class="count">
+      <span class="fig">3–5</span>
+      <div class="what">Proposals built for every booking that lands</div>
+      <div class="how">The others are unpaid. This is the number that makes the hours expensive rather than merely long.</div>
+      <div class="src">Agency-reported, corroborated in sessions</div>
+    </div>
+    <div class="count">
+      <span class="fig">16–18%</span>
+      <div class="what">Of the working week actually spent with clients</div>
+      <div class="how">The rest is assembly, chasing terms and rebuilding context the tools drop.</div>
+      <div class="src">Advisor time estimates, across the engagement</div>
+    </div>
+  </div>
+
+  <blockquote>
+    <p>
+      “We are inundated every day by emails from partners. Some of them I ignore, and I wish I had
+      time to read… that's accurate data, it's coming from the partners, it just goes into our junk
+      or emails that we don't read… if somehow we could get the data pulled into this — and maybe
+      I'm asking for the moon here.”
+    </p>
+    <cite>Advisor · design-partner session · May 2026</cite>
+  </blockquote>
+  <p class="quote-effect">
+    This changed how we framed the whole problem. The information the advisors needed already
+    existed, it was already accurate, and it was already arriving. It was just unread. Our job was
+    never to create information. It was to make what already arrives every day usable.
+  </p>
+
+  <p class="note">
+    <b>Hard stop at two minutes.</b> Context is the cheapest part of this deck. If you are past four minutes in the session, skip the counts and go straight to Act 3.
+  </p>
+</section>
+
+<!-- ══ act 3 ═════════════════════════════════════════════════════════ -->
+<section class="act" id="act-3">
+  <div class="act-head">
+    <span class="mono act-num">Act three <span class="budget">5 min</span></span>
+    <h2 class="act-title">We built the obvious thing first, and it was wrong.</h2>
+  </div>
+
+  <div class="prose">
+    <p>
+      Our first read was that the advisors' problem was access to information. So we built what
+      that implies. Pull all of their documents into a retrieval system, put a chat on top of it,
+      and show what comes back as cards.
+    </p>
+    <p>
+      It demoed well. The conversation flowed, the card shelf filled up, and at a glance it looked
+      like a product.
+    </p>
+  </div>
+
+  <div class="pair">
+    <figure class="pair-item">
+      <span class="tag is-wrong">First build · June 2025</span>
+      <div class="shot"><img src="assets/plates/v1-home.png" alt="The first build: a dark chat interface beside a shelf of image cards."></div>
+      <figcaption class="caption">
+        Chat on the left, a shelf of cards on the right, a pile of documents and a retrieval prompt
+        behind both.
+      </figcaption>
+    </figure>
+    <figure class="pair-item">
+      <span class="tag is-wrong">The tell</span>
+      <div class="shot"><img src="assets/plates/v1-answer.png" alt="An answer about cherry blossom season, cited to Reddit and Wikipedia, beside cards whose fields read Hotel name, Location, Description."></div>
+      <figcaption class="caption">
+        Two problems in one screen. The cards say <b>“Hotel name”, “Location”, “Description”</b>
+        because nothing structured sat underneath them. And the answer to a request for a Japan
+        itinerary is cherry-blossom festivals, cited to Reddit and Wikipedia.
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="prose block">
+    <p>
+      That second screen is the one that changed the project. An advisor asked for a Japan
+      itinerary and got a confident, generic tourist summary sourced from the open web, at the
+      exact moment they needed their own agency's negotiated terms.
+    </p>
+    <p>
+      The cost of that is not embarrassment. An advisor who quotes a rate that has lapsed loses
+      money on a booking they cannot reprice. One who promises a benefit that has been withdrawn
+      loses a client's trust, and in this industry the client is a relationship that took years.
+      Neither of those is recoverable by explaining that the model was confident.
+    </p>
+    <p>
+      What we took from it: <strong>retrieval was never the problem.</strong> The agency did not
+      need a faster way to search a pile. It needed structure on the knowledge it already had, a
+      record of where each fact came from, and a permission attached to every piece of it. A pile
+      of documents with a model on top gives you none of those. It gives you the pile back, faster
+      and with more confidence.
+    </p>
+    <p>
+      So we reversed the order of work. The data model came before any screen: records instead of
+      documents, layers instead of one heap, and a written rule about what an answer is allowed to
+      say. Chat survived, but demoted — one way in among several, rather than the product itself.
+    </p>
+  </div>
+
+  <p class="note">
+    <b>Slow down here.</b> Let the second screenshot be read rather than described — the card fields and the Reddit citation do the work. Point, and wait.
+  </p>
+</section>
+
+<!-- ══ act 4 ═════════════════════════════════════════════════════════ -->
+<section class="act" id="act-4">
+  <div class="act-head">
+    <span class="mono act-num">Act four <span class="budget">18 min · the core</span></span>
+    <h2 class="act-title">One question, followed all the way through.</h2>
+    <p class="act-lede">
+      Rather than tour the product surface by surface, I want to take one question an advisor asks
+      every week and follow it through every place the product touches it — including the places
+      where it goes wrong, and the places where somebody is not allowed to see the answer.
+    </p>
+  </div>
+
+  <div class="prose">
+    <p>
+      The question is: <strong>what is our commission at this hotel, and does the rate include
+      breakfast?</strong> It sounds trivial. It is the single most expensive question in the
+      business, because getting it wrong costs the advisor money on a booking they have already
+      quoted.
+    </p>
+  </div>
+
+  <!-- 4.1 -->
+  <div class="step">
+    <div class="step-marker">
+      <span class="idx">4.1</span>
+      <span class="what">Entry point · the morning</span>
+    </div>
+    <h3 class="head">The advisor does not go looking. The work arrives.</h3>
+    <div class="prose">
+      <p>
+        The first screen of the day is a briefing. It shows the money that is late, the travellers
+        who leave soon, the notices still open on properties in their book, and the incentives about
+        to expire. This is the screen an advisor opens before they open their inbox.
+      </p>
+      <p>
+        Everything on it is a saved view of a real surface, so opening a widget takes you to that
+        surface with the filter already applied. We did it that way because the alternative — five
+        bespoke summary pages — would have drifted out of step with the real data within a month.
+      </p>
+      <p>
+        Nothing on this screen sends itself. When a commission is late, the product writes the
+        chase email and then stops. The advisor reads it, edits it and sends it. That rule came out
+        of the sessions and we never broke it: the product prepares work, the person commits it.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/screens/03-briefing.png" alt="The advisor briefing: commissions outstanding, departures, notices and expiring incentives."></div>
+      <figcaption class="caption">
+        The morning screen. Four things that need the advisor today, each one a link into the
+        surface it summarises.
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- 4.2 -->
+  <div class="step">
+    <div class="step-marker">
+      <span class="idx">4.2</span>
+      <span class="what">Entry point · something needs a decision</span>
+    </div>
+    <h3 class="head">A separate place for things that need a decision, not a message.</h3>
+    <div class="prose">
+      <p>
+        The briefing tells you the shape of the day. It does not tell you what changed overnight.
+        That is a different job, so it got a different surface.
+      </p>
+      <p>
+        We were nervous about building this one. The product exists partly because email failed
+        these advisors — one of them told us “sometimes we read our email, sometimes we don't, and
+        it's always the one time we might not.” Building an inbox risked recreating exactly what we
+        were replacing.
+      </p>
+      <p>
+        The difference we settled on is that every item here is attached to its subject and carries
+        its own decision. You do not read a message and then go elsewhere to act on it. A source
+        conflict opens the record's resolve sheet. An unmatched payment opens the matching flow.
+        And nothing clears itself — an item is actioned or deferred by a person, deliberately.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/screens/07-notifications.png" alt="The notifications surface with a critical item selected, showing evidence, what generated it, and three actions."></div>
+      <figcaption class="caption">
+        One item open. It names what happened, what generated it, the evidence behind it, and the
+        subject it is attached to. <b>The primary action opens the record;</b> marking it actioned
+        or deferring it are deliberately the quieter pair.
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- 4.3 -->
+  <div class="step">
+    <div class="step-marker">
+      <span class="idx">4.3</span>
+      <span class="what">The record · where the disagreement lives</span>
+    </div>
+    <h3 class="head">Three layers, and a source on every single field.</h3>
+    <div class="prose">
+      <p>
+        This is the centre of the product. The record has three layers, and they are stacked rather
+        than merged.
+      </p>
+      <p>
+        <strong>The canonical layer</strong> is the industry's version of the property — the address,
+        the room count, the published amenities. <strong>The agency layer</strong> is what this
+        particular agency has negotiated over twenty years, which sits on top without overwriting
+        what is beneath it. <strong>The personal layer</strong> is what one advisor knows and owns:
+        their note about which rooms to ask for, their contact, their history.
+      </p>
+      <p>
+        We built it in three layers rather than one because advisors move between agencies, and
+        agencies hold terms their competitors must never see. A single merged record would have
+        made both of those impossible. Every field carries the layer it belongs to, the source it
+        came from, and the date it was last known to be true.
+      </p>
+      <p>
+        And here is the question we started with. Three sources give three different commission
+        rates: the partner portal says 12%, the booking platform says 10%, and somebody keyed 14%
+        by hand in April. The record shows all three and does not choose.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/screens/05-record.png" alt="The Maison Léandre record showing the canonical layer, the agency overlay with three conflicting commission values, and provenance on each field."></div>
+      <figcaption class="caption">
+        Every row carries its layer, its source and its date. In the agency overlay, the commission
+        row shows three values that disagree, with a button to resolve them. <b>Nothing has been
+        picked for the advisor.</b>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- 4.4 -->
+  <div class="step">
+    <div class="step-marker">
+      <span class="idx">4.4</span>
+      <span class="what">The decision · the advisor picks</span>
+    </div>
+    <h3 class="head">The product refuses to settle it, and asks why.</h3>
+    <div class="prose">
+      <p>
+        Auto-resolving this by ranking the sources would have been half a day of work. Take the
+        most recently signed document, or the most-corroborated value, and show that. It would have
+        been right most of the time.
+      </p>
+      <p>
+        We did not do it, and the reason came from a session. We had been asking the agency which
+        source should be treated as the authority, and one of the advisors said: “This is the whole
+        conversation of how do you actually determine — who's the authority here? Is it Forbes?”
+        The founder answered “There is no authority,” and then: “the authority is you guys, and the
+        resources you trust.”
+      </p>
+      <p>
+        Ranking would have manufactured wrong answers quietly, at the exact rate that our source
+        ordering was wrong, and nobody would have known which ones. So the sheet shows every value
+        with its source, its date and how many other sources agree with it, and the advisor chooses.
+        The choice is stored at the agency layer, so the same conflict is never re-litigated by
+        somebody else next month.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/screens/06-resolve.png" alt="The resolve sheet showing three commission values, each with source, date, agreement count and a Keep this value button."></div>
+      <figcaption class="caption">
+        Three values, three sources, three dates, and a plain-language label on each — signed terms,
+        superseded rate, uncorroborated. The panel underneath shows exactly where the kept value
+        will appear: <b>the directory row, the quotes, and the answers in chat. One decision, three
+        places.</b>
+      </figcaption>
+    </figure>
+
+    <div class="record">
+      <span class="stamp">Product decision log · resolved 31 March 2026</span>
+      <p>“<b>Intelligence sources and precedence: show all, advisor resolves.</b> When sources
+      conflict — manual entry against itinerary-tool inference against CRM import — display all
+      values and let the advisor pick. No auto-resolution. Safest for a luxury context where getting
+      a preference wrong has real consequences.”</p>
+      <p class="gloss">And in the same set of decisions: show every signal — commission, amenities,
+      programme eligibility, traveller preferences — without ranking them. Weighting was deferred
+      until there was enough usage data to make it meaningful, rather than guessed at up front.</p>
+    </div>
+  </div>
+
+  <!-- 4.5 -->
+  <div class="step">
+    <div class="step-marker">
+      <span class="idx">4.5</span>
+      <span class="what">The other door · the same question, in conversation</span>
+    </div>
+    <h3 class="head">Chat is a second door onto the same record, not a second product.</h3>
+    <div class="prose">
+      <p>
+        The advisor who has an email half-written does not go and open a record. They ask. So the
+        same disagreement has to be reachable in conversation, and it has to behave identically —
+        because the moment the chat answers differently from the record, the advisor stops trusting
+        both.
+      </p>
+      <p>
+        Asked in the conversation, the product gives the same three values, the same sources and
+        the same dates, and offers the same decision. It also offers to open the record, and to
+        dismiss and leave the conflict standing.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/screens/09-ask-conflict.png" alt="The Ask surface answering the commission question by showing three disagreeing sources rather than a single figure."></div>
+      <figcaption class="caption">
+        The same disagreement in conversation. <b>“Three sources disagree. The product will not pick
+        one.”</b> The three actions are resolve, open the record, or dismiss and leave it in
+        conflict — which is a real option, because sometimes the advisor knows the answer is not
+        knowable today.
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- 4.6 -->
+  <div class="step">
+    <div class="step-marker">
+      <span class="idx">4.6</span>
+      <span class="what">Unhappy path · when we cannot answer</span>
+    </div>
+    <h3 class="head">Saying “I don't know” is a designed screen, not an error state.</h3>
+    <div class="prose">
+      <p>
+        Before we built any feature we wrote down what an answer has to carry: a citation, a date,
+        a count of how many sources agree, and a permission check. If an answer cannot meet all
+        four, the product does not answer.
+      </p>
+      <p>
+        The hard part was making that feel like a decision rather than a failure. A refusal that
+        just says “no results” is worse than a wrong answer, because the advisor still has a client
+        waiting and now has nothing.
+      </p>
+      <p>
+        So the refusal names which of the four conditions failed and by how much, and it offers the
+        three things that would fix it. Here, two sources mention the offer, the newest is fourteen
+        months old, and neither corroborates the other. The advisor can forward a document into the
+        vault, ask the rep firm, or flag it for review.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/screens/10-ask-refusal.png" alt="A refusal naming sources, freshness and corroboration as pass or fail, with three recovery actions."></div>
+      <figcaption class="caption">
+        Sources passed. Freshness failed — the newest source is fourteen months old. Corroboration
+        failed — neither source confirms the other. <b>The product says what it holds and why it
+        will not use it,</b> then offers three ways forward.
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- 4.7 -->
+  <div class="step">
+    <div class="step-marker">
+      <span class="idx">4.7</span>
+      <span class="what">Edge case · the same record, a different person</span>
+    </div>
+    <h3 class="head">Restricted material is absent, not hidden behind a lock.</h3>
+    <div class="prose">
+      <p>
+        Commission terms belong to the advisor who owns the client. A colleague at the same desk can
+        see the property, the programme and the rep firm, and must not see what the booking pays.
+      </p>
+      <p>
+        Most products handle this with a greyed-out row and a padlock. We decided against it,
+        because a locked row still tells you the number exists, still tells you roughly where it
+        sits in the layout, and invites the colleague to go and ask about it. For an agency whose
+        most guarded asset is its negotiated terms, that was the difference between a product they
+        would connect their drive to and one they would not.
+      </p>
+      <p>
+        So restricted material is simply not there. Same record, same layout, and the commission row
+        does not exist. Nor does the private note from the other advisor, nor the agent terms, nor
+        the active promotion.
+      </p>
+    </div>
+    <div class="pair">
+      <figure class="pair-item">
+        <span class="tag is-plain">The owning advisor</span>
+        <div class="shot"><img src="assets/screens/05-record.png" alt="The record as seen by the advisor who owns the client, including the commission row."></div>
+      </figure>
+      <figure class="pair-item">
+        <span class="tag is-plain">A colleague at the same desk</span>
+        <div class="shot"><img src="assets/screens/11-colleague-record.png" alt="The same record seen by a colleague, with the commission row and personal note absent rather than masked."></div>
+      </figure>
+    </div>
+    <p class="caption">
+      Same record, same day, two different people. The agency layer in the second screen has no
+      commission row at all — <b>no gap, no lock, no explanation.</b> The other advisor's personal
+      note is gone too; only the note shared to the team remains.
+    </p>
+
+    <div class="prose block">
+      <p>
+        The same rule has to hold in conversation, and this is where it gets harder. Asked the same
+        two-part question, the colleague gets the half that is theirs to have and a plain statement
+        about the half that is not.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/screens/12-colleague-ask.png" alt="The colleague asking the commission question and receiving a partial answer with the rate declined."></div>
+      <figcaption class="caption">
+        <b>“Commission terms sit with the owning advisor. This desk cannot answer the rate part of
+        the question, and there is no partial figure to show.”</b> The question is split: the half
+        that belongs to this reader is theirs to open, and the half that does not is declined
+        without a number. The sources panel the owning advisor sees is not rendered here at all.
+      </figcaption>
+    </figure>
+
+    <div class="prose block">
+      <p>
+        One thing I got wrong here and had to fix late: the panel that explains how an answer was
+        built was showing every step regardless of who was reading. So a colleague was told the
+        product had “checked the rate against the agency overlay” — one line under a sentence saying
+        it could not tell them the rate. The explanation of the work leaked the thing the answer had
+        just withheld. Now the trace is assembled from what the reader is allowed to see.
+      </p>
+    </div>
+  </div>
+
+  <p class="note">
+    <b>This act is the case study.</b> Eighteen minutes, and expect interruptions. If running long, drop 4.1 and 4.2 and start at the record. Never drop 4.6 or 4.7 — the refusal and the permission model are the two hardest things here to do well.
+  </p>
+</section>
+
+<!-- ══ act 5 ═════════════════════════════════════════════════════════ -->
+<section class="act" id="act-5">
+  <div class="act-head">
+    <span class="mono act-num">Act five <span class="budget">7 min</span></span>
+    <h2 class="act-title">Five decisions, and what each one cost.</h2>
+  </div>
+
+  <!-- 5.1 -->
+  <div class="decision">
+    <div class="step-marker"><span class="idx">5.1</span><span class="what">Notices stopped expiring</span></div>
+    <h3 class="head">We removed the end date, and accepted more noise for it.</h3>
+    <div class="prose">
+      <p>
+        A notice tells an advisor about a temporary change: a renovation, a paused benefit, a new
+        rate. The first version had an end date, because that is the obvious design and because
+        somebody has to clean these up.
+      </p>
+      <p>
+        It was wrong for a specific reason. A notice can expire while the thing it describes is
+        still true — a renovation runs over, a spa stays shut — and when it does, the product goes
+        back to stating the old information with full confidence. That is the failure in Act 1, and
+        it is the exact thing the answer rules exist to prevent.
+      </p>
+      <p>
+        So the end date came off. An advisor closes a notice by hand, and the product asks them to
+        confirm it is still true when it goes stale.
+      </p>
+    </div>
+    
+    <div class="record">
+      <span class="stamp">Product decision log · resolved 31 March 2026</span>
+      <p>“<b>Temporary advisories: no auto-expire.</b> Advisories stay active until manually closed.
+      Avoids the risk of an advisory expiring while the issue is still ongoing. Build a stale-advisory
+      review nudge.”</p>
+      <p class="gloss">The nudge is the ninety-day review prompt. It was written into the decision at
+      the same time as the trade-off, rather than added later when the noise showed up.</p>
+    </div>
+    <dl class="tradeoff">
+      <div>
+        <dt class="mono">What it cost</dt>
+        <dd>More noise. Notices accumulate, and somebody has to review them. We added a review
+        prompt at ninety days, which is itself another thing in the queue.</dd>
+      </div>
+      <div>
+        <dt class="mono">Why we took it</dt>
+        <dd>A stale notice is visible and annoying. A silently expired one is invisible and
+        expensive. We took the annoying failure over the invisible one every time this came up.</dd>
+      </div>
+    </dl>
+  </div>
+
+  <!-- 5.2 -->
+  <div class="decision">
+    <div class="step-marker"><span class="idx">5.2</span><span class="what">The confidence number came off</span></div>
+    <h3 class="head">We showed a percentage on every value, then took it away.</h3>
+    <div class="prose">
+      <p>
+        An early version put a confidence percentage next to every extracted value — 0.92, 0.60,
+        and so on. It seemed like the honest thing to do. We were showing the machine's own
+        uncertainty rather than hiding it.
+      </p>
+      <p>
+        The problem is that a model's stated confidence does not track how often it is actually
+        right — not closely enough to publish as a number to somebody who is about to quote it to a
+        client. So the number was precise about the wrong thing. It looked like a measurement of
+        whether the value was correct, and it was really a measurement of how sure the extraction
+        was about its own reading.
+      </p>
+      <p>
+        I want to be careful about how I describe what happened next, because it is easy to
+        overclaim here. <strong>I did not run a study showing advisors deferring to the score.</strong>
+        What I had was the product's own guardrail — a low rate of confidently wrong answers — and
+        the observation that a single opaque number is not something an advisor can check. It gives
+        them nothing to act on except trust.
+      </p>
+      <p>
+        So rather than remove the signal, we broke it into the parts an advisor can verify for
+        themselves. A count of how many sources agree, which is a fact we can point at. And a
+        written label — signed terms, superseded rate, uncorroborated — which describes the state of
+        the evidence in words they already use with each other. Where a comparison is genuinely
+        useful, as in the extraction review queue, a bar carries it without putting a decimal on it.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/screens/13-admin-sereno.png" alt="The extraction review screen showing each field with its source position, a confidence bar and a confirm action."></div>
+      <figcaption class="caption">
+        What replaced the number. Each field shows the value, where in the document it came from,
+        and a bar. Two fields are held rather than offered — a converted currency figure with no
+        source currency, and boilerplate marketing copy — and <b>held fields have no confirm button
+        at all.</b>
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- 5.3 -->
+  <div class="decision">
+    <div class="step-marker"><span class="idx">5.3</span><span class="what">Eighty-seven fields became one card at a time</span></div>
+    <h3 class="head">We built exactly what the agency asked for, and it was unusable.</h3>
+    <div class="prose">
+      <p>
+        The agency told us they wanted to review every machine-filled field by hand before it went
+        live. That is a completely reasonable request from people whose business runs on the terms
+        being right, and we built it literally.
+      </p>
+      <p>
+        It worked. It was also eighty-seven fields per record across two hundred and fourteen
+        records in the batch, and nobody was ever going to finish it. A review that exhausting does
+        not get done, and a review that does not get done is worse for trust than no review at all,
+        because everyone assumes it happened.
+      </p>
+      <p>
+        We kept the rule and changed the shape. The system now captures the basic metadata silently,
+        then works through a fixed list of questions a travel designer actually needs answered —
+        meal benefits, upgrade terms, rate codes, commission terms. Each proposed answer arrives as
+        one card carrying the claim, the quoted line and the page it came from. Confirm or correct
+        with a keystroke.
+      </p>
+      <p>
+        The part I care about most: when a document does not answer one of the questions, the system
+        records that it was silent rather than defaulting to no. An absent answer is not a negative
+        answer, and in this business the difference is a benefit an advisor either promises or does
+        not.
+      </p>
+    </div>
+    <figure>
+      <div class="shot"><img src="assets/plates/form.png" alt="The first review interface: field 11 of 87, record 3 of 214."></div>
+      <figcaption class="caption">
+        What the request looked like when we built it exactly as asked. <b>Field 11 of 87. Record 3
+        of 214.</b> We kept this screen as the argument for the card flow.
+      </figcaption>
+    </figure>
+  </div>
+
+  <!-- 5.4 -->
+  <div class="decision">
+    <div class="step-marker"><span class="idx">5.4</span><span class="what">The left rail became a dock</span></div>
+    <h3 class="head">The navigation changed because the product turned out to be a desk, not a site.</h3>
+    <div class="prose">
+      <p>
+        For most of the build the product had a conventional left sidebar. It worked, and it was the
+        pattern every comparable tool in this industry uses.
+      </p>
+      <p>
+        Two things pushed us off it. The rail cost about 230 pixels of width permanently, on every
+        screen, and the screens that matter most here are wide comparisons — a record with three
+        layers and a provenance column, a directory you scan across. And the way advisors actually
+        used the product was not section-to-section like a website. It was workspace-to-workspace,
+        all day, in a loop: the morning screen, a record, a conversation, back to a trip.
+      </p>
+      <p>
+        So navigation moved to a dock along the bottom, which is what an operating system does with
+        things you keep returning to rather than pages you visit. It also gave us one navigation
+        model that works identically on a laptop and a phone, instead of a desktop idea awkwardly
+        translated.
+      </p>
+      <p>
+        The conflict screen changed with it. In the rail version the disagreement was its own page,
+        so resolving a rate meant leaving the record and coming back. In the dock version it is a
+        sheet over the record, because the decision only makes sense while you can still see the
+        other fields it sits among.
+      </p>
+    </div>
+    <div class="pair">
+      <figure class="pair-item">
+        <span class="tag is-plain">Earlier · rail, conflict as its own page</span>
+        <div class="shot"><img src="assets/plates/leftrail-conflict.png" alt="The earlier design: a left sidebar and the commission conflict on a dedicated page."></div>
+      </figure>
+      <figure class="pair-item">
+        <span class="tag is-plain">Later · dock, conflict as a sheet on the record</span>
+        <div class="shot"><img src="assets/screens/06-resolve.png" alt="The later design: a bottom dock and the commission conflict as a sheet over the record."></div>
+      </figure>
+    </div>
+    <p class="caption">
+      A note on the two builds in this deck, so the order is clear. This change — rail to dock —
+      happened before the March build in Act 1. <b>The March-versus-current comparison at the start
+      is about how notices behave, not about navigation;</b> both of those builds already had the
+      dock. Pressing <code>V</code> in the demo rewinds the data and the answer rules, not the
+      chrome.
+    </p>
+    <dl class="tradeoff">
+      <div>
+        <dt class="mono">What it cost</dt>
+        <dd>About 70 pixels of height, permanently. Docks are also rare in this category, so it
+        reads as considered only if it behaves well — which meant the tiles had to stay in fixed
+        positions, and the first version did not.</dd>
+      </div>
+      <div>
+        <dt class="mono">Why we took it</dt>
+        <dd>Width is worth more than height on the screens that carry the product's argument, and
+        one navigation model across laptop and phone removed a whole category of responsive work.</dd>
+      </div>
+    </dl>
+  </div>
+
+  <!-- 5.5 -->
+  <div class="decision">
+    <div class="step-marker"><span class="idx">5.5</span><span class="what">The rule I broke myself</span></div>
+    <h3 class="head">I wrote the rule that the advisor decides, then shipped a screen that decided for them.</h3>
+    <div class="prose">
+      <p>
+        This is the one I would want to be asked about.
+      </p>
+      <p>
+        The resolve sheet exists to prove a single principle: the product does not rank sources, the
+        advisor decides. I wrote that principle, argued for it against a faster implementation, and
+        put it in the product's own copy — “three sources disagree, the product will not pick one.”
+      </p>
+      <p>
+        Then I shipped a version where only one of the three values could actually be kept. The
+        other two buttons were disabled. The screen whose entire purpose was to prove that the
+        advisor chooses allowed exactly the choice that a ranking rule would have made, and said the
+        opposite in words directly above it.
+      </p>
+      <p>
+        All three values are selectable now, and keeping any of them requires the advisor to type a
+        reason before it commits — the same standard we already applied to every other irreversible
+        act in the product.
+      </p>
+      <p>
+        And then the same failure happened again, one layer down, which is the part worth your
+        time. I fixed what the screen <em>offers</em> and did not check what it <em>commits</em>. In
+        the rebuild you are looking at, the store records that the conflict was resolved and does
+        not record which value was chosen or the reason that was typed. So the product still asks
+        the advisor to justify a decision and then discards the justification. If you pick 14% and
+        write a reason, the record afterwards reads 12%.
+      </p>
+      <p>
+        The lesson is not “test more”. It is that a principle written in a document does not enforce
+        itself, and the place it fails is the screen that claims it most loudly — and that checking
+        the affordance is not the same as checking the commit. I caught the first half of this and
+        not the second, after I had already written the lesson down.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ act 6 ═════════════════════════════════════════════════════════ -->
+<section class="act" id="act-6">
+  <div class="act-head">
+    <span class="mono act-num">Act six <span class="budget">3 min</span></span>
+    <h2 class="act-title">How it was built, and where the AI actually sat.</h2>
+  </div>
+
+  <div class="prose">
+    <p>
+      The company was pre-seed and building from nothing, which meant there was room to move on the
+      interface. I spent that room on making designing and building the same motion rather than two.
+    </p>
+    <p>
+      There were four repositories: production, dev, the design system, and a prototype. Production
+      belonged to the engineers. The design system and the prototype were mine, and the prototype
+      used the design system as a live dependency — so the moment a journey needed something the
+      system could not do, that gap showed up while I was working, not in a handoff review.
+    </p>
+    <p>
+      The design system is an atomic language, and it is documented well enough that an agent can
+      operate it. That is the part that mattered. I wrote a set of rules for the coding agents:
+      build from existing components first, and when something is genuinely missing, say what it is
+      — a token, a primitive, a component, a layout — rather than inventing it inline.
+    </p>
+    <p>
+      The loop ran like this. We would put a candidate journey together in the prototype. I would
+      review a low-resolution version of what it produced, check it in the preview, and then build
+      whatever the system was actually missing, which widened the system. As journeys and states
+      settled, the system settled with them. What survived that loop — hardened journeys, states and
+      components — the engineers implemented in production.
+    </p>
+    <p>
+      What that bought was speed at the level that matters. I could iterate on whole journeys in a
+      day instead of a fortnight, and none of it was throwaway UI, because everything was built from
+      the same primitives the engineers were going to ship.
+    </p>
+    <p>
+      What it cost was that the system needed real discipline to stay coherent under that pace. I
+      ran audits against it — measuring type styles, spacing values and component reuse across every
+      surface — rather than trusting that it had held.
+    </p>
+  </div>
+
+  <div class="prose block">
+    <p>
+      The other half of how this worked was writing decisions down before building them. Every
+      contested call — whether advisories expire, whether the product ranks conflicting sources,
+      whether traveller profiles are shared in tiers or not at all — went into a product decision log
+      with a date and a resolution, and the build followed it. The two records quoted in Acts 4 and 5
+      are from that log. It is also where I can show you the calls that went against me, and the
+      ones we later changed our minds about.
+    </p>
+  </div>
+
+  <blockquote>
+    <p>
+      “The opportunity doesn't come along to just build the tool we want — we talk about it for
+      years… that's why we jumped on board. It can be ours, and we could be the ones building it
+      along the way.”
+    </p>
+    <cite>Founder, design-partner agency · session · April 2026</cite>
+  </blockquote>
+  <p class="quote-effect">
+    The weekly sessions were not a focus group. The partner treated the product as theirs to shape,
+    which is why nearly every decision in Act 5 traces back to something somebody said in a room
+    rather than to a design review.
+  </p>
+
+  <p class="note">
+    <b>Keep this short and keep it about method.</b> The system is the reason journeys could be iterated in a day rather than a fortnight. That is the point, not the tokens. Go deeper only if asked.
+  </p>
+</section>
+
+<!-- ══ act 7 ═════════════════════════════════════════════════════════ -->
+<section class="act" id="act-7">
+  <div class="act-head">
+    <span class="mono act-num">Act seven <span class="budget">3 min</span></span>
+    <h2 class="act-title">What changed, for the advisors and for the business.</h2>
+  </div>
+
+  <div class="prose">
+    <p>
+      The metric we ran the product against was <strong>time to a trusted answer</strong> — where a
+      trusted answer means the answer plus its sources, plus how fresh it is, plus a plain label on
+      how well corroborated it is, or an honest “I don't know”, and no permission leakage. Speed on
+      its own was never the goal. An answer produced quickly that the advisor still has to go and
+      check has not saved them anything.
+    </p>
+  </div>
+
+  <div class="counts">
+    <div class="count">
+      <span class="fig">10–15h</span>
+      <div class="what">From client request to a personalised first proposal</div>
+      <div class="how">Down from a measured forty-plus hours. The target we set at the start of the engagement was twenty.</div>
+      <div class="src">Measured · design-partner advisors · platform logs and sessions</div>
+    </div>
+    <div class="count">
+      <span class="fig">~1h / day</span>
+      <div class="what">Administrative time returned per advisor</div>
+      <div class="how">Mostly the manual reconciliation of rule changes arriving by email. This one is advisor-reported, not logged.</div>
+      <div class="src">Self-reported · weekly sessions</div>
+    </div>
+    <div class="count">
+      <span class="fig">System of record</span>
+      <div class="what">The agency committed to replacing a ten-year-old intranet</div>
+      <div class="how">They connected their drive and their email first, then made the commitment. An agency does not do that for a feature list.</div>
+      <div class="src">Signed usage contract</div>
+    </div>
+  </div>
+
+  <div class="prose block">
+    <p>
+      The business outcome is the second and third of those. The design partner connected their
+      drive and their email, and then committed to replacing the intranet they had run for ten
+      years. That decision is the one that matters, because it is the agency putting its most
+      guarded asset — its negotiated terms — inside somebody else's product. They did it because
+      every record has an owner, every answer has a source, and the system says it does not know
+      when it does not know.
+    </p>
+    <p>
+      The usage contract is signed. The company is raising to scale the team across sales and
+      engineering, and the engagement ended the way it was designed to: with a design system in
+      place that a product manager can hold a roadmap against, and engineers who build on it.
+    </p>
+  </div>
+
+  <h3 class="head block">What is built, and what is still only designed.</h3>
+  <table class="table">
+    <thead>
+      <tr><th>Capability</th><th>State</th><th>Note</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>The answer contract: sources, dates, corroboration</td><td class="state built">Built</td><td>Inline source markers, an attribution panel and a status label on each source.</td></tr>
+      <tr><td>Product directory across hotels, cruises, DMCs, rep firms</td><td class="state built">Built</td><td>One catalogue over the reconciled model, with detail views and sharing.</td></tr>
+      <tr><td>Conflict resolution by the advisor</td><td class="state built">Built</td><td>Seven source types. Each value keeps its own date and evidence label.</td></tr>
+      <tr><td>The morning briefing</td><td class="state built">Built</td><td>Commissions, departures, notices and incentives on one screen, per role.</td></tr>
+      <tr><td>Document review: propose, confirm, correct</td><td class="state built">Built</td><td>Questions come from the record schema. Corrections land at the owning layer.</td></tr>
+      <tr><td>Knowledge vault with owner, source, date and permission</td><td class="state built">Built</td><td>Three ways in: drive sync, email-in with sender checks, upload.</td></tr>
+      <tr><td>Itinerary workspace and traveller profiles</td><td class="state built">Built</td><td>Timeline and day views, sharing by person or team, private by default.</td></tr>
+      <tr><td>Audit trail for administrator access</td><td class="state drawn">Designed</td><td>The policy says every administrator access is logged. The log surface is not built.</td></tr>
+      <tr><td>The three layers as a data model</td><td class="state drawn">Designed</td><td>Permissions work. The layers are not yet part of the underlying model.</td></tr>
+      <tr><td>Preference signals and inline warnings</td><td class="state drawn">Designed</td><td>The surfaces exist. The extraction that would feed them was an outline when I rolled off.</td></tr>
+      <tr><td>Live connections to the source systems</td><td class="state drawn">Designed</td><td>The product currently reads fixed test data.</td></tr>
+    </tbody>
+  </table>
+
+  <p class="note">
+    <b>Expect to be pushed on the numbers.</b> Know which are logged and which are reported — it is in the source line under each. The likely challenge is that several capabilities are designed rather than built. The honest answer is that the time saving was measured on the built path, and the designed items were the next block of work.
+  </p>
+</section>
+
+<!-- ══ act 8 ═════════════════════════════════════════════════════════ -->
+<section class="act" id="act-8">
+  <div class="act-head">
+    <span class="mono act-num">Act eight <span class="budget">2 min</span></span>
+    <h2 class="act-title">What I would challenge if I picked this up again.</h2>
+  </div>
+
+  <div class="prose">
+    <p>
+      <strong>The resolve flow puts real work on the advisor, and it does not scale.</strong> At the
+      record counts this agency has today it is fine. At ten times that, asking a person to settle
+      every disagreement one at a time becomes its own backlog. Review needs a design of its own:
+      batching, thresholds above which the product proposes and below which it asks, and defaults
+      that a source earns over time rather than being given. I would want to design that without
+      quietly reintroducing the ranking we removed, which is the hard part.
+    </p>
+    <p>
+      <strong>The traveller side is the least proven thing in the product.</strong> The surfaces are
+      built and the sharing model works, but the preference extraction that is supposed to feed them
+      was still an outline when I rolled off. The warnings you see on a shortlisted property are
+      designed behaviour, not learned behaviour. I would not present that as working, and I did not
+      let the company present it that way either.
+    </p>
+    <p>
+      <strong>I would test the permission model against somebody trying to break it.</strong> We
+      designed for honest colleagues. The trace panel leaking a step it should not have — the thing
+      I described in Act 4 — is the kind of failure that only shows up when you read the product as
+      an adversary rather than as a user. I did not catch it myself — it came out of a structured
+      review I commissioned against the build, which is the honest version of how it surfaced. There is
+      a second one of exactly the same shape that I found the same way: the conversation list shows
+      every reader the text of the question, so a colleague who cannot be told the commission can
+      still read a thread titled “what is our commission, and does the rate include breakfast?”. I
+      gated the outcome and the message count on that list and did not gate the question itself.
+    </p>
+    <p>
+      Both of those matter more than they look, because <strong>zero permission leakage was written
+      into the product's own guardrails</strong> — alongside a low rate of confidently wrong answers
+      and freshness always being visible. It is the one metric we said had to be zero rather than
+      low. Two leaks got past me anyway, and neither would have been caught by testing the product
+      as a well-behaved user. What that tells me is that a guardrail set at zero needs a review
+      method of its own, not just a number in a document.
+    </p>
+    <p>
+      <strong>A two-part question still gets a one-part answer.</strong> The question I used all the
+      way through Act 4 asks two things — the commission and whether breakfast is included. When the
+      sources disagree, the product answers the commission half properly and hands the breakfast
+      half off to the record rather than answering it. That is defensible for the colleague, who is
+      only entitled to one half. It is not defensible for the advisor, who is entitled to both. The
+      answer contract governs whether we answer; it says nothing about answering completely, and it
+      should.
+    </p>
+  </div>
+</section>
+
+<!-- ══ appendix ══════════════════════════════════════════════════════ -->
+<section class="act" id="appendix">
+  <div class="act-head">
+    <span class="mono act-num">Appendix</span>
+    <h2 class="act-title">The other surfaces, for questions.</h2>
+    <p class="act-lede">
+      Not part of the walkthrough. Here so that anything they ask about can be shown rather than
+      described.
+    </p>
+  </div>
+
+  <div class="grid-shots">
+    <figure>
+      <div class="shot"><img src="assets/screens/04-records-grid.png" alt="The product directory as a grid of records."></div>
+      <figcaption class="caption">The directory. Every row carries its programmes, its rate and the state of the evidence behind that rate.</figcaption>
+    </figure>
+    <figure>
+      <div class="shot"><img src="assets/screens/15-traveller.png" alt="A traveller profile with preferences, sources and a sharing control."></div>
+      <figcaption class="caption">A traveller profile. Preferences with the source each came from, and a conflict raised against a shortlisted property.</figcaption>
+    </figure>
+    <figure>
+      <div class="shot"><img src="assets/screens/16-itinerary.png" alt="The itinerary workspace with a day board."></div>
+      <figcaption class="caption">The itinerary workspace. The same intelligence appears inside the work: an incentive on a hotel card, a preference conflict before the proposal goes out.</figcaption>
+    </figure>
+    <figure>
+      <div class="shot"><img src="assets/screens/18-knowledge.png" alt="The knowledge vault listing documents with owner and access."></div>
+      <figcaption class="caption">The vault. Every document arrives private to whoever brought it, and every widening of access is an act somebody performs and the log records.</figcaption>
+    </figure>
+    <figure>
+      <div class="shot"><img src="assets/screens/17-lead-briefing.png" alt="The agency lead's briefing showing publication queue, confirmation queue and connection health."></div>
+      <figcaption class="caption">The agency lead sees a different briefing entirely — what is waiting to be published, what is waiting to be confirmed, and whether the connections are healthy.</figcaption>
+    </figure>
+    <figure>
+      <div class="shot"><img src="assets/screens/14-admin-connections.png" alt="The connections screen showing five sources and their states."></div>
+      <figcaption class="caption">Connections. When a source fails, answers exclude it and carry a note saying so, rather than answering as though it were current.</figcaption>
+    </figure>
+    <figure>
+      <div class="shot"><img src="assets/screens/19-commissions.png" alt="The commissions ledger."></div>
+      <figcaption class="caption">The commissions ledger, which the morning screen expands into. Actuals arrive read-only from the booking system.</figcaption>
+    </figure>
+    <figure>
+      <div class="shot"><img src="assets/screens/20-v1-record.png" alt="The March build of the record, with the notice silently absent."></div>
+      <figcaption class="caption">The March build of the same record. The notice is simply not there, and nothing on the screen suggests anything is missing. That is the failure in Act 1, at rest.</figcaption>
+    </figure>
+  </div>
+</section>
+
+</main>
+
+<div class="pmode-flag">Presenter notes on · P to hide</div>
+
+<script>
+(function () {
+  var acts = Array.prototype.slice.call(document.querySelectorAll('main section.act, main header.masthead'));
+  var links = Array.prototype.slice.call(document.querySelectorAll('.rail-act'));
+  var ids = links.map(function (a) { return a.getAttribute('href').slice(1); });
+
+  /* Mark the act currently filling most of the screen. */
+  var seen = {};
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { seen[e.target.id] = e.intersectionRatio; });
+    var best = null, bestRatio = 0;
+    Object.keys(seen).forEach(function (id) {
+      if (seen[id] > bestRatio) { bestRatio = seen[id]; best = id; }
+    });
+    links.forEach(function (a) {
+      a.setAttribute('aria-current', a.getAttribute('href') === '#' + best ? 'true' : 'false');
+    });
+  }, { threshold: [0, 0.15, 0.35, 0.6, 0.9] });
+  acts.forEach(function (s) { if (s.id) io.observe(s); });
+
+  function currentIndex() {
+    var top = window.scrollY + 120, idx = 0;
+    ids.forEach(function (id, i) {
+      var el = document.getElementById(id);
+      if (el && el.offsetTop <= top) idx = i;
+    });
+    return idx;
+  }
+  function goTo(i) {
+    if (i < 0 || i >= ids.length) return;
+    var el = document.getElementById(ids[i]);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+    if (e.key === 'ArrowRight' || e.key === 'PageDown') { e.preventDefault(); goTo(currentIndex() + 1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); goTo(currentIndex() - 1); }
+    else if (e.key === 'p' || e.key === 'P') { document.body.classList.toggle('presenting'); }
+    else if (e.key >= '1' && e.key <= '8') { e.preventDefault(); goTo(parseInt(e.key, 10) - 1); }
+    else if (e.key === '0') { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }
+  });
+})();
+</script>
+
+</body>
+</html>

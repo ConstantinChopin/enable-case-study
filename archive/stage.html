@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enable — case study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stage.css">
+</head>
+<body>
+
+<!-- ══ rail ══════════════════════════════════════════════════════════ -->
+<nav class="rail" aria-label="Beats">
+  <div class="rail-mark">
+    <b>Enable</b>
+    <span>Constantin Chopin</span>
+  </div>
+  <div class="dots" id="dots"></div>
+  <div class="rail-keys">
+    <kbd>↓</kbd><kbd>↑</kbd> beat<br>
+    <kbd>←</kbd><kbd>→</kbd> frame
+  </div>
+</nav>
+
+<!-- ══ visual track ══════════════════════════════════════════════════ -->
+<div class="track" id="track">
+
+  <!-- 01 -->
+  <section class="slot" id="b1" data-frames="1" data-label="The mess">
+    <div class="frames">
+      <div class="frame is-on"><img src="assets/figures/fig-06-landscape.svg" alt="The landscape: six categories of tool around an open centre."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 02 -->
+  <section class="slot" id="b2" data-frames="1" data-label="Eleven stages">
+    <div class="frames">
+      <div class="frame is-on"><img src="assets/figures/fig-04-wedge.svg" alt="Eleven stages of the advisor sales cycle, with six source systems read and written at every stage."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 03 -->
+  <section class="slot" id="b3" data-frames="1" data-label="The obvious build">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/plates/v1-home.png" alt="The first build: a dark chat interface beside a shelf of image cards."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 04 -->
+  <section class="slot" id="b4" data-frames="1" data-label="The tell">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/plates/v1-answer.png" alt="An answer about cherry blossom season cited to Reddit and Wikipedia, beside cards whose fields read Hotel name, Location, Description."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 05 -->
+  <section class="slot" id="b5" data-frames="1" data-label="Not a record">
+    <div class="frames">
+      <div class="frame is-on"><img src="assets/figures/fig-03-feed.svg" alt="Six systems feeding one model, which feeds five surfaces."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 06 — PLACEHOLDER -->
+  <section class="slot" id="b6" data-frames="1" data-label="The engine">
+    <div class="frames">
+      <div class="frame is-on">
+        <div class="placeholder">
+          <b>Placeholder — the transformation</b>
+          <p>A real source on one side (a rate sheet, a DMC spreadsheet, a forwarded email)
+          and the structured record it became on the other, with a source on every field.</p>
+          <p class="mono">Awaiting assets</p>
+        </div>
+      </div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 07 -->
+  <section class="slot" id="b7" data-frames="1" data-label="87 fields">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/plates/form.png" alt="The first review interface: field 11 of 87, record 3 of 214."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 08 -->
+  <section class="slot" id="b8" data-frames="1" data-label="One card at a time">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/13-admin-sereno.png" alt="The extraction review: each field with its position in the source, a bar, and a confirm action."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 09 -->
+  <section class="slot" id="b9" data-frames="1" data-label="Three layers">
+    <div class="frames">
+      <div class="frame is-on"><img src="assets/figures/fig-02-layers.svg" alt="Three layers over one record: canonical, organisation, personal, with an effective view."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 10 -->
+  <section class="slot" id="b10" data-frames="1" data-label="Sources disagree">
+    <div class="frames">
+      <div class="frame is-on"><img src="assets/figures/fig-01-conflict.svg" alt="One field, three sources, the advisor choosing, the value stored at the owning layer."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 11 -->
+  <section class="slot" id="b11" data-frames="1" data-label="The decision">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/06-resolve.png" alt="The resolve sheet: three values, each with source, date and agreement count."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 12 -->
+  <section class="slot" id="b12" data-frames="3" data-label="Terms stay theirs">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/05-record.png" alt="The record as seen by the advisor who owns the client, including the commission row."></div>
+      <div class="frame is-shot"><img src="assets/screens/11-colleague-record.png" alt="The same record seen by a colleague, with the commission row absent rather than masked."></div>
+      <div class="frame is-shot is-pair">
+        <figure><img src="assets/screens/05-record.png" alt="The owning advisor's view."><figcaption>The owning advisor</figcaption></figure>
+        <figure><img src="assets/screens/11-colleague-record.png" alt="A colleague's view."><figcaption>A colleague at the same desk</figcaption></figure>
+      </div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 13 — PLACEHOLDER -->
+  <section class="slot" id="b13" data-frames="1" data-label="Masking refused">
+    <div class="frames">
+      <div class="frame is-on">
+        <div class="placeholder">
+          <b>fig-08 — absence, and what it has to mean</b>
+          <p>To be drawn in the same isometric language as the others, carrying the
+          annotation <b>masking — refused</b>.</p>
+          <p class="mono">To draw</p>
+        </div>
+      </div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 14 — PLACEHOLDER -->
+  <section class="slot" id="b14" data-frames="1" data-label="The contract">
+    <div class="frames">
+      <div class="frame is-on">
+        <div class="placeholder">
+          <b>fig-09 — the answer contract</b>
+          <p>Four conditions on every answer, and the path taken when one of them fails.
+          Annotation: <b>answering anyway — refused</b>.</p>
+          <p class="mono">To draw</p>
+        </div>
+      </div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 15 -->
+  <section class="slot" id="b15" data-frames="1" data-label="Cannot answer">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/10-ask-refusal.png" alt="A refusal naming sources, freshness and corroboration as pass or fail, with three recovery actions."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 16 -->
+  <section class="slot" id="b16" data-frames="4" data-label="Wrong about time">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/01-v1-ask-spa.png" alt="The March build answering that the spa is open, with a citation and a badge saying the answer met its contract."></div>
+      <div class="frame is-shot"><img src="assets/screens/02-v2-ask-spa.png" alt="The current build answering that the spa is closed, carrying the active notice above the answer."></div>
+      <div class="frame is-shot is-pair">
+        <figure><img src="assets/screens/01-v1-ask-spa.png" alt="The March build."><figcaption class="lab-wrong">March build · wrong</figcaption></figure>
+        <figure><img src="assets/screens/02-v2-ask-spa.png" alt="The current build."><figcaption class="lab-right">Current build · correct</figcaption></figure>
+      </div>
+      <div class="frame is-shot"><img src="assets/screens/20-v1-record.png" alt="The March build of the record, with the notice silently absent."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 17 -->
+  <section class="slot" id="b17" data-frames="1" data-label="The morning">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/03-briefing.png" alt="The advisor briefing: commissions, departures, notices, expiring incentives."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 18 -->
+  <section class="slot" id="b18" data-frames="2" data-label="The other door">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/09-ask-conflict.png" alt="The same disagreement, answered in conversation."></div>
+      <div class="frame is-shot"><img src="assets/screens/12-colleague-ask.png" alt="The colleague asking the same question and receiving a partial answer."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 19 -->
+  <section class="slot" id="b19" data-frames="4" data-label="The working day">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/04-records-grid.png" alt="The product directory."></div>
+      <div class="frame is-shot"><img src="assets/screens/16-itinerary.png" alt="The itinerary workspace with a day board."></div>
+      <div class="frame is-shot"><img src="assets/screens/15-traveller.png" alt="A traveller profile with preferences and their sources."></div>
+      <div class="frame is-shot"><img src="assets/screens/18-knowledge.png" alt="The knowledge vault listing documents with owner and access."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 20 -->
+  <section class="slot" id="b20" data-frames="1" data-label="Prototype as spec">
+    <div class="frames">
+      <div class="frame is-on"><img src="assets/figures/fig-07-workshop.svg" alt="Four repositories: production, dev, design system, prototype, with Claude Code running the iterations."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 21 -->
+  <section class="slot" id="b21" data-frames="1" data-label="What changed">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/17-lead-briefing.png" alt="The agency lead's briefing: publication queue, confirmation queue, connection health, policy."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+  <!-- 22 -->
+  <section class="slot" id="b22" data-frames="1" data-label="What I'd challenge">
+    <div class="frames">
+      <div class="frame is-on is-shot"><img src="assets/screens/15-traveller.png" alt="The traveller profile, the least proven surface in the product."></div>
+    </div>
+    <div class="controls"></div>
+  </section>
+
+</div>
+
+<!-- ══ copy ══════════════════════════════════════════════════════════ -->
+<aside class="copy">
+  <div class="copy-inner" id="copy">
+
+    <article class="beat is-on" data-for="b1">
+      <span class="eyebrow mono">Enable · 2025–2026</span>
+      <h2>Six categories of tool, and none of them holds the whole thing.</h2>
+      <p class="lede">Luxury travel agencies run on independent advisors assembling trips out of an
+      industry-wide web of systems that were never designed to meet.</p>
+      <ol>
+        <li>Itinerary builders hold the trip. Booking systems hold the reservation. CRMs hold the client. Consortium portals hold the terms.</li>
+        <li>The agency's intranet had been pressed into service as a suite it was never meant to be.</li>
+        <li>Nothing sat in the middle, so every advisor rebuilt the same picture by hand, every time.</li>
+      </ol>
+      <div class="facts">
+        <div><dt>Role</dt><dd>Founding product designer, sole designer</dd></div>
+        <div><dt>When</dt><dd>May 2025 – June 2026</dd></div>
+        <div><dt>Team</dt><dd>Six, plus a design-partner agency of about fifty advisors</dd></div>
+      </div>
+      <p class="note">The production product is under NDA. What I am driving is a rebuild of the
+      flows I designed; every name and figure on screen is invented.</p>
+    </article>
+
+    <article class="beat" data-for="b2">
+      <span class="eyebrow mono">The work</span>
+      <h2>Eleven stages, and every one of them touches all six.</h2>
+      <ol>
+        <li>Advisors are trained on an eleven-stage cycle, from first lead to post-travel review.</li>
+        <li>We built for the opening stretch — everything up to the proposal. That is where the knowledge work concentrates, and where nobody else was building.</li>
+        <li>To place one hotel an advisor plays three things against each other: whether the property suits this client, what the client gets on arrival, and what the advisor is paid.</li>
+        <li>Book through the consortium and the commission rises but the client loses the breakfast. Book direct and it inverts.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b3">
+      <span class="eyebrow mono">The first build · June 2025</span>
+      <h2>We built the obvious thing first.</h2>
+      <ol>
+        <li>Pull every document into a retrieval system, put a chat on top, show what comes back as cards.</li>
+        <li>It demoed well. The conversation flowed and the shelf filled up.</li>
+        <li>At a glance it looked like a product.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b4">
+      <span class="eyebrow mono">The first build · the tell</span>
+      <h2>Then you looked at the cards.</h2>
+      <ol>
+        <li>The fields read <b>Hotel name</b>, <b>Location</b>, <b>Description</b> — there was nothing structured underneath to fill them with.</li>
+        <li>Asked for a Japan itinerary it returned cherry-blossom festivals, cited to Reddit and Wikipedia, when what was needed was the agency's own negotiated terms.</li>
+        <li>An advisor who quotes a lapsed rate loses money. One who promises a withdrawn benefit loses a client. Neither is recoverable by saying the model was confident.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b5">
+      <span class="eyebrow mono">The reversal</span>
+      <h2>A pile of documents is not a record.</h2>
+      <ol>
+        <li>Retrieval was never the problem. The knowledge already existed and was already accurate — it was sitting unread in inboxes and portals.</li>
+        <li>What was missing was structure, a source on every fact, and a permission attached to it.</li>
+        <li>So the data model came before any screen. Chat survived, demoted to one door among several rather than the product itself.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b6">
+      <span class="eyebrow mono">The engine</span>
+      <h2>The thing the agency actually bought.</h2>
+      <p class="lede">Not answers. A single place that could absorb heterogeneous, unstructured
+      material and turn it into records.</p>
+      <ol>
+        <li>In: rate sheets as PDFs, inventories as semi-structured spreadsheets, terms buried in forwarded email, notes in a drive.</li>
+        <li>Out: one record per thing, with the source, the position in that source, and the date on every field.</li>
+        <li>This is what an agency cannot build for itself, and it is why they connected their drive and their email before they committed to anything else.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b7">
+      <span class="eyebrow mono">What they asked for</span>
+      <h2>They wanted to check every field by hand. We built exactly that.</h2>
+      <ol>
+        <li>A completely reasonable request from people whose business depends on the terms being right.</li>
+        <li>Eighty-seven fields per record, two hundred and fourteen records in the batch.</li>
+        <li>It worked, and nobody was ever going to finish it. A review that exhausting does not happen — and a review that does not happen is worse than none, because everybody assumes it did.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b8">
+      <span class="eyebrow mono">What we shipped instead</span>
+      <h2>We kept the rule and changed its shape.</h2>
+      <ol>
+        <li>The system captures basic metadata silently, then works through a fixed list of questions a travel designer actually needs answered.</li>
+        <li>Each proposed answer arrives as one card carrying the claim, the quoted line and the page. Confirm or correct with a keystroke.</li>
+        <li>Two fields here are held rather than offered — a converted figure with no source currency, and boilerplate marketing copy. Held fields have no confirm button at all.</li>
+        <li>When a document is silent on a question, that is recorded as silence. An absent answer is not a no.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b9">
+      <span class="eyebrow mono">Guarantee one · provenance</span>
+      <h2>Three layers, and none of them overwrites another.</h2>
+      <ol>
+        <li><b>Canonical</b> — the industry's version of the property.</li>
+        <li><b>Agency</b> — what this agency negotiated over twenty years, sitting on top without replacing what is beneath it.</li>
+        <li><b>Personal</b> — what one advisor knows and owns. Private by default.</li>
+        <li>Three rather than one because advisors move between agencies, and agencies hold terms their competitors must never see. A single merged record makes both impossible.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b10">
+      <span class="eyebrow mono">Guarantee one · provenance</span>
+      <h2>When the sources disagree, a person decides.</h2>
+      <ol>
+        <li>The partner portal says 12%. The booking platform says 10%. Somebody keyed 14% by hand in April.</li>
+        <li>Ranking them would have been half a day of work and right most of the time.</li>
+        <li>It would also have been quietly wrong at exactly the rate our source ordering was wrong, and nobody would ever know which answers.</li>
+      </ol>
+      <p class="stamp"><em>Decision log · 31 March 2026</em>
+      Show all, advisor resolves. When sources conflict, display every value and let the advisor
+      pick. No auto-resolution.</p>
+    </article>
+
+    <article class="beat" data-for="b11">
+      <span class="eyebrow mono">Guarantee one · provenance</span>
+      <h2>The decision, in the product.</h2>
+      <ol>
+        <li>Every value keeps its source, its date, and how many others agree with it.</li>
+        <li>A plain label rather than a score: signed terms, superseded rate, uncorroborated.</li>
+        <li>The panel states where the kept value will land before you keep it — the directory row, the quotes, the answers in chat.</li>
+        <li>Committing requires a written reason.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b12">
+      <span class="eyebrow mono">Guarantee two · permission</span>
+      <h2>Their terms stay theirs.</h2>
+      <ol>
+        <li>Same record, same day, two people at the same desk.</li>
+        <li>The commission row is not greyed out and it does not carry a padlock. It is not there.</li>
+        <li>Neither is the other advisor's private note, the agent terms, or the active promotion.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b13">
+      <span class="eyebrow mono">Guarantee two · permission</span>
+      <h2>Masking, refused.</h2>
+      <ol>
+        <li>A locked row still tells you the number exists, roughly where it sits, and that it is worth asking about.</li>
+        <li>For an agency whose most guarded asset is its negotiated terms, that was the difference between connecting their drive and not connecting it.</li>
+        <li>The cost is that absence then has to mean exactly one thing. Everything else that is empty has to say why it is empty.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b14">
+      <span class="eyebrow mono">Guarantee three · refusal</span>
+      <h2>What an answer has to carry.</h2>
+      <ol>
+        <li>A citation — the document, the line, the page.</li>
+        <li>A date — when this was last known to be true.</li>
+        <li>A count of how many sources agree.</li>
+        <li>A permission check on the person asking. If it cannot meet all four, it does not answer.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b15">
+      <span class="eyebrow mono">Guarantee three · refusal</span>
+      <h2>Saying “I don't know” is a designed screen, not an error.</h2>
+      <ol>
+        <li>Sources passed. Freshness failed — the newest is over a year old. Corroboration failed — neither source confirms the other.</li>
+        <li>A refusal that says “no results” is worse than a wrong answer, because the advisor still has a client waiting and now has nothing.</li>
+        <li>So it names which condition failed, by how much, and offers the three things that would fix it.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b16">
+      <span class="eyebrow mono">The time dimension</span>
+      <h2>And once, it was wrong about time.</h2>
+      <ol>
+        <li>It said the spa was open, gave the hours, cited a real document, and marked the answer as meeting the contract. The spa had been closed for six weeks.</li>
+        <li>Somebody had posted a notice about the closure. The notice had an end date. The date passed and the notice removed itself.</li>
+        <li>With it gone, the product went back to reporting the last thing it had been told, with full confidence.</li>
+      </ol>
+      <p class="stamp"><em>Decision log · 31 March 2026</em>
+      Temporary advisories: no auto-expire. Advisories stay active until manually closed, with a
+      stale-review nudge.</p>
+    </article>
+
+    <article class="beat" data-for="b17">
+      <span class="eyebrow mono">The working day</span>
+      <h2>The work arrives; the advisor does not go looking.</h2>
+      <ol>
+        <li>Money that is late, travellers who leave soon, notices still open, incentives about to expire.</li>
+        <li>Every widget is a saved view of a real surface, so opening one takes you there with the filter already applied.</li>
+        <li>Nothing sends itself. When a commission is late the product writes the chase and stops. The advisor reads it, edits it, sends it.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b18">
+      <span class="eyebrow mono">The working day</span>
+      <h2>Chat is a second door onto the same record.</h2>
+      <ol>
+        <li>The advisor with an email half-written does not open a record. They ask.</li>
+        <li>So the same disagreement is reachable in conversation and behaves identically — the moment chat answers differently from the record, both stop being trusted.</li>
+        <li>The second frame is the same question asked by a colleague. The rate half is declined; the sources panel is not rendered at all.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b19">
+      <span class="eyebrow mono">The working day</span>
+      <h2>One model, reached through different doors.</h2>
+      <ol>
+        <li>The directory, the itinerary workspace, a traveller profile, the vault.</li>
+        <li>Every one reads the same reconciled records, so a rate corrected in one place is the same rate everywhere.</li>
+        <li>The intelligence appears inside the work rather than behind a search box — an incentive on a hotel card, a preference conflict before the proposal goes out.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b20">
+      <span class="eyebrow mono">Method</span>
+      <h2>The prototype was the spec.</h2>
+      <ol>
+        <li>Two user calls a week, shipping weekly and sometimes twice. Design ahead of code could not keep that pace — the first build is what that looks like.</li>
+        <li>So the iteration surface became working software. Four repositories: production, dev, the design system, and a prototype that used the system as a live dependency.</li>
+        <li>The roadmap held the decisions; the prototype held the specification. There was always something demoable to put in front of an advisor.</li>
+        <li>What survived — hardened journeys, states and components — the engineers implemented in production.</li>
+      </ol>
+    </article>
+
+    <article class="beat" data-for="b21">
+      <span class="eyebrow mono">Outcome</span>
+      <h2>What changed.</h2>
+      <ol>
+        <li>Client request to a personalised first proposal fell to <b>10–15 hours</b>. The target we set at the start was twenty.</li>
+        <li>Advisors reported about <b>an hour a day</b> of administrative time returned, mostly manual reconciliation of rule changes arriving by email.</li>
+        <li>The agency connected its drive and its email, then committed to Enable as the place its structured knowledge lives.</li>
+      </ol>
+      <p class="note">Verify each figure and its method before presenting. Which are logged and
+      which are self-reported is the first thing you will be asked.</p>
+    </article>
+
+    <article class="beat" data-for="b22">
+      <span class="eyebrow mono">Reflection</span>
+      <h2>What I would challenge if I picked it up again.</h2>
+      <ol>
+        <li>The resolve flow puts real work on the advisor and does not scale. At ten times the records it needs batching and thresholds — without quietly reintroducing the ranking we removed.</li>
+        <li>The traveller side is the least proven thing here. The surfaces are built; the extraction that feeds them was an outline when I rolled off.</li>
+        <li>I would read the permission model as an adversary rather than as a user. Both leaks I found were of that kind, and I found them late.</li>
+      </ol>
+    </article>
+
+  </div>
+</aside>
+
+<script>
+(function () {
+  var slots  = Array.prototype.slice.call(document.querySelectorAll('.slot'));
+  var beats  = Array.prototype.slice.call(document.querySelectorAll('.beat'));
+  var dotsEl = document.getElementById('dots');
+  var active = 0;
+
+  /* ── build the rail from the slots themselves ── */
+  slots.forEach(function (s, i) {
+    var a = document.createElement('a');
+    a.className = 'dot';
+    a.href = '#' + s.id;
+    a.innerHTML = '<i></i><span>' + (s.dataset.label || ('Beat ' + (i + 1))) + '</span>';
+    a.addEventListener('click', function (e) { e.preventDefault(); go(i); });
+    dotsEl.appendChild(a);
+  });
+  var dots = Array.prototype.slice.call(dotsEl.children);
+
+  /* ── frame controls per slot ── */
+  slots.forEach(function (slot) {
+    var frames = Array.prototype.slice.call(slot.querySelectorAll('.frame'));
+    var bar = slot.querySelector('.controls');
+    if (frames.length < 2) return;
+
+    slot._frames = frames;
+    slot._at = 0;
+
+    var prev = document.createElement('button');
+    prev.type = 'button'; prev.textContent = '‹'; prev.setAttribute('aria-label', 'Previous frame');
+    var next = document.createElement('button');
+    next.type = 'button'; next.textContent = '›'; next.setAttribute('aria-label', 'Next frame');
+    var pips = document.createElement('div');
+    pips.className = 'pips';
+    frames.forEach(function () { pips.appendChild(document.createElement('i')); });
+    var count = document.createElement('div');
+    count.className = 'count';
+
+    bar.appendChild(prev); bar.appendChild(pips); bar.appendChild(count); bar.appendChild(next);
+
+    slot._show = function (n) {
+      n = Math.max(0, Math.min(frames.length - 1, n));
+      slot._at = n;
+      frames.forEach(function (f, i) { f.classList.toggle('is-on', i === n); });
+      Array.prototype.forEach.call(pips.children, function (p, i) { p.classList.toggle('on', i === n); });
+      count.textContent = (n + 1) + ' / ' + frames.length;
+      prev.disabled = n === 0;
+      next.disabled = n === frames.length - 1;
+    };
+    prev.addEventListener('click', function () { slot._show(slot._at - 1); });
+    next.addEventListener('click', function () { slot._show(slot._at + 1); });
+    slot._show(0);
+  });
+
+  /* ── which beat is active ── */
+  function setActive(i) {
+    if (i === active) return;
+    active = i;
+    beats.forEach(function (b, n) { b.classList.toggle('is-on', n === i); });
+    dots.forEach(function (d, n) { d.setAttribute('aria-current', n === i ? 'true' : 'false'); });
+  }
+
+  var io = new IntersectionObserver(function (entries) {
+    var best = null, ratio = 0;
+    entries.forEach(function (e) { slots[slots.indexOf(e.target)]._r = e.intersectionRatio; });
+    slots.forEach(function (s, i) { if ((s._r || 0) > ratio) { ratio = s._r; best = i; } });
+    if (best !== null) setActive(best);
+  }, { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: '-8% 0px -30% 0px' });
+  slots.forEach(function (s) { io.observe(s); });
+
+  function go(i) {
+    i = Math.max(0, Math.min(slots.length - 1, i));
+    slots[i].scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  document.addEventListener('keydown', function (e) {
+    var t = e.target;
+    if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+
+    var slot = slots[active];
+    if (e.key === 'ArrowRight') { if (slot._show) { e.preventDefault(); slot._show(slot._at + 1); } }
+    else if (e.key === 'ArrowLeft') { if (slot._show) { e.preventDefault(); slot._show(slot._at - 1); } }
+    else if (e.key === 'ArrowDown' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); go(active + 1); }
+    else if (e.key === 'ArrowUp' || e.key === 'PageUp') { e.preventDefault(); go(active - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slots.length - 1); }
+  });
+
+  setActive(0);
+  dots[0].setAttribute('aria-current', 'true');
+})();
+</script>
+
+</body>
+</html>

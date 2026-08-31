@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 84 894 772" font-family="'Libre Franklin', Inter, 'Helvetica Neue', Arial, sans-serif"><rect x="0" y="0" width="894" height="900" fill="#ffffff"/>
+<text x="60" y="140" font-size="13.5" font-weight="600" fill="#17171a" letter-spacing="2">FIG. 04 &#8212; ELEVEN STAGES, ONE WEDGE</text>
+<line x1="812" y1="140" x2="829.3" y2="150" stroke="#75757b" stroke-width="1.1"/>
+<text x="837.1" y="158" font-size="10" fill="#75757b" text-anchor="middle">x</text>
+<line x1="812" y1="140" x2="794.7" y2="150" stroke="#75757b" stroke-width="1.1"/>
+<text x="786.9" y="158" font-size="10" fill="#75757b" text-anchor="middle">y</text>
+<line x1="812" y1="140" x2="812" y2="120" stroke="#75757b" stroke-width="1.1"/>
+<text x="812" y="114.5" font-size="10" fill="#75757b" text-anchor="middle">z</text>
+
+<!-- the wedge sector, behind everything -->
+<path d="M 447,430 L 348,183 A 350,247 0 0 1 636,638 Z" fill="#f5f4f1"/>
+<text x="700" y="256" font-size="12" font-weight="600" fill="#17171a" letter-spacing="1.2">THE WEDGE</text>
+
+<!-- the cycle -->
+<ellipse cx="447" cy="430" rx="290" ry="204" fill="none" stroke="#46464d" stroke-width="1.2"/>
+<!-- direction arrows, clockwise -->
+<polygon points="540,231 526,222 529,238" fill="#46464d"/>
+<polygon points="435,641 450,634 450,648" fill="#46464d"/>
+<polygon points="236,283 224,295 240,297" fill="#46464d"/>
+
+<!-- stage nodes : 1-5 the wedge, 6-11 downstream -->
+<rect x="388" y="209" width="118" height="34" rx="4" fill="#fbfbfa" stroke="#46464d" stroke-width="1.6"/>
+<text x="447" y="230" font-size="9.5" font-weight="600" fill="#17171a" letter-spacing=".4" text-anchor="middle">1 &#183; LEAD</text>
+<rect x="545" y="245" width="118" height="34" rx="4" fill="#fbfbfa" stroke="#46464d" stroke-width="1.6"/>
+<text x="604" y="266" font-size="9.5" font-weight="600" fill="#17171a" letter-spacing=".1" text-anchor="middle">2 &#183; EMAIL CONNECTION</text>
+<rect x="652" y="332" width="118" height="34" rx="4" fill="#fbfbfa" stroke="#46464d" stroke-width="1.6"/>
+<text x="711" y="353" font-size="9.5" font-weight="600" fill="#17171a" letter-spacing=".1" text-anchor="middle">3 &#183; EXPLORATORY CALL</text>
+<rect x="675" y="445" width="118" height="34" rx="4" fill="#fbfbfa" stroke="#46464d" stroke-width="1.6"/>
+<text x="734" y="466" font-size="9.5" font-weight="600" fill="#17171a" letter-spacing=".2" text-anchor="middle">4 &#183; IDEA &amp; PROPOSAL</text>
+<rect x="607" y="550" width="118" height="34" rx="4" fill="#fbfbfa" stroke="#46464d" stroke-width="1.6"/>
+<text x="666" y="571" font-size="9.5" font-weight="600" fill="#17171a" letter-spacing=".4" text-anchor="middle">5 &#183; PRESENTATION</text>
+<rect x="470" y="612" width="118" height="34" rx="4" fill="#eaeae7" stroke="#46464d" stroke-width="1.1"/>
+<text x="529" y="633" font-size="9.5" font-weight="600" fill="#75757b" letter-spacing=".3" text-anchor="middle">6 &#183; COMMITMENT</text>
+<rect x="306" y="612" width="118" height="34" rx="4" fill="#eaeae7" stroke="#46464d" stroke-width="1.1"/>
+<text x="365" y="633" font-size="9.5" font-weight="600" fill="#75757b" letter-spacing=".3" text-anchor="middle">7 &#183; CRM + INVOICE</text>
+<rect x="169" y="550" width="118" height="34" rx="4" fill="#eaeae7" stroke="#46464d" stroke-width="1.1"/>
+<text x="228" y="571" font-size="9.5" font-weight="600" fill="#75757b" letter-spacing=".3" text-anchor="middle">8 &#183; AXUS UPLOAD</text>
+<rect x="101" y="445" width="118" height="34" rx="4" fill="#eaeae7" stroke="#46464d" stroke-width="1.1"/>
+<text x="160" y="466" font-size="9.5" font-weight="600" fill="#75757b" letter-spacing=".3" text-anchor="middle">9 &#183; CONCIERGE PREP</text>
+<rect x="124" y="332" width="118" height="34" rx="4" fill="#eaeae7" stroke="#46464d" stroke-width="1.1"/>
+<text x="183" y="353" font-size="9.5" font-weight="600" fill="#75757b" letter-spacing=".3" text-anchor="middle">10 &#183; PRE-TRAVEL</text>
+<rect x="231" y="245" width="118" height="34" rx="4" fill="#eaeae7" stroke="#46464d" stroke-width="1.1"/>
+<text x="290" y="266" font-size="9.5" font-weight="600" fill="#75757b" letter-spacing=".3" text-anchor="middle">11 &#183; POST-TRAVEL</text>
+
+<!-- the sources, at the centre of every stage -->
+<text x="447" y="373" font-size="10" font-weight="600" fill="#17171a" letter-spacing="1" text-anchor="middle">THE SOURCES</text>
+<rect x="345" y="384" width="94" height="26" rx="5" fill="#ffffff" stroke="#46464d" stroke-width="1.1"/>
+<text x="392" y="401" font-size="9.5" fill="#17171a" letter-spacing=".6" text-anchor="middle">PORTAL</text>
+<rect x="455" y="384" width="94" height="26" rx="5" fill="#ffffff" stroke="#46464d" stroke-width="1.1"/>
+<text x="502" y="401" font-size="9.5" fill="#17171a" letter-spacing=".6" text-anchor="middle">BOOKING</text>
+<rect x="345" y="418" width="94" height="26" rx="5" fill="#ffffff" stroke="#46464d" stroke-width="1.1"/>
+<text x="392" y="435" font-size="9.5" fill="#17171a" letter-spacing=".6" text-anchor="middle">ITINERARY</text>
+<rect x="455" y="418" width="94" height="26" rx="5" fill="#ffffff" stroke="#46464d" stroke-width="1.1"/>
+<text x="502" y="435" font-size="9.5" fill="#17171a" letter-spacing=".6" text-anchor="middle">DRIVE</text>
+<rect x="345" y="452" width="94" height="26" rx="5" fill="#ffffff" stroke="#46464d" stroke-width="1.1"/>
+<text x="392" y="469" font-size="9.5" fill="#17171a" letter-spacing=".6" text-anchor="middle">EMAIL</text>
+<rect x="455" y="452" width="94" height="26" rx="5" fill="#ffffff" stroke="#46464d" stroke-width="1.1"/>
+<text x="502" y="469" font-size="9.5" fill="#17171a" letter-spacing=".6" text-anchor="middle">CRM</text>
+<text x="447" y="500" font-size="9.5" fill="#75757b" text-anchor="middle">read and written at every stage &#183; none holds the whole</text>
+
+<!-- the refused move : one more downstream tool -->
+<polyline points="440,660 440,700 560,700" fill="none" stroke="#2f6fec" stroke-width="2.6" stroke-dasharray="7 6"/>
+<circle cx="572" cy="700" r="7.5" fill="#ffffff" stroke="#2f6fec" stroke-width="2.2"/>
+
+<!-- callouts -->
+<circle cx="345" cy="200" r="12" fill="#ffffff" stroke="#46464d" stroke-width="1.4"/>
+<text x="345" y="204.4" font-size="12.5" font-weight="600" fill="#17171a" text-anchor="middle">1</text>
+<line x1="356" y1="205" x2="386" y2="212" stroke="#46464d" stroke-width="1"/>
+<circle cx="388" cy="213" r="2.6" fill="#46464d"/>
+<circle cx="806" cy="420" r="12" fill="#ffffff" stroke="#46464d" stroke-width="1.4"/>
+<text x="806" y="424.4" font-size="12.5" font-weight="600" fill="#17171a" text-anchor="middle">2</text>
+<line x1="801" y1="431" x2="794" y2="443" stroke="#46464d" stroke-width="1"/>
+<circle cx="793" cy="445" r="2.6" fill="#46464d"/>
+<circle cx="290" cy="415" r="12" fill="#ffffff" stroke="#46464d" stroke-width="1.4"/>
+<text x="290" y="419.4" font-size="12.5" font-weight="600" fill="#17171a" text-anchor="middle">3</text>
+<line x1="302" y1="418" x2="343" y2="424" stroke="#46464d" stroke-width="1"/>
+<circle cx="345" cy="425" r="2.6" fill="#46464d"/>
+
+<!-- legend -->
+<circle cx="71" cy="716" r="11" fill="#ffffff" stroke="#46464d" stroke-width="1.3"/>
+<text x="71" y="720" font-size="11.5" font-weight="600" fill="#17171a" text-anchor="middle">1</text>
+<text x="90" y="720.5" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">THE CYCLE</text>
+<text x="176" y="720.5" font-size="12.5" fill="#75757b">eleven stages, lead to post-travel review, as the industry trains it</text>
+<circle cx="71" cy="742" r="11" fill="#ffffff" stroke="#46464d" stroke-width="1.3"/>
+<text x="71" y="746" font-size="11.5" font-weight="600" fill="#17171a" text-anchor="middle">2</text>
+<text x="90" y="746.5" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">THE WEDGE</text>
+<text x="182" y="746.5" font-size="12.5" fill="#75757b">lead to proposal and presentation; where the knowledge work concentrates</text>
+<circle cx="71" cy="768" r="11" fill="#ffffff" stroke="#46464d" stroke-width="1.3"/>
+<text x="71" y="772" font-size="11.5" font-weight="600" fill="#17171a" text-anchor="middle">3</text>
+<text x="90" y="772.5" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">THE SOURCES</text>
+<text x="200" y="772.5" font-size="12.5" fill="#75757b">the six systems at the centre; every stage reads and writes them</text>
+<line x1="60" y1="792" x2="72" y2="792" stroke="#2f6fec" stroke-width="2.2" stroke-dasharray="5 4"/>
+<circle cx="78" cy="792" r="5.5" fill="#ffffff" stroke="#2f6fec" stroke-width="2"/>
+<text x="90" y="796" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">ANOTHER VERTICAL TOOL</text>
+<text x="272" y="796" font-size="12.5" fill="#75757b">refused &#8212; downstream is crowded, and each tool adds one more source</text>
+</svg>

@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="273.4 109.4 893.6 805.0" font-family="'Libre Franklin', Inter, 'Helvetica Neue', Arial, sans-serif"><rect x="273.4" y="109.4" width="893.6" height="805.0" fill="#ffffff"/>
+<g id="blocks"><polygon points="570.0,360.8 813.2,501.2 624.0,610.4 380.9,470.0" fill="#fbfbfa" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="380.9,485.6 624.0,626.0 624.0,610.4 380.9,470.0" fill="#eaeae7" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="813.2,516.8 624.0,626.0 624.0,610.4 813.2,501.2" fill="#d6d6d2" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="452.9,444.0 497.9,470.0 492.5,473.1 447.5,447.1" fill="#fbfbfa" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="447.5,478.3 492.5,504.3 492.5,473.1 447.5,447.1" fill="#eaeae7" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="497.9,501.2 492.5,504.3 492.5,473.1 497.9,470.0" fill="#d6d6d2" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="574.5,324.4 763.6,433.6 619.5,516.8 430.4,407.6" fill="#fbfbfa" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="430.4,423.2 619.5,532.4 619.5,516.8 430.4,407.6" fill="#eaeae7" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="763.6,449.2 619.5,532.4 619.5,516.8 763.6,433.6" fill="#d6d6d2" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="502.5,381.6 547.5,407.6 542.1,410.7 497.0,384.7" fill="#fbfbfa" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="497.0,415.9 542.1,441.9 542.1,410.7 497.0,384.7" fill="#eaeae7" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="547.5,438.8 542.1,441.9 542.1,410.7 547.5,407.6" fill="#d6d6d2" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="579.0,288.0 714.1,366.0 615.0,423.2 479.9,345.2" fill="#fbfbfa" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="479.9,360.8 615.0,438.8 615.0,423.2 479.9,345.2" fill="#eaeae7" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="714.1,381.6 615.0,438.8 615.0,423.2 714.1,366.0" fill="#d6d6d2" stroke="#46464d" stroke-width="1.4" stroke-linejoin="round"/>
+<polygon points="552.0,319.2 597.0,345.2 591.6,348.3 546.6,322.3" fill="#fbfbfa" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="546.6,353.5 591.6,379.5 591.6,348.3 546.6,322.3" fill="#eaeae7" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="597.0,376.4 591.6,379.5 591.6,348.3 597.0,345.2" fill="#d6d6d2" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/></g>
+<g id="view"><polygon points="871.7,451.8 928.0,484.3 922.6,487.4 866.3,454.9" fill="#fbfbfa" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="866.3,553.7 922.6,586.2 922.6,487.4 866.3,454.9" fill="#eaeae7" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/>
+<polygon points="928.0,583.1 922.6,586.2 922.6,487.4 928.0,484.3" fill="#d6d6d2" stroke="#46464d" stroke-width="1.3" stroke-linejoin="round"/></g>
+<g id="flows">
+<polyline points="495.2,502.8 739.5,643.8 883.2,560.9" fill="none" stroke="#46464d" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="894.5,554.4 885.1,566.2 879.5,556.5" fill="#46464d"/>
+<polyline points="544.8,440.4 762.1,565.8 883.2,495.9" fill="none" stroke="#46464d" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="894.5,489.4 885.1,501.2 879.5,491.5" fill="#46464d"/>
+<polyline points="594.3,378.0 784.6,487.8 883.2,430.9" fill="none" stroke="#46464d" stroke-width="2.2" stroke-linejoin="round"/>
+<polygon points="894.5,424.4 885.1,436.2 879.5,426.5" fill="#46464d"/>
+<polyline points="583.5,358.2 583.5,389.3" fill="none" stroke="#2f6fec" stroke-width="2.6" stroke-linejoin="round" stroke-dasharray="7 6"/>
+<circle cx="583.5" cy="399.3" r="7.5" fill="#ffffff" stroke="#2f6fec" stroke-width="2.2"/>
+</g>
+<g id="callouts">
+<line x1="358.5" y1="464.7" x2="380.9" y2="470.0" stroke="#46464d" stroke-width="1"/>
+<circle cx="380.9" cy="470.0" r="2.6" fill="#46464d"/>
+<circle cx="346.9" cy="462.0" r="12" fill="#ffffff" stroke="#46464d" stroke-width="1.4"/>
+<text x="346.9" y="466.4" font-size="12.5" font-weight="600" fill="#17171a" text-anchor="middle">1</text>
+<line x1="408.1" y1="402.3" x2="430.4" y2="407.6" stroke="#46464d" stroke-width="1"/>
+<circle cx="430.4" cy="407.6" r="2.6" fill="#46464d"/>
+<circle cx="396.4" cy="399.6" r="12" fill="#ffffff" stroke="#46464d" stroke-width="1.4"/>
+<text x="396.4" y="404.0" font-size="12.5" font-weight="600" fill="#17171a" text-anchor="middle">2</text>
+<line x1="457.6" y1="339.9" x2="479.9" y2="345.2" stroke="#46464d" stroke-width="1"/>
+<circle cx="479.9" cy="345.2" r="2.6" fill="#46464d"/>
+<circle cx="445.9" cy="337.2" r="12" fill="#ffffff" stroke="#46464d" stroke-width="1.4"/>
+<text x="445.9" y="341.6" font-size="12.5" font-weight="600" fill="#17171a" text-anchor="middle">3</text>
+<line x1="871.7" y1="437.8" x2="871.7" y2="451.8" stroke="#46464d" stroke-width="1"/>
+<circle cx="871.7" cy="451.8" r="2.6" fill="#46464d"/>
+<circle cx="871.7" cy="425.8" r="12" fill="#ffffff" stroke="#46464d" stroke-width="1.4"/>
+<text x="871.7" y="430.2" font-size="12.5" font-weight="600" fill="#17171a" text-anchor="middle">4</text>
+</g>
+<text x="333.9" y="258.0" font-size="13.5" font-weight="600" fill="#17171a" letter-spacing="2">FIG. 02 — THREE LAYERS, ONE RECORD</text>
+<circle cx="344.9" cy="687.3" r="11" fill="#ffffff" stroke="#46464d" stroke-width="1.3"/>
+<text x="344.9" y="691.3" font-size="11.5" font-weight="600" fill="#17171a" text-anchor="middle">1</text>
+<text x="363.9" y="691.8" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">CANONICAL</text>
+<text x="453.4" y="691.8" font-size="12.5" fill="#75757b">the baseline the platform keeps</text>
+<circle cx="721.4" cy="687.3" r="11" fill="#ffffff" stroke="#46464d" stroke-width="1.3"/>
+<text x="721.4" y="691.3" font-size="11.5" font-weight="600" fill="#17171a" text-anchor="middle">2</text>
+<text x="740.4" y="691.8" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">ORGANISATION</text>
+<text x="856.5" y="691.8" font-size="12.5" fill="#75757b">agency policy and agreed terms</text>
+<circle cx="344.9" cy="721.3" r="11" fill="#ffffff" stroke="#46464d" stroke-width="1.3"/>
+<text x="344.9" y="725.3" font-size="11.5" font-weight="600" fill="#17171a" text-anchor="middle">3</text>
+<text x="363.9" y="725.8" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">PERSONAL</text>
+<text x="444.6" y="725.8" font-size="12.5" fill="#75757b">private notes, shared by choice</text>
+<circle cx="344.9" cy="755.3" r="11" fill="#ffffff" stroke="#46464d" stroke-width="1.3"/>
+<text x="344.9" y="759.3" font-size="11.5" font-weight="600" fill="#17171a" text-anchor="middle">4</text>
+<text x="363.9" y="759.8" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">EFFECTIVE VIEW</text>
+<text x="497.6" y="759.8" font-size="12.5" fill="#75757b">one combined read-out, each row attributed</text>
+<line x1="333.9" y1="789.8" x2="345.9" y2="789.8" stroke="#2f6fec" stroke-width="2.2" stroke-dasharray="5 4"/>
+<circle cx="351.9" cy="789.8" r="5.5" fill="#ffffff" stroke="#2f6fec" stroke-width="2"/>
+<text x="363.9" y="793.8" font-size="13" font-weight="600" fill="#17171a" letter-spacing=".4">OVERWRITE</text>
+<text x="453.4" y="793.8" font-size="12.5" fill="#75757b">refused — no silent change to a lower layer</text>
+<line x1="922.0" y1="258.0" x2="939.3" y2="268.0" stroke="#75757b" stroke-width="1.1"/>
+<text x="947.1" y="276.0" font-size="10" fill="#75757b" text-anchor="middle">x</text>
+<line x1="922.0" y1="258.0" x2="904.7" y2="268.0" stroke="#75757b" stroke-width="1.1"/>
+<text x="896.9" y="276.0" font-size="10" fill="#75757b" text-anchor="middle">y</text>
+<line x1="922.0" y1="258.0" x2="922.0" y2="238.0" stroke="#75757b" stroke-width="1.1"/>
+<text x="922.0" y="232.5" font-size="10" fill="#75757b" text-anchor="middle">z</text>
+</svg>
