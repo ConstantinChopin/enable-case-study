@@ -661,16 +661,18 @@
 
     /* The frame is drawn at full size and scaled down, so the product keeps its
        real proportions instead of being rendered into a narrow column. */
+    /* offsetWidth, not getBoundingClientRect: #stage is scaled with a CSS transform
+       to fit the window, and the rect would report the post-transform size. The slot
+       is a fixed size in the 1600×900 layout, so these numbers never change. */
     function fit() {
-      var r = box.getBoundingClientRect();
-      if (!r.width || !r.height) return;
-      var k = Math.min(r.width / w, r.height / hh);
+      var bw = box.offsetWidth, bh = box.offsetHeight;
+      if (!bw || !bh) return;
+      var k = Math.min(bw / w, bh / hh);
       f.style.transform = "scale(" + k + ")";
-      f.style.left = ((r.width - w * k) / 2) + "px";
-      f.style.top = ((r.height - hh * k) / 2) + "px";
+      f.style.left = ((bw - w * k) / 2) + "px";
+      f.style.top = ((bh - hh * k) / 2) + "px";
     }
     fit();
-    window.addEventListener("resize", fit);
 
     /* If it cannot load, put the still back rather than showing an empty box. */
     var settled = false;
