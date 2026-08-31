@@ -100,7 +100,7 @@
 
 <!-- 4 -->
 <!-- wedge -->
-<section class="slide is-full" data-note="Do not walk the stages one by one. Say: the sale runs across eleven stages, we focused on the first five. Then point right — by stage five you have to produce that proposal, and everything in it was gathered by hand across the fragmented tool space on the left.">
+<section class="slide is-full is-tight" data-note="Do not walk the stages one by one. Say: the sale runs across eleven stages, we focused on the first five. Then point right — by stage five you have to produce that proposal, and everything in it was gathered by hand across the fragmented tool space on the left.">
   <div class="head"><h3>An advisor&rsquo;s sale runs across eleven stages. We built into the first five.</h3><span class="eyebrow">Where we built</span></div>
   <div class="art">
     <div class="duo">
@@ -114,7 +114,12 @@
       </figure>
     </div>
   </div>
-  <div class="cap">By stage five the advisor has to produce that document on the right. It is the artefact that makes a recommendation official — the thing a client reads and books from. <b>Everything in it is assembled by hand, across the six systems on the left.</b> That is the stretch we built into: it is where the knowledge work concentrates, and where nobody else was building. Every hour spent before stage five is an hour nobody pays for.</div>
+    <div class="cost">
+    <div><b>~72h</b><span>to assemble one proposal by hand, across all six systems</span></div>
+    <div><b>3&ndash;5</b><span>revisions before it is fit to send to the client</span></div>
+    <div><b>3 at once</b><span>commission, amenities and the traveller&rsquo;s own preferences, weighed together on every candidate</span></div>
+  </div>
+  <div class="cap">That last one is the part that does not survive being done by hand. A property is only the right answer if the portal it came from pays well, the amenities suit this particular traveller, and it matches what they have already said they like. <b>An advisor holds all three in their head, per option, per trip.</b> Every hour of it happens before stage five, and none of it is billable.</div>
 </section>
 
 <!-- the design partner -->
@@ -203,7 +208,7 @@
 </section>
 
 <!-- 7 -->
-<section class="slide is-split" data-note="The constraint that explains everything about how this was made. Do not apologise for having no Figma — this is the reason.">
+<section class="slide is-split" data-note="The constraint that explains everything about how this was made. Do not apologise for having no Figma — this is the reason. If they want the working, offer to leave the deck and open the Notion roadmap: priorities logged per week, a spec per feature, decisions with dates on them. Offer it, do not force it — only open it if they say yes.">
   <div class="art"><img src="assets/figures/fig-07-workshop.svg" alt="Four repositories: production, dev, design system and prototype, with Claude Code running the iterations."></div>
   <div class="words">
     <span class="eyebrow">The constraint</span>
@@ -317,7 +322,7 @@
 <!-- 8b -->
 <section class="slide" data-note="Level two: us. A design partner signing, and an MVP another agency could buy, are the outcomes the company was actually judged on. Say which parts of the pipeline you can stand behind.">
   <span class="eyebrow">What changed · for the business</span>
-  <h2 style="margin-top:20px">The product had to work for the desk. The company had to be able to sell it.</h2>
+  <h2 style="margin-top:20px;max-width:30ch">It had to work for the advisors, and it had to let the company grow.</h2>
   <div class="figs">
     <div>
       <div class="n">Signed</div>
@@ -408,9 +413,9 @@
     <span class="step next">Challenge 1 · where we landed</span>
     <h3>The product fills it in, says how sure it is, and a person signs it off.</h3>
     <ol>
-      <li>Every field arrives already filled, with the line it was taken from and where in the document that line sits.</li>
+      <li>Every field arrives already filled, with the cell it was taken from &mdash; <b>row 41 · col G</b> &mdash; so the reviewer is checking a claim against a source rather than typing.</li>
       <li>Each one carries how confident the extraction is, so an advisor knows which rows to actually look at.</li>
-      <li>Two rows here are <strong>held rather than proposed</strong> — a converted figure with no source currency, and boilerplate copy. A held row has no confirm button at all.</li>
+      <li>Eighteen fields on this one record, and three of them are <strong>held rather than proposed</strong> — a converted figure with no source currency, and two commercial fields the extractor will not put a number on. A held row has no confirm button at all.</li>
       <li>Confirming stamps the record with the name of the person who confirmed it and the date. <strong>Every value on this record can be traced to somebody who agreed to it.</strong></li>
     </ol>
   </div>
@@ -467,7 +472,7 @@
   <div class="art shot"><img src="assets/screens/21-sharing-sheet.png" alt="The sharing panel: private to you, Collaborator Full, Collaborator Basic, with spend held behind the commission entitlement at every tier."></div>
   <div class="words">
     <span class="step next">Challenge 3 &middot; and the same question about reading</span>
-    <h3>Who a change is for, and who a record is for, are the same question about different verbs.</h3>
+    <h3>Who may change a record, and who may see it, are two halves of one rule.</h3>
     <ol>
       <li>Private by default. Sharing a traveller is an explicit act, aimed at a named colleague, and it can be withdrawn.</li>
       <li><strong>Collaborator Full</strong> can edit and run the profiling, but can never re-share or delete. <strong>Collaborator Basic</strong> is a name and a contact, for an introduction and nothing more.</li>
@@ -477,22 +482,12 @@
   </div>
 </section>
 
-<!-- ─── the mistake, anchored to a screen they have already used ─── -->
-<section class="slide is-split" data-note="Point at the three Keep buttons first, then say only the top one existed — otherwise the picture argues against you. They used this exact sheet twenty minutes ago, so start there. Say that I wrote the principle, argued for it against a faster implementation, and then broke it myself in the one place it was written down.">
-  <div class="art shot"><img src="assets/screens/06-resolve.png" alt="The resolve sheet: three sources, each keepable, with a required reason."></div>
-  <div class="words">
-    <span class="step came-back">What I got wrong</span>
-    <h3>Only the first of those three Keep buttons used to exist.</h3>
-    <p>You used this sheet earlier. I wrote the principle behind it myself: when sources disagree, show every one of them and make a person choose. I argued for it against a faster implementation, and I put it in the product&rsquo;s own words &mdash; <strong>&ldquo;Three sources disagree. The product will not pick one.&rdquo;</strong></p>
-    <p>Then I shipped it showing all three sources and offering a way to keep only the first. <strong>The screen said the advisor decides, and then decided for them.</strong> What you are looking at is the version after that was caught.</p>
-  </div>
-</section>
-
-<section class="slide is-statement" data-note="The deeper miss, and the one worth owning unprompted. The fix was trivial; noticing was not. Then move to reflection.">
-  <span class="eyebrow">What I took from it</span>
-  <p class="said">I checked what the screen offered. I never checked what it committed.</p>
-  <p class="after">The fix was not hard. All three are selectable, the reason is required, and it is stored with the value and the name of whoever chose it. What took longer was noticing that I had reviewed the affordance and never the write &mdash; that a screen can offer the right three options and still record none of them.</p>
-  <p class="after"><strong>A principle in a document does not enforce itself.</strong> The screen that states one most loudly is the one to check first, and the thing to check is what it commits.</p>
+<!-- ─── the mistake ─── -->
+<section class="slide is-statement" data-note="Invite questions on this one and do not rush it. There is no screenshot of the broken version — it does not exist any more — so tell it, do not point at it. The fix is not the story. Noticing is: I had reviewed what the screen showed and never what it saved.">
+  <span class="eyebrow">What I got wrong</span>
+  <p class="said">I checked what the screen offered. I never checked what it wrote.</p>
+  <p class="after">We had a rule: when sources disagree, show every one of them and let the advisor choose. I wrote that rule, argued for it against a faster implementation, and put it in the product&rsquo;s own words. Then I shipped a version of the resolve sheet that showed the advisor all three and only ever stored one of them.</p>
+  <p class="after">It was caught in review and the fix took an afternoon. Noticing took far longer, because the screen looked right &mdash; I had reviewed what it offered and never what it committed. <strong>A principle in a document does not enforce itself, and the screen that states one most loudly is the first one to go and check.</strong></p>
 </section>
 
 <section class="slide is-split" data-note="Two minutes. Do not add a third item. Then hand over for questions.">

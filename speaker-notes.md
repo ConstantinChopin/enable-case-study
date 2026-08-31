@@ -1,6 +1,6 @@
 # Enable — speaker notes
 
-Thirty-seven slides. Roughly **seven minutes** front, **twenty** live in the prototype,
+Thirty-six slides. Roughly **seven minutes** front, **twenty** live in the prototype,
 **twelve** back. The live section has its own script in `demo-script.md`.
 
 Press `N` on localhost to see the per-slide note on screen. This is the longer
@@ -55,19 +55,25 @@ If asked: vendors' own product shots, not the partner's instance.
 
 Do not walk the eleven stages. **This is where you say why the wedge, and why now.**
 
-> "An advisor's sale runs across eleven stages. We built into the first five.
+> "An advisor’s sale runs across eleven stages. We built into the first five.
 >
 > By stage five they have to produce that document on the right — the artefact that
 > makes a recommendation official, the thing the client reads and books from. And
-> everything in it was gathered by hand across the six systems on the left.
+> everything in it was gathered by hand, across the six systems on the left.
 >
-> We chose that stretch because we wanted to go to market fast and there was a real
-> opening: nobody was trying to be the single source of truth. Everyone else owned a
-> vertical.
+> Roughly seventy-two hours to assemble one proposal that way. Three to five revisions
+> before it is fit to send. And the part that really does not survive being done by
+> hand: a property is only the right answer if the portal it came from pays well, the
+> amenities suit this particular traveller, and it matches what they have already said
+> they like. An advisor holds all three in their head, per option, per trip.
 >
-> And our advantage was that we were AI-native from the first commit. The
-> competition were older tools that would need years to catch up to where we could
-> start."
+> That front stretch is where the knowledge work concentrates, it is where nobody else
+> was building, and none of it is billable.
+>
+> We went there because we wanted to go to market fast and there was a real opening —
+> nobody was trying to be the single source of truth, everyone else owned a vertical.
+> And we were AI-native from the first commit, where the competition were older tools
+> that would need years to catch up to where we could start."
 
 ### 9 · The design partner
 
@@ -233,8 +239,9 @@ this is the only place it gets told.
 >
 > So we changed what confirming means. Every field arrives already filled, with the
 > line it came from and where in the document that line sits. Each carries how
-> confident the extraction is, so you know which rows to actually look at. You
-> validate rather than type. And confirming stamps the record with your name and the
+> confident the extraction is, so you know which rows to actually look at. Eighteen
+> fields on this one record, three of them held rather than proposed — and the empty
+> one is recorded as silence rather than guessed at. You validate rather than type. And confirming stamps the record with your name and the
 > date — every value on this record traces to somebody who agreed to it."
 
 ### 29–30 · Challenge 2 — a workspace, not a dashboard
