@@ -178,7 +178,7 @@ strong { color: var(--ink); font-weight: 600; }
 .tiles.t6 { grid-template-columns: repeat(3, auto); --tile: 266px; }  /* 3 × 2 */
 .tiles.t4 { grid-template-columns: repeat(4, auto); --tile: 344px; }  /* 4 × 1 */
 .tiles.t2 { grid-template-columns: repeat(2, auto); --tile: 592px; }  /* 2 × 1 */
-.tiles.t1 { grid-template-columns: auto;            --tile: 494px; }  /* 1     */
+.tiles.t1 { grid-template-columns: auto;            --tile: 640px; }  /* 1     */
 
 /* ── split ───────────────────────────────────────────────────────────── */
 
