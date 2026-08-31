@@ -405,9 +405,9 @@ body.settled #help { opacity: 0; }
 
 .bleed {
   position: absolute;
-  inset: 0;
+  inset: 40px;
   display: grid;
-  gap: 6px;
+  gap: 8px;
 }
 /* minmax(0, 1fr) rather than 1fr: a bare 1fr keeps an auto minimum, so the
    intrinsic height of a 1100px source pushes the rows past the slide and the
@@ -422,15 +422,3 @@ body.settled #help { opacity: 0; }
   display: block;
 }
 
-.plate {
-  position: absolute;
-  left: 0; bottom: 0;
-  background: var(--paper);
-  padding: 30px 40px 32px;
-  max-width: 720px;
-  z-index: 2;
-}
-.plate h3 { font-size: 34px; max-width: none; margin-bottom: 6px; }
-.plate .eyebrow { display: block; margin-bottom: 14px; }
-.plate p { font-size: 18px; line-height: 1.5; color: var(--ink-3); max-width: none; }
-.plate p b { color: var(--ink-2); font-weight: 600; }
