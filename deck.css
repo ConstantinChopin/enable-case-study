@@ -197,15 +197,25 @@ strong { color: var(--ink); font-weight: 600; }
 
 .grid4 figure, .duo figure { display: flex; flex-direction: column; min-width: 0; }
 
+/* The box is a sizing rule, not a surface. It has no ground and no border, so
+   an object whose proportions differ from the slot does not sit in a coloured
+   band. The frame belongs to the object, not to the slot that holds it. */
 .grid4 .box, .duo .box {
   display: flex; align-items: center; justify-content: center;
-  background: var(--paper-2);
-  border-radius: 5px;
-  box-shadow: inset 0 0 0 1px rgba(23, 23, 26, 0.09);
-  overflow: hidden;
 }
 .grid4 .box { height: 264px; }
 .duo .box   { height: 536px; }
+
+/* An artefact — a screenshot, a document — exists in the world, so it sits on
+   the paper and carries an edge. A drawn figure is an explanation rather than
+   an artefact, so it sits in the paper with nothing around it. */
+.is-full .art .is-doc img {
+  border-radius: 4px;
+  box-shadow:
+    0 0 0 1px rgba(23, 23, 26, 0.10),
+    0 2px 4px rgba(16, 24, 40, 0.04),
+    0 14px 34px rgba(16, 24, 40, 0.07);
+}
 
 .is-full .art .grid4 img,
 .is-full .art .duo img {
