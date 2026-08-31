@@ -395,3 +395,42 @@ body.settled #help { opacity: 0; }
 .people figcaption { margin-top: 12px; }
 .people .nm { display: block; font-size: 17px; line-height: 1.25; }
 .people .rl { display: block; margin-top: 3px; font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+
+/* ── range slides, full bleed ─────────────────────────────────────────────
+   Six seconds each, so the work fills the frame and a plate in the corner
+   carries the name. Cells are fractions rather than fixed squares; the source
+   images are square and crop into whatever shape the grid gives them. */
+
+.is-bleed { padding: 0; }
+
+.bleed {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  gap: 6px;
+}
+/* minmax(0, 1fr) rather than 1fr: a bare 1fr keeps an auto minimum, so the
+   intrinsic height of a 1100px source pushes the rows past the slide and the
+   bottom row is cut. */
+.bleed.b6 { grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); }
+.bleed.b4 { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); }
+.bleed.b2 { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); }
+
+.bleed img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.plate {
+  position: absolute;
+  left: 0; bottom: 0;
+  background: var(--paper);
+  padding: 30px 40px 32px;
+  max-width: 720px;
+  z-index: 2;
+}
+.plate h3 { font-size: 34px; max-width: none; margin-bottom: 6px; }
+.plate .eyebrow { display: block; margin-bottom: 14px; }
+.plate p { font-size: 18px; line-height: 1.5; color: var(--ink-3); max-width: none; }
+.plate p b { color: var(--ink-2); font-weight: 600; }
