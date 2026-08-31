@@ -167,15 +167,10 @@
       </figure>
     </div>
   </div>
-  <div class="cap">Not answers — a place that absorbs rate sheets as PDFs, inventories as half-structured spreadsheets and terms buried in forwarded email, and returns one record per thing. On the right is a single record out of <b>4</b>, the directory. <b>The next six slides are those surfaces, one each.</b></div>
+  <div class="cap">Not answers — a place that absorbs rate sheets as PDFs, inventories as half-structured spreadsheets and terms buried in forwarded email, and returns one record per thing. On the right is a single record out of <b>4</b>, the directory. <b>The next five slides are the other surfaces, one each.</b></div>
 </section>
 
 <!-- the surfaces, one per slide so the arrow keys walk them -->
-<section class="slide is-full" data-note="Surface 4, and the one to open first — everything else is a view onto this. Say: one record, every field attributed.">
-  <div class="head"><span class="step made">Surface 4</span><h3>The product record</h3></div>
-  <div class="art shot"><img src="assets/screens/05-record.png" alt="The product record — a surface reading from the model."></div>
-  <div class="cap">One thing in the directory, with every field carrying where it came from and when. This is the object the other surfaces read.</div>
-</section>
 
 <section class="slide is-full" data-note="Surface 3. The door people expect, and one of six rather than the product itself.">
   <div class="head"><span class="step made">Surface 3</span><h3>Ask</h3></div>
@@ -286,8 +281,8 @@
 
 
 <!-- 7c — one signal traced from call to decision to feature -->
-<section class="slide is-split is-wide" data-note="This is the engineering argument, and it is the one that separates this from a RAG demo. Lead with the failure: documents in, answers out, wrong too often to be used. Then the move — permission is a property of the record, so an answer cannot leak what the model will not join. Then the metric we wrote so it could fail. Only then the sharing tiers, as that model showing up on a screen.">
-  <div class="art shot"><img src="assets/screens/21-sharing-sheet.png" alt="The sharing panel: private to you, Collaborator Full, Collaborator Basic, with spend held behind the commission entitlement at every tier."></div>
+<section class="slide is-split is-wide" data-note="This is the engineering argument, and it is the one that separates this from a RAG demo. Lead with the failure: documents in, answers out, wrong too often to be used. Then the move — permission is a property of the record, so an answer cannot leak what the model will not join. Then the metric we wrote so it could fail. Only then the figure: walk it bottom to top, canonical, agency, personal, and the combined read-out on the right. Land on the refused overwrite — a change never rewrites the layer beneath it, and that is what makes the whole thing auditable.">
+  <div class="art"><img src="assets/figures/fig-02-layers.png" alt="Three layers of one record — canonical, organisation, personal — combining into one attributed read-out, with an overwrite of a lower layer refused."></div>
   <div class="words">
     <span class="eyebrow">The model, and why it came before the screens</span>
     <h3>Three layers, and permission in the model rather than on top of it.</h3>
@@ -302,8 +297,8 @@
         <b>We wrote the target so it could fail.</b>
         <span>Time to Trusted Answer: an answer only counted if it arrived with its sources, its freshness, a confidence label or a plain &ldquo;I don&rsquo;t know&rdquo; &mdash; and zero permission leakage. Any override is auditable.</span></li>
       <li><em>On the left</em>
-        <b>The sharing tiers are that model showing up on a screen.</b>
-        <span>In March we made sharing all or nothing, and wrote down what would reopen it. In April the agency lead met that condition almost word for word, so it became Full and Basic. Money stayed behind its own permission at every tier.</span></li>
+        <b>Three layers, one read-out, and no silent overwrite.</b>
+        <span>Canonical underneath, the agency&rsquo;s position over it, the advisor&rsquo;s own on top. What you read is the three combined with every row still attributed &mdash; and a change never rewrites the layer beneath it. <strong>That refusal is the whole guarantee.</strong></span></li>
     </ul>
   </div>
 </section>
@@ -445,15 +440,15 @@
 </section>
 
 <!-- 27 -->
-<section class="slide is-split" data-note="Two arguments: width, and how advisors actually move. Name the cost — 70px of height.">
-  <div class="art shot"><img src="assets/screens/06-resolve.png" alt="The later design: a bottom dock, with the conflict as a sheet over the record."></div>
+<section class="slide is-split" data-note="Two arguments: width, and how advisors actually move. This is the briefing, which is the clearest room to point at — the dock at the foot, and the whole width given to the work. Say that our users live in an iOS environment, so each room reads as its own small app rather than a section of a dashboard. Then name the cost: 70px of height, permanently.">
+  <div class="art shot"><img src="assets/screens/03-briefing.png" alt="The briefing: a full room with the dock at the foot of the screen."></div>
   <div class="words">
     <span class="step next">Challenge 2 · where we landed</span>
     <h3>We stopped building a dashboard and started building a workspace.</h3>
     <ol>
       <li>The rail cost about 230 pixels of width permanently, on the screens that most need it — a record with three layers and a provenance column.</li>
       <li>Advisors did not move section to section like a website. They moved workspace to workspace, all day, in a loop.</li>
-      <li>Resolving a rate stopped being its own page. The decision only makes sense while you can still see the fields it sits among.</li>
+      <li>Each room became its own small thing rather than a section of a dashboard &mdash; closer to how these advisors already use a phone than how they use a website.</li>
     </ol>
     <p><strong>The cost:</strong> about 70 pixels of height, permanently, and a pattern rare enough in this category that it only reads as considered if it behaves well.</p>
   </div>
@@ -466,18 +461,21 @@
   <p class="after">An advisor corrects a rate. That might be a note to themselves, or something their desk needs, or the agency changing its official position &mdash; and whoever reads it next has to know which. The first version gave them a text box and stored whatever they typed. <strong>It never asked who the change was for.</strong></p>
 </section>
 
-<section class="slide is-split" data-note="Say the order: the scope question comes first, before the value, because it is the one people get wrong. Read the third option aloud — agency-wide goes to a lead, because an advisor cannot change the agency position on their own. Then point at the on-save line: it says exactly what will happen before you commit.">
-  <div class="art shot"><img src="assets/screens/23-edit-scope.png" alt="Editing a field: who the change is for, a required reason, and what will happen on save."></div>
-  <div class="words">
-    <span class="step next">Challenge 3 &middot; where we landed</span>
-    <h3>We ask who the change is for, before we ask what it says.</h3>
-    <ol>
-      <li>The scope question comes first, because it is the one an advisor gets wrong. Just me, my team, or the whole agency &mdash; each with the people it means written underneath it.</li>
-      <li>Scope decides the layer. A private correction never becomes the agency&rsquo;s position by accident, and the canonical value underneath stays readable.</li>
-      <li><strong>Agency-wide goes to a lead for review.</strong> An advisor can propose the agency&rsquo;s position; they cannot set it.</li>
-      <li>A reason is required, and the line above the button says what will happen before it happens: live immediately, or waiting on review.</li>
-    </ol>
+<section class="slide is-full" data-note="Left, then right. Left: you are on the record, in edit mode, and every field has grown its own Edit button — the banner says you are editing as yourself and that canonical values are not yours to overwrite. Right: the sheet asks who the change is for before it asks what it says, because that is the question an advisor gets wrong. Read the third option aloud — the whole agency goes to a lead for review. Then the on-save line, which says what will happen before it happens.">
+  <div class="head"><span class="step next">Challenge 3 &middot; where we landed</span><h3>Editing a field is a question about who it is for.</h3></div>
+  <div class="art">
+    <div class="duo">
+      <figure class="is-doc">
+        <div class="box"><img src="assets/screens/24-record-editing.png" alt="The record in edit mode: a banner naming the editor, and an Edit button on each field."></div>
+        <figcaption>1 on the record, in edit mode</figcaption>
+      </figure>
+      <figure class="is-doc">
+        <div class="box"><img src="assets/screens/24-edit-sheet.png" alt="The edit sheet: the canonical value kept beneath, a new value, and who the change is for."></div>
+        <figcaption>2 who the change is for, before what it says</figcaption>
+      </figure>
+    </div>
   </div>
+  <div class="cap">The canonical value stays underneath and stays readable &mdash; a change is stored <b>above</b> it, never over it. Scope decides the layer: <b>just me</b> is personal, <b>my team</b> is the desk, <b>the whole agency</b> is the agency&rsquo;s position and <b>goes to a lead for review</b>, because an advisor can propose that position but not set it. A reason is required, and the line above the button says what will happen before it happens.</div>
 </section>
 
 <!-- ─── loop 7 ─── -->

@@ -1,6 +1,6 @@
 # Enable — speaker notes
 
-Thirty-nine slides. Roughly **seven minutes** front, **twenty** live in the prototype,
+Thirty-eight slides. Roughly **seven minutes** front, **twenty** live in the prototype,
 **twelve** back. The live section has its own script in `demo-script.md`.
 
 Press `N` on localhost to see the per-slide note on screen. This is the longer
@@ -85,14 +85,12 @@ Do not walk the eleven stages. **This is where you say why the wedge, and why no
 
 The record is live — you can scroll it.
 
-### 11–16 · The surfaces
+### 11–15 · The surfaces
 
 One slide each, so your arrow keys walk them. Ten to fifteen seconds apiece. The
-numbers match the diagram you were just on.
+numbers match the diagram you were just on. The record is not among them — you
+have just had it live on the previous slide.
 
-> **The product record** — "Start here, because every other surface is a view onto
-> this. One thing in the directory, every field attributed."
->
 > **Ask** — "The door people expect. It answers out of the model rather than the web,
 > and every line is cited to a record it can name."
 >
@@ -108,7 +106,7 @@ numbers match the diagram you were just on.
 > **The knowledge vault** — "And this is the way in. Everything the model knows
 > arrived through here or through a connection."
 
-### 17 · How we worked
+### 16 · How we worked
 
 The constraint that explains the method. Do not apologise for having no Figma files.
 
@@ -123,7 +121,7 @@ The constraint that explains the method. Do not apologise for having no Figma fi
 > workable. My job was to take what came out of those calls and shape it into
 > journeys that made sense to use."
 
-### 18 · What the calls produced
+### 17 · What the calls produced
 
 Read the first two aloud. Point at the third. Read the agency lead's line slowly.
 
@@ -136,7 +134,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 >
 > So we built them somewhere to look."
 
-### 19–20 · The first build
+### 18–19 · The first build
 
 > "A conversational interface over their own material — Notion, Google Drive, exports
 > out of the intranet — with results as cards beside a generated answer.
@@ -145,7 +143,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 > a Japan itinerary and it returns cherry-blossom festivals cited to Reddit, when what
 > was needed was the agency's negotiated terms. It was wrong too often to use."
 
-### 21 · Retrieval was never the problem
+### 20 · Retrieval was never the problem
 
 **The intellectual move of the project. Say the headline, then stop.**
 
@@ -160,7 +158,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 > Nothing said which was which. So the model came before any screen: three layers, a
 > source on every field, and permission built in rather than added on."
 
-### 22 · Three layers, permission in the model
+### 21 · Three layers, permission in the model
 
 **The engineering argument. This is what separates it from a RAG demo.**
 
@@ -173,11 +171,15 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 > own sharing rules, and commission sits behind its own entitlement on top of that.
 > An answer cannot leak what the model will not join in the first place.
 >
+> Walk the figure bottom to top: canonical, the agency over it, personal on top, and
+> the combined read-out on the right. Land on the refused overwrite — a change never
+> rewrites the layer beneath it, and that is what makes the whole thing auditable.
+>
 > And we wrote the target so it could fail: Time to Trusted Answer. An answer only
 > counts if it arrives with its sources, its freshness, a confidence label or a plain
 > 'I don't know' — and zero permission leakage."
 
-### 23–24 · What changed
+### 22–23 · What changed
 
 > **For the advisors** — time from client request to a personalised first proposal,
 > time saved on daily administration, and the ratio underneath both: three to five
@@ -190,11 +192,11 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 
 ⚠ **Say the method for every number, or drop the number.** See the open list below.
 
-### 25 · Handoff
+### 24 · Handoff
 
 > "Rather than describe it, let me use it."
 
-Switch windows. `demo-script.md` from here. Come back to slide 26.
+Switch windows. `demo-script.md` from here. Come back to slide 25.
 
 ---
 
@@ -210,13 +212,13 @@ this is the only place it gets told.
 
 ## BACK — twelve minutes
 
-### 26 · The map
+### 25 · The map
 
 > "Three design challenges we worked through. Each one runs the same beats: what we
 > tried first, what came back from the desk, and where we landed. After the three
 > there is one more thing, which is a mistake of mine nobody caught."
 
-### 27–30 · Challenge 1 — a person in the loop on the way in
+### 26–29 · Challenge 1 — a person in the loop on the way in
 
 > "The material arrives unstructured, from a dozen sources in a dozen formats, and
 > somebody has to agree how it maps onto a record.
@@ -242,7 +244,7 @@ this is the only place it gets told.
 > validate rather than type. And confirming stamps the record with your name and the
 > date — every value on this record traces to somebody who agreed to it."
 
-### 31–32 · Challenge 2 — a workspace, not a dashboard
+### 30–31 · Challenge 2 — a workspace, not a dashboard
 
 > "We built the layout every comparable tool uses: a left rail, and the conflict on
 > its own page. It worked.
@@ -260,15 +262,16 @@ this is the only place it gets told.
 > The cost was about seventy pixels of height, permanently, and a pattern rare enough
 > here that it only reads as considered if it behaves well."
 
-### 33–34 · Challenge 3 — changing a record at the right level
+### 32–33 · Challenge 3 — changing a record at the right level
 
 > "An advisor corrects a rate. That might be a note to themselves, or something their
 > desk needs, or the agency changing its official position — and whoever reads it next
 > has to know which. The first version gave them a text box and stored whatever they
 > typed. It never asked who the change was for.
 >
-> So now the scope question comes first, before the value, because it is the one an
-> advisor gets wrong. Just me, my team, or the whole agency — each with the people it
+> Left screen: you are on the record in edit mode, and every field has grown its own
+> Edit button. Right screen: the sheet. The scope question comes first, before the
+> value, because it is the one an advisor gets wrong. Just me, my team, or the whole agency — each with the people it
 > means written underneath it.
 >
 > Scope decides the layer, so a private correction never becomes the agency's position
@@ -280,7 +283,7 @@ this is the only place it gets told.
 > A reason is required, and the line above the button says what will happen before it
 > happens — live immediately, or waiting on review."
 
-### 35–37 · What I got wrong
+### 34–36 · What I got wrong
 
 **Do not soften this. It is the strongest thing in the deck.**
 
@@ -293,11 +296,11 @@ this is the only place it gets told.
 > the model, or in a test, or it will be true on the day you write it and false a
 > month later."
 
-### 38 · Reflection
+### 37 · Reflection
 
 > "What I would challenge if I picked it up again."
 
-### 39 · Questions
+### 38 · Questions
 
 Stop talking. Ten minutes.
 
@@ -305,9 +308,9 @@ Stop talking. Ten minutes.
 
 ## Open before you present
 
-1. **The metrics on 23 and 24.** Say the method for each figure or cut it. Any number
+1. **The metrics on 22 and 23.** Say the method for each figure or cut it. Any number
    you cannot source is worse than no number in front of these two.
-2. **The quotes on slide 18** are attributed by role because that is all the
+2. **The quotes on slide 17** are attributed by role because that is all the
    transcripts carry. If you know which advisor said which, name them.
 3. **Both repos are public.** The deck and the app.
 4. If you present from the deployed deck, the live record on slide 10 needs the app's
