@@ -60,20 +60,26 @@ This is the longest and most important one. Budget seven minutes and protect it.
 **State:** press `0`, then `3`. Advisor, current build, `/records/maison-leandre`.
 
 **a. Provenance**
-1. Point at the three sections: canonical, agency overlay, personal. Say what each one is in one line.
-2. **Click a field value** — Address, or Rooms — to open its provenance popover. Press `Escape`.
-3. Point at **Pool hours · 96d unverified** and click **Verify against source**. It becomes
+1. The record opens on its photography. Say the property name, then scroll past it — the gallery is
+   orientation, not the point.
+2. Point at the three sections: canonical, agency overlay, personal. Each now carries a line saying
+   what the layer is: *published by Enable, not yours to edit* · *what your agency has decided, sitting
+   over the canonical value beneath it*.
+3. **Click a field value** — Address, or Rooms — to open its provenance popover. Press `Escape`.
+4. Point at **Pool hours · 96d unverified** and click **Verify against source**. It becomes
    *verified today · R. Devane*.
 
 **b. The disagreement**
-4. Scroll to **Commission** in the agency overlay. Three values: 12% partner portal, 10% booking
+5. Scroll to **Commission** in the agency overlay. Three values: 12% partner portal, 10% booking
    platform, 14% keyed by hand.
-5. Click **Resolve 3 sources**.
-6. Walk the sheet: every value keeps its source, its date, and how many others agree. The label is
+6. Click **Resolve 3 sources**. There are two of these — one on the commission row, one in the rail
+   at the top right beside *3 sources disagree*. The rail one is the safer click; it is visible without
+   scrolling and it is a filled button.
+7. Walk the sheet: every value keeps its source, its date, and how many others agree. The label is
    words, not a score — *signed terms*, *superseded rate*, *uncorroborated*.
-7. Point at **where this value goes** — the directory row, the quotes, the answers in chat.
-8. **Select any of the three.** Take 14% — the manual entry — precisely because a ranking rule would never have chosen it.
-9. Type a reason. Commit.
+8. Point at **where this value goes** — the directory row, the quotes, the answers in chat.
+9. **Select any of the three.** Take 14% — the manual entry — precisely because a ranking rule would never have chosen it.
+10. Type a reason. Commit.
 
 **c. Scope of what you write**
 10. Click **Add note…**, type a line.
@@ -112,7 +118,9 @@ their drive and not connecting it.
 - The colleague can still see a contact row reading **L. Berger · Commission contact**. If they spot
   it, that is a real gap and the honest answer is that the rule holds for values and not yet for
   the people attached to them.
-- The hero image pushes the commission row below the fold. Scroll before you talk.
+- The record opens on a three-image gallery, so the fields sit below the fold. The rail does show the
+  commission state on open — *pending · 3 sources disagree · Resolve 3 sources* — so you can point there
+  first and scroll second.
 
 ---
 
