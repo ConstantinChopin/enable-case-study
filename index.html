@@ -162,8 +162,8 @@
         <figcaption>1 six systems in · 2 one model · 3–7 out to every surface</figcaption>
       </figure>
       <figure class="is-doc">
-        <div class="box"><img src="assets/screens/05-record-fields.png" alt="A product record: canonical and agency layers, a source and a date on every field, and a commission the sources disagree on."></div>
-        <figcaption>4 the directory — one record from it</figcaption>
+        <div class="box"><div class="live" data-live="/records/maison-leandre?demo=advisor" data-w="1440" data-h="1120"><noscript><img src="assets/screens/05-record-fields.png" alt="A product record."></noscript></div></div>
+        <figcaption>4 the directory — one record from it &middot; live, scroll it</figcaption>
       </figure>
     </div>
   </div>
@@ -640,5 +640,70 @@
 })();
 </script>
 
+
+<script>
+(function () {
+  /* Same machine when the deck is local; the deployed app otherwise. */
+  var LOCAL = ["localhost", "127.0.0.1", "[::1]", ""].indexOf(location.hostname) !== -1;
+  var APP = LOCAL ? "http://localhost:3000" : "https://enable-analogue.vercel.app";
+
+  function mount(box) {
+    if (box.dataset.mounted) return;
+    box.dataset.mounted = "1";
+
+    var w = +box.dataset.w || 1440, hh = +box.dataset.h || 1120;
+    var f = document.createElement("iframe");
+    f.src = APP + box.dataset.live;
+    f.width = w; f.height = hh;
+    f.setAttribute("title", "The product record, running");
+    f.setAttribute("loading", "lazy");
+    box.appendChild(f);
+
+    /* The frame is drawn at full size and scaled down, so the product keeps its
+       real proportions instead of being rendered into a narrow column. */
+    function fit() {
+      var r = box.getBoundingClientRect();
+      if (!r.width || !r.height) return;
+      var k = Math.min(r.width / w, r.height / hh);
+      f.style.transform = "scale(" + k + ")";
+      f.style.left = ((r.width - w * k) / 2) + "px";
+      f.style.top = ((r.height - hh * k) / 2) + "px";
+    }
+    fit();
+    window.addEventListener("resize", fit);
+
+    /* If it cannot load, put the still back rather than showing an empty box. */
+    var settled = false;
+    f.addEventListener("load", function () { settled = true; box.classList.add("is-up"); });
+    setTimeout(function () {
+      if (settled) return;
+      box.innerHTML = '<img src="assets/screens/05-record-fields.png" alt="A product record.">';
+      box.classList.add("is-still");
+    }, 6000);
+  }
+
+  /* Arrow keys are the deck's. Clicking into a frame hands focus to the app and
+     they stop working, so take it straight back — scrolling does not need focus. */
+  window.addEventListener("blur", function () {
+    setTimeout(function () {
+      var a = document.activeElement;
+      if (a && a.tagName === "IFRAME") { a.blur(); window.focus(); }
+    }, 0);
+  });
+
+  /* Mount on arrival rather than at load, so the deck opens without waiting. */
+  function sweep() {
+    var on = document.querySelector(".slide.is-on");
+    if (!on) return;
+    var boxes = on.querySelectorAll(".live");
+    for (var i = 0; i < boxes.length; i++) mount(boxes[i]);
+  }
+  document.addEventListener("keyup", sweep);
+  document.addEventListener("click", sweep);
+  window.addEventListener("hashchange", sweep);
+  setInterval(sweep, 700);
+  sweep();
+})();
+</script>
 </body>
 </html>

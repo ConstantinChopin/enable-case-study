@@ -512,3 +512,24 @@ body.settled #help { opacity: 0; }
 .is-statement.has-ev .said { max-width: 14ch; }
 .is-statement.has-ev .after { max-width: 40ch; }
 .is-statement.has-ev .ev { margin-top: 0; max-width: none; gap: 24px; }
+
+/* ── a running screen, in the slot a screenshot would have taken ──────── */
+
+.live {
+  position: relative; width: 100%; height: 100%;
+  overflow: hidden; border-radius: 4px;
+  background: var(--paper);
+  box-shadow:
+    0 0 0 1px rgba(23, 23, 26, 0.10),
+    0 2px 4px rgba(16, 24, 40, 0.04),
+    0 14px 34px rgba(16, 24, 40, 0.07);
+}
+.live iframe {
+  position: absolute; border: 0; display: block;
+  transform-origin: 0 0;
+  /* Until it paints, an unstyled frame is a white slab; fade it in instead. */
+  opacity: 0; transition: opacity 240ms ease;
+}
+.live.is-up iframe { opacity: 1; }
+/* the fallback still, if the app is not reachable */
+.live.is-still img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
