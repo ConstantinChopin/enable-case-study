@@ -423,3 +423,37 @@ body.settled #help { opacity: 0; }
   border-radius: 6px;
 }
 
+/* ── what the calls produced: four things said, dated ───────────────── */
+
+.said-grid {
+  margin-top: 44px;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 34px 60px;
+  border-top: 1px solid var(--line-2);
+}
+.said-grid > div { padding-top: 26px; }
+.said-grid q { display: block; quotes: "\201C" "\201D"; font-size: 21px; line-height: 1.42; max-width: 40ch; }
+.said-grid .when {
+  margin-top: 13px; font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.09em; text-transform: uppercase; color: var(--ink-4);
+}
+.said-grid .then { margin-top: 9px; font-size: 16.5px; line-height: 1.45; color: var(--ink-3); max-width: 42ch; }
+.said-grid .is-lead q { color: var(--ink); }
+.said-grid .is-lead .then b { color: var(--ink); font-weight: 500; }
+
+/* ── the chain: a decision, the call that reopened it, the revision ─── */
+
+.is-split.is-wide { gap: 46px; }
+.is-split.is-wide .art   { flex: 1 1 40%; }
+.is-split.is-wide .words { flex: 1 1 60%; }
+
+.chain { margin-top: 24px; list-style: none; }
+.chain li { padding: 14px 0 14px 118px; position: relative; border-top: 1px solid var(--line); }
+.chain li:first-child { border-top: 0; padding-top: 2px; }
+.chain li em {
+  position: absolute; left: 0; top: 17px; font-style: normal;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--ink-4); max-width: 102px; line-height: 1.45;
+}
+.chain li:first-child em { top: 5px; }
+.chain li b { display: block; font-weight: 500; font-size: 18.5px; line-height: 1.4; color: var(--ink); }
+.chain li span { display: block; margin-top: 7px; font-size: 16px; line-height: 1.5; color: var(--ink-3); max-width: 62ch; }
