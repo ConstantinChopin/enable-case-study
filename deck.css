@@ -148,6 +148,38 @@ strong { color: var(--ink); font-weight: 600; }
 }
 .is-full .cap b { color: var(--ink-2); font-weight: 600; }
 
+/* ── square tiles, for the range slides ──────────────────────────────────
+   The work itself, not a screenshot of a site showing the work. Sizes are
+   explicit because the slide is a fixed 1600×900 and guessing is worse.     */
+
+.tiles {
+  display: grid;
+  gap: 14px;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+}
+/* Specificity has to beat `.is-full .art img`, which fits a single image to the
+   frame. A tile is not fitted — it is a fixed square and the image crops into it. */
+.is-full .art .tiles img {
+  display: block;
+  width: var(--tile);
+  height: var(--tile);
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  border-radius: 5px;
+  background: var(--paper-2);
+  /* A hairline so a pale tile still has an edge against the paper. Invisible
+     on the tiles that carry their own colour. */
+  box-shadow: inset 0 0 0 1px rgba(23, 23, 26, 0.09);
+}
+
+.tiles.t6 { grid-template-columns: repeat(3, auto); --tile: 266px; }  /* 3 × 2 */
+.tiles.t4 { grid-template-columns: repeat(4, auto); --tile: 344px; }  /* 4 × 1 */
+.tiles.t2 { grid-template-columns: repeat(2, auto); --tile: 592px; }  /* 2 × 1 */
+.tiles.t1 { grid-template-columns: auto;            --tile: 494px; }  /* 1     */
+
 /* ── split ───────────────────────────────────────────────────────────── */
 
 .is-split { flex-direction: row; gap: 52px; align-items: center; padding: 58px 72px; }
