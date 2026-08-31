@@ -185,31 +185,32 @@
 </section>
 
 <!-- 7b — what came out of the calls -->
-<section class="slide is-mid" data-note="Do not read all four. Read the email one and the room-name one aloud, point at the other two, then say: every one of these is dated and attributed, and the last one is the one I want to follow all the way through.">
+<section class="slide is-mid" data-note="Read the first two aloud. Point at the third. Then read the agency lead&rsquo;s line slowly, because it is the brief we were given and it is the one we followed. Every quote here is about not being able to find something. That is the whole set-up for the next three slides.">
   <span class="eyebrow">What the calls produced</span>
-  <h2 style="margin-top:20px;max-width:34ch">Four things advisors told us, and what we built because of them.</h2>
+  <h2 style="margin-top:20px;max-width:36ch">Four things advisors told us, all pointing the same way.</h2>
   <div class="said-grid">
     <div>
-      <q>Sometimes we read our email, sometimes we don&rsquo;t. And it&rsquo;s always the one time we might not.</q>
+      <q>Do we have a place on the Internet where all these meet-and-greet services are listed?</q>
+      <div class="when">Advisor &middot; 21 May &middot; the answer was no</div>
+      <div class="then">There was nowhere to look. Every question like this one ended at somebody&rsquo;s memory.</div>
+    </div>
+    <div>
+      <q>I had a Hawaii list that I took off the Internet&hellip; found out that this was pre-Covid. So a lot of those restaurants were closed already.</q>
       <div class="when">Advisor &middot; 30 April</div>
-      <div class="then">So we stopped sending notices to the inbox and put them on the record itself, where the work already happens.</div>
+      <div class="then">When there was somewhere to look, it was the open web, and it answered confidently with things that had closed years ago.</div>
     </div>
     <div>
-      <q>Literally every single time I do a booking I am looking at the website at the same time&hellip; sometimes I even look at the square footage.</q>
-      <div class="when">Advisor &middot; 21 May</div>
-      <div class="then">So the record shows every source it has and refuses to pick between them. A person chooses, and their reason is kept.</div>
-    </div>
-    <div>
-      <q>Twenty per cent commission until June&hellip; I&rsquo;ve never seen them do that before&hellip; obsolete come July 1st.</q>
-      <div class="when">Advisor &middot; 23 April</div>
-      <div class="then">So a commission carries the day it stops being true, and the product says so before the day arrives rather than after.</div>
+      <q>I don&rsquo;t want to rely on information it gives me because it&rsquo;s just information from the Internet.</q>
+      <div class="when">Advisor &middot; 16 April</div>
+      <div class="then">So a general assistant was never going to be used here, however good the writing was.</div>
     </div>
     <div class="is-lead">
-      <q>We want sharing appropriate data, but we want to make sure we&rsquo;re not sharing sensitive data&hellip; as far as client data.</q>
-      <div class="when">The agency lead &middot; 30 April</div>
-      <div class="then"><b>This one contradicted a decision we had already made and shipped, so it gets the slide after next.</b></div>
+      <q>It&rsquo;s better than AI because it&rsquo;s all of our proprietary data that&rsquo;s been vetted.</q>
+      <div class="when">The agency lead &middot; 23 April</div>
+      <div class="then"><b>The agency describing the product back to us. Search our own material instead of the web, and the trust problem goes away.</b></div>
     </div>
   </div>
+  <div class="cap calls-foot">Four complaints, one obvious conclusion: <b>they could not find what they already knew.</b> So we built them somewhere to look.</div>
 </section>
 
 <!-- ─── the first build, before the challenges ─── -->
@@ -230,35 +231,42 @@
 </section>
 
 <!-- 13 -->
-<section class="slide is-statement" data-note="The intellectual move of the whole project. Say it slowly.">
-  <span class="eyebrow">What we changed</span>
-  <p class="said">Retrieval was never the problem.</p>
-  <p class="after">The knowledge already existed and was already accurate — it was sitting unread in
-  inboxes and portals. What was missing was structure, a source on every fact, and a permission
-  attached to it. So the data model came before any screen, and chat became one door among several
-  rather than the product.</p>
+<section class="slide is-statement has-ev" data-note="The intellectual move of the whole project. Say the headline slowly, then stop. The three on the right are why: the text was boilerplate, the money did not resolve to anything, and none of it could be switched on until the agency knew who could see what. That third one is the next slide.">
+  <div class="col-a">
+    <span class="eyebrow">What we changed</span>
+    <p class="said">Retrieval was never the problem.</p>
+    <p class="after">The agency&rsquo;s own material was not a trustworthy thing to search either. Once we looked at what was in it, the work stopped being retrieval and started being structure, attribution and permission.</p>
+    <p class="after"><strong>So the data model came before any screen, and chat became one door among several rather than the product.</strong></p>
+  </div>
+  <div class="col-b">
+    <ul class="ev">
+      <li><b>93% of the amenities text</b> across 3,280 properties was template boilerplate &mdash; <em>&ldquo;View Hotel &mdash; experience refined luxury&hellip;&rdquo;</em> &mdash; not editorial anyone had written. <span>Database review &middot; March 2026</span></li>
+      <li><b>Commission was arriving under a traveller&rsquo;s name</b> instead of the agency&rsquo;s, against properties that did not resolve to anything: &ldquo;Currency Cloud&rdquo;, &ldquo;Pipery Hotel&rdquo;. <span>Advisor &middot; 23 April</span></li>
+      <li><b>And none of it could be switched on</b> until the agency knew who would see what: &ldquo;we want to make sure we&rsquo;re not sharing sensitive data&hellip; as far as client data.&rdquo; <span>The agency lead &middot; 30 April</span></li>
+    </ul>
+  </div>
 </section>
 
 
 <!-- 7c — one signal traced from call to decision to feature -->
-<section class="slide is-split is-wide" data-note="This is the answer to how a call becomes a feature. The point is not that we changed our mind — it is that we had written down, a month earlier, what would make us change it. Land on that. Then point at the sheet: three tiers, and money gated separately from all three.">
+<section class="slide is-split is-wide" data-note="This is the engineering argument, and it is the one that separates this from a RAG demo. Lead with the failure: documents in, answers out, wrong too often to be used. Then the move — permission is a property of the record, so an answer cannot leak what the model will not join. Then the metric we wrote so it could fail. Only then the sharing tiers, as that model showing up on a screen.">
   <div class="art shot"><img src="assets/screens/21-sharing-sheet.png" alt="The sharing panel: private to you, Collaborator Full, Collaborator Basic, with spend held behind the commission entitlement at every tier."></div>
   <div class="words">
-    <span class="eyebrow">One of them, followed all the way through</span>
-    <h3>We wrote the sharing rule in March, along with the thing that would make us tear it up. A month later that thing happened.</h3>
+    <span class="eyebrow">Why the data model came before the screens</span>
+    <h3>Permission had to live in the data model. A filter on the answer was never going to hold.</h3>
     <ul class="chain">
-      <li><em>31 March &middot; decided</em>
-        <b>Sharing a traveller is all or nothing.</b>
-        <span>An advisor hands over the whole profile or none of it. We wrote the revisit condition into the decision itself: reopen this if advisors refuse to share because of sensitive notes.</span></li>
-      <li><em>30 April &middot; heard</em>
-        <b>The agency lead argued both sides in one call.</b>
-        <span>He wanted notes shared &mdash; &ldquo;you don&rsquo;t necessarily have to be on this call to retrieve that information&rdquo; &mdash; and in the same conversation drew the line at client data. He also kept the finance dashboard out of it entirely.</span></li>
-      <li><em>The same week &middot; reopened</em>
-        <b>That was our condition, met almost word for word.</b>
-        <span>Nobody had to argue for reopening it. We had already agreed in March what would earn a second look, so the only question left was what replaced it.</span></li>
-      <li><em>Shipped &middot; and still standing</em>
-        <b>Three tiers, and money is not one of them.</b>
-        <span>Full lets a colleague edit and run Acuity but never re-share. Basic is a name and a contact, for an introduction. Spend sits behind a separate permission at every tier, because who you trust with a client is a different question from who you trust with the numbers.</span></li>
+      <li><em>The failure</em>
+        <b>Documents in, answers out, wrong too often to use.</b>
+        <span>Pointing a model at the agency&rsquo;s files gave confident answers that were wrong often enough that an advisor would stop trusting the whole product inside a week. And when one was right, it was sometimes right about a commission the reader was not entitled to see.</span></li>
+      <li><em>The move</em>
+        <b>We made permission a property of the record, not a filter on the output.</b>
+        <span>Everything lands private by default. Every reverse lookup is gated by the record&rsquo;s own sharing rules, and commission sits behind its own entitlement on top of that. An answer cannot leak what the model will not join in the first place.</span></li>
+      <li><em>The measure</em>
+        <b>We wrote the target so it could fail.</b>
+        <span>Time to Trusted Answer: an answer only counted if it arrived with its sources, its freshness, a confidence label or a plain &ldquo;I don&rsquo;t know&rdquo; &mdash; and zero permission leakage. Any override is auditable.</span></li>
+      <li><em>On the left</em>
+        <b>The sharing tiers are that model showing up on a screen.</b>
+        <span>In March we made sharing all or nothing, and wrote down what would reopen it. In April the agency lead met that condition almost word for word, so it became Full and Basic. Money stayed behind its own permission at every tier.</span></li>
     </ul>
   </div>
 </section>
@@ -345,9 +353,27 @@
 </section>
 
 <!-- ─── loop 2 ─── -->
+<!-- where the review work comes from, before the review screen itself -->
+<section class="slide is-full" data-note="Do not skip to the form. Say the path out loud: an advisor forwards a rate sheet into the vault, or an administrator connects a portal, and the extractor proposes records off the back of it. Point at the held row — Villa ???? — that is the extractor declining to guess. Then say the rule: nothing reaches an answer until a named person confirms it. The form on the next slide is the bill for that rule.">
+  <div class="head"><span class="step made">Challenge 1 &middot; how you get here</span><h3>A document lands, or a system syncs. Either way a person has to confirm what came out.</h3></div>
+  <div class="art">
+    <div class="duo">
+      <figure class="is-doc">
+        <div class="box"><img src="assets/screens/18-knowledge.png" alt="The knowledge vault: documents an advisor has forwarded in, each with its source and date."></div>
+        <figcaption>1 a rate sheet is forwarded into the vault</figcaption>
+      </figure>
+      <figure class="is-doc">
+        <div class="box"><img src="assets/screens/22-review-queue.png" alt="Confirm new records: three candidates with their source URIs, one a possible duplicate, one held at low confidence."></div>
+        <figcaption>2 candidates queue up, with the file they came from</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="cap">The other way in is a connection an administrator sets up, and it lands in the same queue. Each candidate keeps the file it came from &mdash; <b>gdrive://dmc-kyoto-2026.xlsx</b>, <b>portal://meridian</b> &mdash; and one row is held rather than proposed, because the source line was unreadable. <b>Nothing here reaches an answer, a card or a search until a named person confirms it.</b> That rule is not negotiable, so the only question was what confirming one should cost.</div>
+</section>
+
 <!-- 14 -->
-<section class="slide is-full" data-note="They asked for this. We built exactly it. Do not mock the request — it was reasonable.">
-  <div class="head"><span class="step made">Challenge 1 · first attempt</span><h3>They asked to check every field by hand.</h3></div>
+<section class="slide is-full" data-note="They asked for this and we built exactly it. Do not mock the request — when your business is the terms being right, checking them is not paranoia. Read the two numbers off the slide and let the silence do the work.">
+  <div class="head"><span class="step made">Challenge 1 · first attempt</span><h3>We let them check every field by hand. This is what that cost.</h3></div>
   <div class="art shot"><img src="assets/plates/form.png" alt="The first review interface: field 11 of 87, record 3 of 214."></div>
   <div class="cap"><b>Field 11 of 87. Record 3 of 214.</b> A completely reasonable request from people
   whose business depends on the terms being right.</div>

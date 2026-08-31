@@ -480,3 +480,35 @@ body.settled #help { opacity: 0; }
 
 /* a text-only slide, held on the vertical centre rather than hung from the top */
 .is-mid { justify-content: center; }
+
+/* the line that sends the calls slide into the first build */
+.calls-foot { margin-top: 34px; font-size: 19px; line-height: 1.45; color: var(--ink-3); }
+.calls-foot b { color: var(--ink-2); font-weight: 600; }
+
+/* ── what we found when we looked at the agency’s own data ──────────── */
+
+.ev { margin-top: 30px; list-style: none; display: grid; gap: 14px; max-width: 62ch; }
+.ev li {
+  padding-left: 18px; position: relative;
+  font-size: 18px; line-height: 1.45; color: var(--ink-2);
+}
+.ev li::before {
+  content: ""; position: absolute; left: 0; top: 11px;
+  width: 5px; height: 5px; border-radius: 50%; background: var(--ink-4);
+}
+.ev li b { color: var(--ink); font-weight: 500; }
+.ev li em { font-style: italic; color: var(--ink-3); }
+.ev li span {
+  display: block; margin-top: 4px;
+  font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.09em;
+  text-transform: uppercase; color: var(--ink-4);
+}
+.is-statement .ev + .after { margin-top: 28px; }
+
+/* the pivot slide carries its evidence beside the claim, not under it */
+.is-statement.has-ev { flex-direction: row; gap: 70px; align-items: center; }
+.is-statement.has-ev .col-a { flex: 1 1 50%; min-width: 0; }
+.is-statement.has-ev .col-b { flex: 1 1 50%; min-width: 0; }
+.is-statement.has-ev .said { max-width: 14ch; }
+.is-statement.has-ev .after { max-width: 40ch; }
+.is-statement.has-ev .ev { margin-top: 0; max-width: none; gap: 24px; }
