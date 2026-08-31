@@ -60,47 +60,59 @@ This is the longest and most important one. Budget seven minutes and protect it.
 **State:** press `0`, then `3`. Advisor, current build, `/records/maison-leandre`.
 
 **a. Provenance**
-1. The record opens on its photography. Say the property name, then scroll past it — the gallery is
+1. The record opens on its photography. Name the property, then scroll once — the pictures are
    orientation, not the point.
-2. Point at the three sections: canonical, agency overlay, personal. Each now carries a line saying
-   what the layer is: *published by Enable, not yours to edit* · *what your agency has decided, sitting
-   over the canonical value beneath it*.
-3. **Click a field value** — Address, or Rooms — to open its provenance popover. Press `Escape`.
-4. Point at **Pool hours · 96d unverified** and click **Verify against source**. It becomes
+2. **Stop on the Summary card.** Everything unsettled about this record is gathered here before any
+   of the detail: the commission still pending, three sources disagreeing, a notice that has been
+   open seventy-six days, and a promotion with sixteen days left to run. An advisor can read the
+   state of a record without reading the record.
+3. Point at the three sections underneath: canonical, agency overlay, personal. Each carries a line
+   saying what the layer is — *published by Enable, and not yours to edit* · *what your agency has
+   decided, sitting over the canonical value beneath it* · *yours, scoped when you write it*.
+4. **Click a field value** — Address, or Rooms — to open its provenance popover. Press `Escape`.
+5. Point at **Pool hours · 96d unverified** and click **Verify against source**. It becomes
    *verified today · R. Devane*.
 
 **b. The disagreement**
-5. Scroll to **Commission** in the agency overlay. Three values: 12% partner portal, 10% booking
-   platform, 14% keyed by hand.
-6. Click **Resolve 3 sources**. There are two of these — one on the commission row, one in the rail
-   at the top right beside *3 sources disagree*. The rail one is the safer click; it is visible without
-   scrolling and it is a filled button.
-7. Walk the sheet: every value keeps its source, its date, and how many others agree. The label is
+6. Scroll to **Commission** in the agency overlay. The three values sit on the row itself, each with
+   where it came from and when: 12% partner portal, 12 Mar · 10% booking platform, 28 Feb · 14% keyed
+   by hand, 3 Apr.
+7. Click **Resolve 3 sources** — the filled dark button on the commission row, beside *3 sources
+   disagree*.
+8. Walk the sheet: every value keeps its source, its date, and how many others agree. The label is
    words, not a score — *signed terms*, *superseded rate*, *uncorroborated*.
-8. Point at **where this value goes** — the directory row, the quotes, the answers in chat.
-9. **Select any of the three.** Take 14% — the manual entry — precisely because a ranking rule would never have chosen it.
-10. Type a reason. Commit.
+9. **Select any of the three.** Take 14% — the manual entry — precisely because a ranking rule would
+   never have chosen it. It marks itself *Selected*.
+10. Now point at **where this value goes** and let them watch it change: directory row, quotes and
+    proposals, answers in chat, all three now reading 14%. One decision, three places, and the three
+    follow the one in front of you.
+11. Point at **the other fields**: address and rooms canonical, programme and rep firm agency, and
+    *only commission is in dispute*. The sheet also says what it is not asking you to decide.
+12. Type the reason. It is required, not optional — the field says so. Then commit with the button
+    that reads **Store 14% at the agency layer**. It names the layer it is writing to, so nobody has
+    to guess afterwards where the decision went or who can see it.
 
 **c. Scope of what you write**
-10. Click **Add note…**, type a line.
-11. **Stop on the scope picker.** Three options, each with who it means:
+13. Click **Add note…** — it is on the Summary card at the top as well as in the personal
+    section — and type a line.
+14. **Stop on the scope picker.** Three options, each with who it means:
     **Private** — only R. Devane · **Team** — Paris desk · **Agency-wide** — every advisor.
     This is the three layers as a choice the advisor makes, every time they write anything down.
-12. Choose **Team**, save. The banner reads
+15. Choose **Team**, save. The banner reads
     *Note saved — team · Paris desk · attributed and dated.*
 
 *Verified end to end: composer opens, three scopes render, the save confirms with attribution.*
 
 **d. Permission — end on this**
-13. Switch to the colleague. Fastest route is the console:
+16. Switch to the colleague. Fastest route is the console:
     ```js
     const s=JSON.parse(sessionStorage.getItem('enable-demo-state'));
     s.role='colleague'; sessionStorage.setItem('enable-demo-state',JSON.stringify(s));
     location.href='/records/maison-leandre'
     ```
     Or sign out via the dock account and sign in as **J. Dubois**.
-14. Same record. **The commission row is not there.** Not greyed, not padlocked — absent.
-15. Also gone: R. Devane's private note, the agent terms block, the active promotion. The team note
+17. Same record. **The commission row is not there.** Not greyed, not padlocked — absent.
+18. Also gone: R. Devane's private note, the agent terms block, the active promotion. The team note
     you just wrote survives, because you scoped it to the team.
 
 **Also worth pointing at:** in the colleague's conversation list, the Maison Léandre thread shows
@@ -118,9 +130,11 @@ their drive and not connecting it.
 - The colleague can still see a contact row reading **L. Berger · Commission contact**. If they spot
   it, that is a real gap and the honest answer is that the rule holds for values and not yet for
   the people attached to them.
-- The record opens on a three-image gallery, so the fields sit below the fold. The rail does show the
-  commission state on open — *pending · 3 sources disagree · Resolve 3 sources* — so you can point there
-  first and scroll second.
+- *Changed 31 Aug.* The record was rebuilt: the right-hand rail is gone and a full-width **Summary**
+  card took its place, so there is now only one **Resolve 3 sources** button and it is on the commission
+  row in the agency overlay. The gallery fills the first screen, so scroll once on arrival — the
+  Summary card is immediately under it and carries the commission state, the open notice and the
+  promotion countdown.
 
 ---
 
