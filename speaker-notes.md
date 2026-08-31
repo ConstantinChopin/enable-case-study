@@ -1,10 +1,10 @@
 # Enable — speaker notes
 
-Thirty-eight slides. Roughly **six minutes** front, **twenty** live in the prototype,
+Thirty-nine slides. Roughly **seven minutes** front, **twenty** live in the prototype,
 **twelve** back. The live section has its own script in `demo-script.md`.
 
-Press `N` on localhost to see the per-slide note on screen. This document is the
-longer version, in your words, for rehearsing.
+Press `N` on localhost to see the per-slide note on screen. This is the longer
+version, in your words, for rehearsing.
 
 Rules for yourself on the day:
 - Do not read the slides. They are the evidence; you are the argument.
@@ -13,11 +13,11 @@ Rules for yourself on the day:
 
 ---
 
-## FRONT — six minutes
+## FRONT — seven minutes
 
 ### 1–4 · Prior work
 
-Four full-bleed slides, no titling. Six seconds each — you name them aloud.
+Six seconds each. You name them aloud; nothing on the slides does.
 
 > "Replika, the AI companion. I led design engineering on memory and onboarding,
 > forty-two million users." → "Parable, an intelligence layer for enterprise
@@ -25,159 +25,148 @@ Four full-bleed slides, no titling. Six seconds each — you name them aloud.
 > to one, for R/GA, WPP and Kering." → "Lightnote, a creative toolkit that lived in
 > the terminal and was given a canvas. Open source."
 
-Then straight into Enable. Do not linger.
-
 ### 5 · Enable
-
-Ten seconds. Name yourself, name the project, go.
 
 > "Enable. I was the founding product designer. A single source of truth for luxury
 > travel."
 
 ### 6 · The problem
 
-Sixty seconds. **The point is that the industry is fragmented by vertical.**
+Sixty seconds.
 
-> "This industry runs on a lot of tools, and they split two ways. Some of them make
-> you productive — itinerary builders, booking systems, the things that get a trip
-> out of the door. Others own exactly one vertical of your data: your clients, or
-> your itineraries, or your drive, or your negotiated terms.
+> "This industry runs on a lot of tools, and they split two ways. Some make you
+> productive — itinerary builders, booking systems, the things that get a trip out
+> of the door. Others own exactly one vertical of your data: your clients, or your
+> itineraries, or your drive, or your negotiated terms.
 >
 > Nobody was building the place where all of that meets. So the advisor is the
-> integration layer. They assemble that picture by hand, on every single trip."
+> integration layer. They assemble that picture by hand, on every trip."
 
 ### 7 · The tools they already had
 
-Point at two, not four. Let the gap between them do the work.
+Point at two, not four.
 
-> "These are the real products. A GDS terminal that looks like 1985, next to a
-> client trip app from last year. None of them holds the commission, the amenities
-> and the client at the same time."
+> "A GDS terminal that looks like 1985, next to a client trip app from last year.
+> None of them holds the commission, the amenities and the client at the same time."
 
-If asked: these are the vendors' own product shots, not the partner's instance.
+If asked: vendors' own product shots, not the partner's instance.
 
 ### 8 · Where we built
 
-**Do not walk the eleven stages.**
+Do not walk the eleven stages. **This is where you say why the wedge, and why now.**
 
 > "An advisor's sale runs across eleven stages. We built into the first five.
 >
-> Here is why. By stage five they have to produce that document on the right. That
-> is the artefact that makes a recommendation official — the thing the client
-> actually reads and books from. Everything in it was gathered by hand, across the
-> six systems on the left.
+> By stage five they have to produce that document on the right — the artefact that
+> makes a recommendation official, the thing the client reads and books from. And
+> everything in it was gathered by hand across the six systems on the left.
 >
-> That front stretch is where the knowledge work concentrates, and it is the part
-> nobody was building. It is also unpaid. Every hour before stage five is an hour
-> nobody pays for."
+> We chose that stretch because we wanted to go to market fast and there was a real
+> opening: nobody was trying to be the single source of truth. Everyone else owned a
+> vertical.
+>
+> And our advantage was that we were AI-native from the first commit. The
+> competition were older tools that would need years to catch up to where we could
+> start."
 
 ### 9 · The design partner
 
-Ten seconds. Do not read the names.
-
-> "We worked with a travel agency in Boston. Weekly, for eight months. Every
-> decision in the back half of this deck traces to something one of these people
-> said in a room."
+> "A travel agency in Boston. Weekly, for eight months. Every decision in the back
+> half of this deck traces to something one of these people said in a room."
 
 ### 10 · What the agency bought
 
-> "What they bought was a single source of truth — one model that ingests
-> everything and then makes it available across several different surfaces.
+> "One model that ingests everything and makes it available across several surfaces.
+> Six systems in, one model, and out to the record, Ask, the briefing, the itinerary,
+> the traveller and the vault.
 >
-> Six systems in. One model. And out to Ask, the product record, the briefing room,
-> the itinerary and the traveller profile.
->
-> On the right is one record out of the directory, running. Every field carries
-> where it came from and when."
+> On the right is one record out of the directory, running. Every field carries where
+> it came from and when."
 
 The record is live — you can scroll it.
 
-### 11–14 · The surfaces
+### 11–16 · The surfaces
 
-One slide each, so your arrow keys walk them. Ten to fifteen seconds apiece — this
-is a look at the shape of the product, not a tour. The numbers match the diagram on
-the previous slide.
+One slide each, so your arrow keys walk them. Ten to fifteen seconds apiece. The
+numbers match the diagram you were just on.
 
+> **The product record** — "Start here, because every other surface is a view onto
+> this. One thing in the directory, every field attributed."
+>
 > **Ask** — "The door people expect. It answers out of the model rather than the web,
 > and every line is cited to a record it can name."
 >
 > **The briefing** — "The morning screen. What changed overnight, what expires soon,
-> what is waiting on somebody. This is the one the agency lead asked for by name."
+> what is waiting on somebody. The agency lead asked for this one by name."
 >
-> **The itinerary** — "The work in progress. Nothing here is re-keyed — a rate on an
-> itinerary is the same value the record holds, not a copy of it."
+> **The itinerary** — "The work in progress. Nothing is re-keyed — a rate here is the
+> same value the record holds, not a copy."
 >
-> **The traveller** — "Who the work is for. Every preference with a source and a
-> date, and what the product suggests kept visibly separate from what a person
-> confirmed."
+> **The traveller** — "Who the work is for. Every preference with a source and a date,
+> and what the product suggests kept separate from what a person confirmed."
+>
+> **The knowledge vault** — "And this is the way in. Everything the model knows
+> arrived through here or through a connection."
 
-Then: "All four read from the same model. That is the whole idea."
+### 17 · How we worked
 
-### 15 · How we worked
-
-This is the constraint that explains the whole method. Do not apologise for having
-no Figma files — this is the reason.
+The constraint that explains the method. Do not apologise for having no Figma files.
 
 > "Our constraint was time. We had to validate an MVP fast, we were shipping weekly
 > and sometimes twice, and we had two calls a week with the design partner.
 >
-> We started in Figma. I was reviewing designs with the product manager, and we were
-> simply not going fast enough for that cadence. So we moved to a code-first
-> approach — the prototype became the specification, and it kept moving.
+> We started in Figma. I was reviewing designs with the product manager and we were
+> not going fast enough for that cadence. So we moved to a code-first approach — the
+> prototype became the specification, and it kept moving.
 >
 > The PM owned the roadmap and held the scope so the engineers had something
 > workable. My job was to take what came out of those calls and shape it into
 > journeys that made sense to use."
 
-### 16 · What the calls produced
+### 18 · What the calls produced
 
-Read the first two aloud. Point at the third. Read the agency lead's line slowly —
-**that is the brief you were given, and you followed it.**
+Read the first two aloud. Point at the third. Read the agency lead's line slowly.
 
-> "Everything we heard early pointed the same way: they could not find what they
-> already knew. There was nowhere to look. When there was, it was the open web, and
-> it answered confidently about restaurants that closed years ago.
+> "Everything early pointed the same way: they could not find what they already knew.
+> There was nowhere to look, and when there was, it was the open web answering
+> confidently about restaurants that closed years ago.
 >
-> And then the agency lead described the product back to us: better than AI, because
-> it is all our own vetted data.
+> Then the agency lead described the product back to us: better than AI, because it
+> is all our own vetted data.
 >
 > So we built them somewhere to look."
 
-### 17–18 · The first build
+### 19–20 · The first build
 
-> "A conversational interface over the agency's own documents — Notion, Google
-> Drive, exports out of their intranet — and results as cards.
+> "A conversational interface over their own material — Notion, Google Drive, exports
+> out of the intranet — with results as cards beside a generated answer.
 >
-> It demoed well. The conversation flowed, the shelf filled up.
->
-> Then you read the cards. Hotel name. Location. Description. Ask it for a Japan
-> itinerary and it comes back with cherry-blossom festivals cited to Reddit, when
-> what was needed was the agency's own negotiated terms. The model was making too
-> many errors to be used."
+> It demoed well. Then you read the cards. Hotel name. Location. Description. Ask for
+> a Japan itinerary and it returns cherry-blossom festivals cited to Reddit, when what
+> was needed was the agency's negotiated terms. It was wrong too often to use."
 
-### 19 · Retrieval was never the problem
+### 21 · Retrieval was never the problem
 
 **The intellectual move of the project. Say the headline, then stop.**
 
-> "Retrieval was never the problem.
+> "Retrieval was never the problem. And it was never one body of data.
 >
-> Their own material was not a trustworthy thing to search either. Ninety-three per
-> cent of the amenities text across three thousand properties was template
-> boilerplate. Commission was arriving under a traveller's name against properties
-> that resolved to nothing. And none of it could be switched on until the agency
-> knew who would see what.
+> Three different kinds were sitting in the same folders pretending to be one.
+> Canonical industry data — what a property is, published once, shared by every
+> agency, and not theirs to edit. Agency data — the negotiated terms, the programme,
+> the rep firm, which is the commercially sensitive layer. And user data — an
+> advisor's own notes and what they have promised a client.
 >
-> So the data model came before any screen, and chat became one door among several
-> rather than the product."
+> Nothing said which was which. So the model came before any screen: three layers, a
+> source on every field, and permission built in rather than added on."
 
-### 20 · Permission in the data model
+### 22 · Three layers, permission in the model
 
-**This is the engineering argument, and it is what separates this from a RAG demo.**
+**The engineering argument. This is what separates it from a RAG demo.**
 
 > "Pointing a model at their files gave confident answers that were wrong often
-> enough that an advisor would abandon the product inside a week. And when one was
-> right, it was sometimes right about a commission the reader was not entitled to
-> see.
+> enough to lose an advisor inside a week. And when one was right, it was sometimes
+> right about a commission the reader was not entitled to see.
 >
 > So permission became a property of the record rather than a filter on the output.
 > Everything lands private by default. Every reverse lookup is gated by the record's
@@ -186,113 +175,117 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 >
 > And we wrote the target so it could fail: Time to Trusted Answer. An answer only
 > counts if it arrives with its sources, its freshness, a confidence label or a plain
-> 'I don't know' — and zero permission leakage.
+> 'I don't know' — and zero permission leakage."
+
+### 23–24 · What changed
+
+> **For the advisors** — time from client request to a personalised first proposal,
+> time saved on daily administration, and the ratio underneath both: three to five
+> proposals built for every booking that lands, the rest unpaid.
 >
-> The sharing panel on the left is that model showing up on a screen."
+> **For the business** — "Bootstrapped, so the outcomes were different. Sign the
+> design partner. Have an MVP the sales team could take to the agencies already in
+> the pipeline. And give the CEO something tangible enough to put in front of
+> investors for letters of intent."
 
-### 21–22 · What changed
+⚠ **Say the method for every number, or drop the number.** See the open list below.
 
-> **For the advisors** — "Client request to a personalised first proposal. Time
-> saved on daily administrative work. And the ratio that makes those hours
-> expensive: they build three to five proposals for every booking that lands, and
-> the rest are unpaid."
->
-> **For the business** — "This was a bootstrapped startup, so the outcomes it was
-> judged on were different. Sign the design partner. Have an MVP the sales team
-> could take to the agencies in the pipeline. And give the CEO something tangible
-> enough to put in front of investors for letters of intent."
-
-⚠ **Say the method for every number, or drop the number.** Which are logged, which
-are advisor-reported, which are the agency's own figures. See the open questions
-at the end of this file.
-
-### 23 · Handoff
+### 25 · Handoff
 
 > "Rather than describe it, let me use it."
 
-Switch windows. `demo-script.md` from here. Come back to slide 24.
+Switch windows. `demo-script.md` from here. Come back to slide 26.
 
 ---
 
 ## LIVE — twenty minutes
 
-Four journeys, in `demo-script.md`:
 **J1** the day arrives · **J2** a record, and who may see it · **J3** ingestion ·
 **J4** an answer, and a refusal.
 
-Protect J2. It is the longest and the most important.
+Protect J2. The conflict resolution lives here now — it is no longer a slide, so
+this is the only place it gets told.
 
 ---
 
 ## BACK — twelve minutes
 
-### 24 · The map
+### 26 · The map
 
-> "Three design challenges. Every one of them we got wrong first. Each runs the same
-> beats — the first attempt, what came back from the desk, and where we landed.
-> After the three there is one more thing, which is a mistake of mine nobody caught."
+> "Three design challenges we worked through. Each one runs the same beats: what we
+> tried first, what came back from the desk, and where we landed. After the three
+> there is one more thing, which is a mistake of mine nobody caught."
 
-### 25–28 · Challenge 1 — getting records right on the way in
+### 27–30 · Challenge 1 — a person in the loop on the way in
 
-> "First, how the work arrives. An advisor forwards a rate sheet into the vault, or
-> an administrator connects a portal, and the extractor proposes records off the
-> back of it. Each candidate keeps the file it came from. That row is held rather
-> than proposed, because the source line was unreadable — the extractor declining to
-> guess.
+> "The material arrives unstructured, from a dozen sources in a dozen formats, and
+> somebody has to agree how it maps onto a record.
 >
-> The rule is that nothing reaches an answer, a card or a search until a named
-> person confirms it. That was not negotiable. So the only question was what
-> confirming one should cost.
+> An advisor forwards a rate sheet into the vault, or an administrator connects a
+> portal. The extractor proposes records off the back of it, and the vault tells you
+> so — three records waiting to be confirmed — which is the way through to the queue.
+> Each candidate keeps the file it came from. One is held rather than proposed,
+> because the source line was unreadable: the extractor declining to guess.
 >
-> We let them check every field by hand, because that is what they asked for, and
-> when your business is the terms being right that is not paranoia. Field eleven of
-> eighty-seven. Record three of two hundred and fourteen.
+> The rule was not negotiable — nothing reaches an answer, a card or a search until a
+> named person confirms it. So the only question was what confirming one should cost.
+>
+> First we gave them the whole mapping. Every field, by hand. Field eleven of
+> eighty-seven, record three of two hundred and fourteen. They had asked for it, and
+> when your business is the terms being right, that is not paranoia.
 >
 > It worked, and nobody was ever going to finish it.
 >
-> So we kept the check and changed its shape. A fixed list of the questions a travel
-> designer actually needs answered, rather than every field in the schema. Each one
-> arrives as a card: the claim, the quoted line, the page. Two rows here are held
-> rather than offered — a converted figure with no source currency, and boilerplate
-> copy. And when a document is silent, that is recorded as silence. An absent answer
-> is not a no."
+> So we changed what confirming means. Every field arrives already filled, with the
+> line it came from and where in the document that line sits. Each carries how
+> confident the extraction is, so you know which rows to actually look at. You
+> validate rather than type. And confirming stamps the record with your name and the
+> date — every value on this record traces to somebody who agreed to it."
 
-### 29–31 · Challenge 2 — showing a conflict instead of hiding it
+### 31–32 · Challenge 2 — a workspace, not a dashboard
 
-> "Three systems said three different things about one commission rate. So we built
-> a ranking rule to settle it automatically.
+> "We built the layout every comparable tool uses: a left rail, and the conflict on
+> its own page. It worked.
 >
-> What came back was that there is no authority. Nobody in that building could tell
-> me which system was right, because the answer depends on the contract, and the
-> contract is the thing in dispute.
+> But the rail cost about two hundred and thirty pixels of width permanently, on the
+> screens that need it most. And advisors did not move section to section like a
+> website — they moved workspace to workspace, all day, in a loop, closer to how they
+> use a phone than a site. Our users live in an iOS environment, and each room needed
+> to feel like its own small app rather than a section of a dashboard.
 >
-> So we show all three, and a person has to choose. Every value keeps its source, its
-> date, and how many others agree with it. The choice is stored at the agency layer,
-> with the reason, so the same conflict is never re-litigated."
+> So navigation went to the bottom, and the decision moved onto the record. Resolving
+> a rate stopped being a page of its own — it only makes sense while you can still see
+> the fields it sits among.
+>
+> The cost was about seventy pixels of height, permanently, and a pattern rare enough
+> here that it only reads as considered if it behaves well."
 
-### 32–33 · Challenge 3 — a workspace, not a website
+### 33–34 · Challenge 3 — changing a record at the right level
 
-> "We built the layout every comparable tool in this category uses — a left rail, and
-> the conflict on its own page. It worked.
+> "An advisor corrects a rate. That might be a note to themselves, or something their
+> desk needs, or the agency changing its official position — and whoever reads it next
+> has to know which. The first version gave them a text box and stored whatever they
+> typed. It never asked who the change was for.
 >
-> But the rail cost about two hundred and thirty pixels of width permanently, on
-> exactly the screens that need it most. And advisors did not move section to section
-> like a website. They moved workspace to workspace, all day, in a loop — closer to
-> how they use their phone than how they use a site. So navigation went to the
-> bottom, and each room became its own thing rather than a section of a dashboard.
+> So now the scope question comes first, before the value, because it is the one an
+> advisor gets wrong. Just me, my team, or the whole agency — each with the people it
+> means written underneath it.
 >
-> Resolving a rate stopped being a page of its own. The decision only makes sense
-> while you can still see the fields it sits among.
+> Scope decides the layer, so a private correction never becomes the agency's position
+> by accident, and the canonical value underneath stays readable.
 >
-> The cost was about seventy pixels of height, permanently, and a pattern rare
-> enough here that it only reads as considered if it behaves well."
+> And agency-wide goes to a lead for review. An advisor can propose the agency's
+> position. They cannot set it.
+>
+> A reason is required, and the line above the button says what will happen before it
+> happens — live immediately, or waiting on review."
 
-### 34–36 · What I got wrong
+### 35–37 · What I got wrong
 
 **Do not soften this. It is the strongest thing in the deck.**
 
-> "We had written down that the advisor decides. Then I shipped a screen that said
-> the advisor decides and quietly decided for them.
+> "We had written down that the advisor decides. Then I shipped a screen that said the
+> advisor decides and quietly decided for them.
 >
 > I fixed what the screen offered. I did not check what it committed.
 >
@@ -300,11 +293,11 @@ Protect J2. It is the longest and the most important.
 > the model, or in a test, or it will be true on the day you write it and false a
 > month later."
 
-### 37 · Reflection
+### 38 · Reflection
 
 > "What I would challenge if I picked it up again."
 
-### 38 · Questions
+### 39 · Questions
 
 Stop talking. Ten minutes.
 
@@ -312,12 +305,10 @@ Stop talking. Ten minutes.
 
 ## Open before you present
 
-1. **The metrics on 17 and 18.** Say the method for each figure or cut it. Any
-   number you cannot source is worse than no number in front of these two.
-2. **"There is no authority"** on slide 30 has no source in the evidence pack. Either
-   place it or drop the quotation marks and own it as your line.
-3. **The quotes on slide 16** are attributed by role because that is all the
+1. **The metrics on 23 and 24.** Say the method for each figure or cut it. Any number
+   you cannot source is worse than no number in front of these two.
+2. **The quotes on slide 18** are attributed by role because that is all the
    transcripts carry. If you know which advisor said which, name them.
-4. **Both repos are public.** The deck and the app.
-5. If you present from the deployed deck, the live record on slide 10 needs the app's
+3. **Both repos are public.** The deck and the app.
+4. If you present from the deployed deck, the live record on slide 10 needs the app's
    Vercel deploy to be current. From localhost, both are running.
