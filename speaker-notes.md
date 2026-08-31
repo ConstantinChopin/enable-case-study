@@ -294,8 +294,15 @@ this is the only place it gets told.
 
 **Do not soften this. It is the strongest thing in the deck.**
 
-> "We had written down that the advisor decides. Then I shipped a screen that said the
-> advisor decides and quietly decided for them.
+> "Point at the three Keep buttons before you say anything else — only the first of
+> them used to exist, and if you do not point first the screenshot argues against you.
+>
+> You used this sheet earlier. I wrote the principle behind it: when sources disagree,
+> show every one and make a person choose. I argued for it against a faster
+> implementation and put it in the product’s own words. Then I shipped it showing all
+> three and offering a way to keep only the first. The screen said the advisor decides
+> and then decided for them. What you are looking at is the version after that was
+> caught.
 >
 > I fixed what the screen offered. I did not check what it committed.
 >
