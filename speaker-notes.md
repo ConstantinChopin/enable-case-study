@@ -113,7 +113,7 @@ the previous slide.
 
 Then: "All four read from the same model. That is the whole idea."
 
-### 19 · How we worked
+### 15 · How we worked
 
 This is the constraint that explains the whole method. Do not apologise for having
 no Figma files — this is the reason.
