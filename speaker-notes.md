@@ -262,7 +262,7 @@ this is the only place it gets told.
 > The cost was about seventy pixels of height, permanently, and a pattern rare enough
 > here that it only reads as considered if it behaves well."
 
-### 32–33 · Challenge 3 — changing a record at the right level
+### 32–34 · Challenge 3 — changing a record at the right level
 
 > "An advisor corrects a rate. That might be a note to themselves, or something their
 > desk needs, or the agency changing its official position — and whoever reads it next
@@ -281,9 +281,16 @@ this is the only place it gets told.
 > position. They cannot set it.
 >
 > A reason is required, and the line above the button says what will happen before it
-> happens — live immediately, or waiting on review."
+> happens — live immediately, or waiting on review.
+>
+> And then the same question about the other verb. Who a change is for, and who a
+> record is for, are the same question — one about writing, one about reading.
+> Private by default. Collaborator Full can edit and run the profiling but never
+> re-share. Basic is a name and a contact. And spend sits behind the commission
+> entitlement at every tier, because who you trust with a client is a different
+> question from who you trust with the numbers."
 
-### 34–36 · What I got wrong
+### 35–36 · What I got wrong
 
 **Do not soften this. It is the strongest thing in the deck.**
 
