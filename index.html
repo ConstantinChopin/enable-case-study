@@ -263,42 +263,27 @@
 </section>
 
 <!-- 13 -->
-<section class="slide is-statement has-ev" data-note="The intellectual move of the whole project. Say the headline slowly, then stop. The three on the right are why: the text was boilerplate, the money did not resolve to anything, and none of it could be switched on until the agency knew who could see what. That third one is the next slide.">
-  <div class="col-a">
-    <span class="eyebrow">What we changed</span>
-    <p class="said">Retrieval was never the problem.</p>
-    <p class="after">And it was never one body of data. Three different kinds were sitting in the same folders pretending to be one, and nothing said which was which.</p>
-    <p class="after"><strong>So the model came before any screen: three layers, a source on every field, and permission built in rather than added on.</strong></p>
-  </div>
-  <div class="col-b">
-    <ul class="ev">
-      <li><b>Canonical industry data</b> &mdash; what a property is, published once and shared by every agency. Nobody at the agency owns it, and nobody there may edit it. <span>The Enable directory</span></li>
-      <li><b>Agency data</b> &mdash; the negotiated terms, the programme, the rep firm. This is the commercially sensitive layer, and it is the reason none of it could be switched on until they knew who would see what. <span>93% of the amenities text here was template boilerplate</span></li>
-      <li><b>User data</b> &mdash; an advisor&rsquo;s own notes and what they have promised a client. Private unless they say otherwise, and never the agency&rsquo;s position. <span>Commission was arriving under travellers&rsquo; names</span></li>
-    </ul>
-  </div>
-</section>
 
 
 <!-- 7c — one signal traced from call to decision to feature -->
-<section class="slide is-split is-wide" data-note="This is the engineering argument, and it is the one that separates this from a RAG demo. Lead with the failure: documents in, answers out, wrong too often to be used. Then the move — permission is a property of the record, so an answer cannot leak what the model will not join. Then the metric we wrote so it could fail. Only then the figure: walk it bottom to top, canonical, agency, personal, and the combined read-out on the right. Land on the refused overwrite — a change never rewrites the layer beneath it, and that is what makes the whole thing auditable.">
+<section class="slide is-split is-wide" data-note="The intellectual move of the whole project. Say the headline and stop — let it sit. Then the failure, then what we actually found when we looked: three kinds of data in the same folders with nothing saying which was which. Walk the figure bottom to top, canonical, agency, personal, and the combined read-out on the right. Land on the refused overwrite, because that is what makes the whole thing auditable.">
   <div class="art"><img src="assets/figures/fig-02-layers.png" alt="Three layers of one record — canonical, organisation, personal — combining into one attributed read-out, with an overwrite of a lower layer refused."></div>
   <div class="words">
-    <span class="eyebrow">The model, and why it came before the screens</span>
-    <h3>Three layers, and permission in the model rather than on top of it.</h3>
+    <span class="eyebrow">Why the model came before the screens</span>
+    <h3>Retrieval was never the problem. It was three kinds of data pretending to be one.</h3>
     <ul class="chain">
       <li><em>The failure</em>
         <b>Documents in, answers out, wrong too often to use.</b>
-        <span>Pointing a model at the agency&rsquo;s files gave confident answers that were wrong often enough that an advisor would stop trusting the whole product inside a week. And when one was right, it was sometimes right about a commission the reader was not entitled to see.</span></li>
+        <span>Pointing a model at the agency&rsquo;s files gave confident answers wrong often enough to lose an advisor inside a week &mdash; and when one was right, it was sometimes right about a commission the reader was not entitled to see.</span></li>
+      <li><em>What we found</em>
+        <b>Three kinds of data, in the same folders, unlabelled.</b>
+        <span><strong>Canonical</strong> industry data, published once and shared by every agency, not theirs to edit. <strong>Agency</strong> data &mdash; the negotiated terms, the commercially sensitive layer. And <strong>personal</strong> data, an advisor&rsquo;s own notes. Nothing said which was which.</span></li>
       <li><em>The move</em>
-        <b>We made permission a property of the record, not a filter on the output.</b>
-        <span>Everything lands private by default. Every reverse lookup is gated by the record&rsquo;s own sharing rules, and commission sits behind its own entitlement on top of that. An answer cannot leak what the model will not join in the first place.</span></li>
+        <b>Permission became a property of the record, not a filter on the output.</b>
+        <span>Everything lands private by default, every reverse lookup is gated by the record&rsquo;s own sharing rules, and commission sits behind its own entitlement on top. <strong>An answer cannot leak what the model will not join.</strong> A change is stored above a layer, never over it.</span></li>
       <li><em>The measure</em>
         <b>We wrote the target so it could fail.</b>
-        <span>Time to Trusted Answer: an answer only counted if it arrived with its sources, its freshness, a confidence label or a plain &ldquo;I don&rsquo;t know&rdquo; &mdash; and zero permission leakage. Any override is auditable.</span></li>
-      <li><em>On the left</em>
-        <b>Three layers, one read-out, and no silent overwrite.</b>
-        <span>Canonical underneath, the agency&rsquo;s position over it, the advisor&rsquo;s own on top. What you read is the three combined with every row still attributed &mdash; and a change never rewrites the layer beneath it. <strong>That refusal is the whole guarantee.</strong></span></li>
+        <span>Time to Trusted Answer: an answer only counted with its sources, its freshness, a confidence label or a plain &ldquo;I don&rsquo;t know&rdquo; &mdash; and zero permission leakage. Any override is auditable.</span></li>
     </ul>
   </div>
 </section>

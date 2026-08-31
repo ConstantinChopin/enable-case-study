@@ -1,6 +1,6 @@
 # Enable — speaker notes
 
-Thirty-eight slides. Roughly **seven minutes** front, **twenty** live in the prototype,
+Thirty-seven slides. Roughly **seven minutes** front, **twenty** live in the prototype,
 **twelve** back. The live section has its own script in `demo-script.md`.
 
 Press `N` on localhost to see the per-slide note on screen. This is the longer
@@ -145,41 +145,34 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 
 ### 20 · Retrieval was never the problem
 
-**The intellectual move of the project. Say the headline, then stop.**
+**The intellectual move of the whole project. Say the headline, then stop.**
 
-> "Retrieval was never the problem. And it was never one body of data.
+> "Retrieval was never the problem. It was three kinds of data pretending to be one.
 >
-> Three different kinds were sitting in the same folders pretending to be one.
-> Canonical industry data — what a property is, published once, shared by every
-> agency, and not theirs to edit. Agency data — the negotiated terms, the programme,
-> the rep firm, which is the commercially sensitive layer. And user data — an
-> advisor's own notes and what they have promised a client.
+> Pointing a model at their files gave confident answers that were wrong often enough
+> to lose an advisor inside a week. And when one was right, it was sometimes right
+> about a commission the reader was not entitled to see.
 >
-> Nothing said which was which. So the model came before any screen: three layers, a
-> source on every field, and permission built in rather than added on."
-
-### 21 · Three layers, permission in the model
-
-**The engineering argument. This is what separates it from a RAG demo.**
-
-> "Pointing a model at their files gave confident answers that were wrong often
-> enough to lose an advisor inside a week. And when one was right, it was sometimes
-> right about a commission the reader was not entitled to see.
+> Then we looked at what was actually in there. Canonical industry data — what a
+> property is, published once, shared by every agency, and not theirs to edit. Agency
+> data — the negotiated terms, the commercially sensitive layer. And personal data, an
+> advisor’s own notes. Three kinds, in the same folders, and nothing saying which was
+> which.
 >
 > So permission became a property of the record rather than a filter on the output.
-> Everything lands private by default. Every reverse lookup is gated by the record's
-> own sharing rules, and commission sits behind its own entitlement on top of that.
-> An answer cannot leak what the model will not join in the first place.
->
-> Walk the figure bottom to top: canonical, the agency over it, personal on top, and
-> the combined read-out on the right. Land on the refused overwrite — a change never
-> rewrites the layer beneath it, and that is what makes the whole thing auditable.
+> Everything lands private by default. Every reverse lookup is gated by the record’s
+> own sharing rules, and commission sits behind its own entitlement on top of that. An
+> answer cannot leak what the model will not join in the first place.
 >
 > And we wrote the target so it could fail: Time to Trusted Answer. An answer only
-> counts if it arrives with its sources, its freshness, a confidence label or a plain
-> 'I don't know' — and zero permission leakage."
+> counts with its sources, its freshness, a confidence label or a plain ‘I don’t know’
+> — and zero permission leakage."
 
-### 22–23 · What changed
+Walk the figure bottom to top — canonical, agency, personal, and the combined read-out
+on the right. Land on the refused overwrite: a change is stored **above** a layer, never
+over it, and that is what makes the whole thing auditable.
+
+### 21–22 · What changed
 
 > **For the advisors** — time from client request to a personalised first proposal,
 > time saved on daily administration, and the ratio underneath both: three to five
@@ -192,11 +185,11 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 
 ⚠ **Say the method for every number, or drop the number.** See the open list below.
 
-### 24 · Handoff
+### 23 · Handoff
 
 > "Rather than describe it, let me use it."
 
-Switch windows. `demo-script.md` from here. Come back to slide 25.
+Switch windows. `demo-script.md` from here. Come back to slide 24.
 
 ---
 
@@ -212,13 +205,13 @@ this is the only place it gets told.
 
 ## BACK — twelve minutes
 
-### 25 · The map
+### 24 · The map
 
 > "Three design challenges we worked through. Each one runs the same beats: what we
 > tried first, what came back from the desk, and where we landed. After the three
 > there is one more thing, which is a mistake of mine nobody caught."
 
-### 26–29 · Challenge 1 — a person in the loop on the way in
+### 25–28 · Challenge 1 — a person in the loop on the way in
 
 > "The material arrives unstructured, from a dozen sources in a dozen formats, and
 > somebody has to agree how it maps onto a record.
@@ -244,7 +237,7 @@ this is the only place it gets told.
 > validate rather than type. And confirming stamps the record with your name and the
 > date — every value on this record traces to somebody who agreed to it."
 
-### 30–31 · Challenge 2 — a workspace, not a dashboard
+### 29–30 · Challenge 2 — a workspace, not a dashboard
 
 > "We built the layout every comparable tool uses: a left rail, and the conflict on
 > its own page. It worked.
@@ -262,7 +255,7 @@ this is the only place it gets told.
 > The cost was about seventy pixels of height, permanently, and a pattern rare enough
 > here that it only reads as considered if it behaves well."
 
-### 32–34 · Challenge 3 — changing a record at the right level
+### 31–33 · Challenge 3 — changing a record at the right level
 
 > "An advisor corrects a rate. That might be a note to themselves, or something their
 > desk needs, or the agency changing its official position — and whoever reads it next
@@ -290,7 +283,7 @@ this is the only place it gets told.
 > entitlement at every tier, because who you trust with a client is a different
 > question from who you trust with the numbers."
 
-### 35–36 · What I got wrong
+### 34–35 · What I got wrong
 
 **Do not soften this. It is the strongest thing in the deck.**
 
@@ -310,11 +303,11 @@ this is the only place it gets told.
 > the model, or in a test, or it will be true on the day you write it and false a
 > month later."
 
-### 37 · Reflection
+### 36 · Reflection
 
 > "What I would challenge if I picked it up again."
 
-### 38 · Questions
+### 37 · Questions
 
 Stop talking. Ten minutes.
 
@@ -322,7 +315,7 @@ Stop talking. Ten minutes.
 
 ## Open before you present
 
-1. **The metrics on 22 and 23.** Say the method for each figure or cut it. Any number
+1. **The metrics on 21 and 22.** Say the method for each figure or cut it. Any number
    you cannot source is worse than no number in front of these two.
 2. **The quotes on slide 17** are attributed by role because that is all the
    transcripts carry. If you know which advisor said which, name them.
