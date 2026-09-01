@@ -563,3 +563,12 @@ body.settled #help { opacity: 0; }
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-4);
 }
 .people.p3 { grid-template-columns: repeat(3, 186px); gap: 18px; }
+
+/* six landscape shots, three across — the same fit rules as .grid4 */
+.grid6 { display: grid; justify-content: center; align-content: center; height: 100%;
+  grid-template-columns: repeat(3, 452px); gap: 18px 22px; }
+.grid6 figure { display: flex; flex-direction: column; min-width: 0; }
+.grid6 .box { height: 268px; display: flex; align-items: center; justify-content: center; }
+.is-full .art .grid6 img { max-width: 100%; max-height: 100%; width: auto; height: auto; display: block; }
+.grid6 figcaption { margin-top: 9px; font-family: var(--mono); font-size: 10.5px;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }

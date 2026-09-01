@@ -44,12 +44,24 @@ Sixty seconds.
 
 ### 7 · The tools they already had
 
-Point at two, not four.
+**The top row is one property in three places.** Do not narrate all six.
 
-> "A GDS terminal that looks like 1985, next to a client trip app from last year.
-> None of them holds the commission, the amenities and the client at the same time."
+> "Four Seasons Red Sea at Shura Island. The intranet post announces it opens in 2027.
+> The partner email carries the offer. And the advisor’s own note has the only thing
+> worth knowing — ask for an overwater room, the garden rooms are a long walk from
+> anything, and don’t sell it as a spa trip.
+>
+> Then read the last line of that note out loud: ‘launch rate looked like it might be
+> twenty per cent but I need to confirm with the rep, the email is somewhere in my
+> inbox.’
+>
+> Nothing joins these three. The advisor is the join."
 
-If asked: vendors' own product shots, not the partner's instance.
+Bottom row is the rest of the stack — a GDS that looks like 1985 next to a client trip
+app from last year. Point, do not narrate.
+
+If asked: the note is a reconstruction of the kind an advisor keeps; the other five are
+real. Contact details are redacted throughout.
 
 ### 8 · Where we built
 
