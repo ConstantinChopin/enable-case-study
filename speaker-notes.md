@@ -302,9 +302,29 @@ this is the only place it gets told.
 > entitlement at every tier, because who you trust with a client is a different
 > question from who you trust with the numbers."
 
-### 36 · Reflection
+### 36 · What I am still not happy with
 
-> "What I would challenge if I picked it up again."
+Two minutes. Do not soften it, and do not add a fourth thing.
+
+> "The review flow. We wrote the rule deliberately — a person confirms every candidate
+> for the first three months, exact matches included, commercial fields admin-only for
+> good. That was right for a catalogue nobody trusted yet.
+>
+> I never designed the fourth month. The rule has no exit, so that queue is the only
+> thing standing between a bad extraction and an answer, permanently.
+>
+> And it is already showing: forty-one of a hundred and twenty-eight Paris records
+> verified this quarter, eighty-seven carried forward. An unchecked field still answers,
+> with its date and a freshness warning — honest, but not the same as being right.
+>
+> Batching and confidence thresholds are the obvious way out, and both quietly
+> reintroduce the ranking we spent a whole challenge removing. I do not have a clean
+> answer to that."
+
+**If they ask about volume:** it never goes to twenty thousand. The industry database is
+about 3,280 properties and one agency works with a few hundred — 312 in this build, 128
+of them in Paris. The total was never the problem. The rate is, and the rule has no end
+date.
 
 ### 37 · Questions
 
