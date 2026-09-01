@@ -47,9 +47,9 @@ Sixty seconds.
 **The top row is one property in three places.** Do not narrate all six.
 
 > "Four Seasons Red Sea at Shura Island. The intranet post announces it opens in 2027.
-> The partner email carries the offer. And the advisor’s own note has the only thing
+> The note right beside it — same property, same week — has the only thing actually
 > worth knowing — ask for an overwater room, the garden rooms are a long walk from
-> anything, and don’t sell it as a spa trip.
+> anything, and don’t sell it as a spa trip. The partner email, third, carries the offer.
 >
 > Then read the last line of that note out loud: ‘launch rate looked like it might be
 > twenty per cent but I need to confirm with the rep, the email is somewhere in my
