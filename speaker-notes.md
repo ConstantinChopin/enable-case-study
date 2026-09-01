@@ -152,7 +152,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 >
 > So we built them somewhere to look."
 
-### 18–19 · The first build
+### 18–21 · The first build
 
 > "A conversational interface over their own material — Notion, Google Drive, exports
 > out of the intranet — with results as cards beside a generated answer.
@@ -161,7 +161,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 > a Japan itinerary and it returns cherry-blossom festivals cited to Reddit, when what
 > was needed was the agency's negotiated terms. It was wrong too often to use."
 
-### 20 · Retrieval was never the problem
+### 22 · Retrieval was never the problem
 
 **The intellectual move of the whole project. Say the headline, then stop.**
 
@@ -190,7 +190,7 @@ Walk the figure bottom to top — canonical, agency, personal, and the combined 
 on the right. Land on the refused overwrite: a change is stored **above** a layer, never
 over it, and that is what makes the whole thing auditable.
 
-### 21–22 · What changed
+### 23–24 · What changed
 
 > **For the advisors** — time from client request to a personalised first proposal,
 > time saved on daily administration, and the ratio underneath both: three to five
@@ -203,11 +203,11 @@ over it, and that is what makes the whole thing auditable.
 
 ⚠ **Say the method for every number, or drop the number.** See the open list below.
 
-### 23 · Handoff
+### 25 · Handoff
 
 > "Rather than describe it, let me use it."
 
-Switch windows. `demo-script.md` from here. Come back to slide 24.
+Switch windows. `demo-script.md` from here. Come back to slide 26.
 
 ---
 
@@ -223,13 +223,13 @@ this is the only place it gets told.
 
 ## BACK — twelve minutes
 
-### 24 · The map
+### 26 · The map
 
 > "Three design challenges we worked through. Each one runs the same beats: what we
 > tried first, what came back from the desk, and where we landed. After the three
 > there is one more thing, which is a mistake of mine nobody caught."
 
-### 25–28 · Challenge 1 — a person in the loop on the way in
+### 27–30 · Challenge 1 — a person in the loop on the way in
 
 > "The material arrives unstructured, from a dozen sources in a dozen formats, and
 > somebody has to agree how it maps onto a record.
@@ -256,7 +256,7 @@ this is the only place it gets told.
 > one is recorded as silence rather than guessed at. You validate rather than type. And confirming stamps the record with your name and the
 > date — every value on this record traces to somebody who agreed to it."
 
-### 29–30 · Challenge 2 — a workspace, not a dashboard
+### 31–32 · Challenge 2 — a workspace, not a dashboard
 
 > "We built the layout every comparable tool uses: a left rail, and the conflict on
 > its own page. It worked.
@@ -274,7 +274,7 @@ this is the only place it gets told.
 > The cost was about seventy pixels of height, permanently, and a pattern rare enough
 > here that it only reads as considered if it behaves well."
 
-### 31–33 · Challenge 3 — changing a record at the right level
+### 33–35 · Challenge 3 — changing a record at the right level
 
 > "An advisor corrects a rate. That might be a note to themselves, or something their
 > desk needs, or the agency changing its official position — and whoever reads it next
@@ -314,7 +314,7 @@ Stop talking. Ten minutes.
 
 ## Open before you present
 
-1. **The metrics on 21 and 22.** Say the method for each figure or cut it. Any number
+1. **The metrics on 23 and 24.** Say the method for each figure or cut it. Any number
    you cannot source is worse than no number in front of these two.
 2. **The quotes on slide 17** are attributed by role because that is all the
    transcripts carry. If you know which advisor said which, name them.
