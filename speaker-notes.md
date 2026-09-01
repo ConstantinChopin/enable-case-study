@@ -319,7 +319,22 @@ thing an advisor assembles by hand across six systems.
 That last one closes the loop with the advisor on slide 17 whose rate changes were
 arriving by email.
 
-### 37 · Questions
+### 37 · To close
+
+Do not re-explain these. They saw them before the demo.
+
+> "Eight months. Two calls a week, shipping every week.
+>
+> Half the time to assemble an itinerary. About two hours a day back per advisor.
+> Fifteen per cent more commission on the same trips.
+>
+> The design partner signed. The MVP was sellable to the next agency. And the company
+> went out to investors on the back of it."
+
+Ending here rather than on the gap matters: the thing we never built is a gap in
+something that worked.
+
+### 38 · Questions
 
 Stop talking. Ten minutes.
 
