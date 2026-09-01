@@ -302,19 +302,19 @@ this is the only place it gets told.
 > entitlement at every tier, because who you trust with a client is a different
 > question from who you trust with the numbers."
 
-### 36 · What I am still not happy with
+### 36 · What I would do next
 
-Two minutes. Four short things, then stop.
+Two minutes, then stop. Point at the document — they saw it on slide eight as the thing
+an advisor assembles by hand.
 
-> "For the first three months a person confirms every new record. That was right —
-> nobody trusted the catalogue.
+> "Two things. One I got wrong, one we never got to.
 >
-> After that, nothing. The queue stays because I never wrote an end to it.
+> A person confirms every new record for the first three months. After that I wrote
+> nothing. 41 of 128 Paris records checked this quarter, 87 rolled over.
 >
-> 41 of 128 Paris records checked this quarter. 87 rolled over.
->
-> Batching would fix it. Batching also brings back the ranking we removed. I do not
-> have an answer."
+> And the proposal itself. We built everything up to stage five and never built what
+> stage five produces — a templated presentation, and the client’s own copy of it. One
+> place their trip lives, with their advisor’s notes arriving in it rather than by email."
 
 **If they ask about volume:** it never goes to twenty thousand. About 3,280 properties
 industry-wide, a few hundred per agency, 128 in Paris. The total was never the risk.
