@@ -548,3 +548,18 @@ body.settled #help { opacity: 0; }
 /* a full-bleed slide carrying a metric row as well as its pictures */
 .is-tight .duo .box { height: 430px; }
 .is-tight .cost { margin-top: 14px; }
+
+/* ── the desk, split the way it actually is ─────────────────────────── */
+
+.teams { display: flex; gap: 34px; justify-content: center; align-items: center; height: 100%; }
+.team { display: flex; flex-direction: column; }
+.team.is-agency {
+  border: 1px solid var(--line-2); border-radius: 8px;
+  padding: 20px 24px 16px; background: var(--paper);
+}
+.team:not(.is-agency) { padding: 20px 0 16px; }
+.team-label {
+  margin-bottom: 16px; font-family: var(--mono); font-size: 11px;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-4);
+}
+.people.p3 { grid-template-columns: repeat(3, 186px); gap: 18px; }
