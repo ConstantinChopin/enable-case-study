@@ -304,27 +304,20 @@ this is the only place it gets told.
 
 ### 36 · What I am still not happy with
 
-Two minutes. Do not soften it, and do not add a fourth thing.
+Two minutes. Four short things, then stop.
 
-> "The review flow. We wrote the rule deliberately — a person confirms every candidate
-> for the first three months, exact matches included, commercial fields admin-only for
-> good. That was right for a catalogue nobody trusted yet.
+> "For the first three months a person confirms every new record. That was right —
+> nobody trusted the catalogue.
 >
-> I never designed the fourth month. The rule has no exit, so that queue is the only
-> thing standing between a bad extraction and an answer, permanently.
+> After that, nothing. The queue stays because I never wrote an end to it.
 >
-> And it is already showing: forty-one of a hundred and twenty-eight Paris records
-> verified this quarter, eighty-seven carried forward. An unchecked field still answers,
-> with its date and a freshness warning — honest, but not the same as being right.
+> 41 of 128 Paris records checked this quarter. 87 rolled over.
 >
-> Batching and confidence thresholds are the obvious way out, and both quietly
-> reintroduce the ranking we spent a whole challenge removing. I do not have a clean
-> answer to that."
+> Batching would fix it. Batching also brings back the ranking we removed. I do not
+> have an answer."
 
-**If they ask about volume:** it never goes to twenty thousand. The industry database is
-about 3,280 properties and one agency works with a few hundred — 312 in this build, 128
-of them in Paris. The total was never the problem. The rate is, and the rule has no end
-date.
+**If they ask about volume:** it never goes to twenty thousand. About 3,280 properties
+industry-wide, a few hundred per agency, 128 in Paris. The total was never the risk.
 
 ### 37 · Questions
 
