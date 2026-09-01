@@ -304,20 +304,20 @@ this is the only place it gets told.
 
 ### 36 · What I would do next
 
-Two minutes, then stop. Point at the document — they saw it on slide eight as the thing
-an advisor assembles by hand.
+Two minutes, then stop. Point at the document first — they saw it on slide eight as the
+thing an advisor assembles by hand across six systems.
 
-> "Two things. One I got wrong, one we never got to.
+> "We built everything up to stage five and never built what stage five produces.
 >
-> A person confirms every new record for the first three months. After that I wrote
-> nothing. 41 of 128 Paris records checked this quarter, 87 rolled over.
+> A templated presentation, so this stops being assembled by hand every trip.
 >
-> And the proposal itself. We built everything up to stage five and never built what
-> stage five produces — a templated presentation, and the client’s own copy of it. One
-> place their trip lives, with their advisor’s notes arriving in it rather than by email."
+> The client’s own copy of it — one place their trip lives, instead of a PDF in a thread.
+>
+> And their advisor writing notes into it while they are travelling, rather than
+> emailing them."
 
-**If they ask about volume:** it never goes to twenty thousand. About 3,280 properties
-industry-wide, a few hundred per agency, 128 in Paris. The total was never the risk.
+That last one closes the loop with the advisor on slide 17 whose rate changes were
+arriving by email.
 
 ### 37 · Questions
 
