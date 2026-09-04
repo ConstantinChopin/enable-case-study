@@ -2,9 +2,9 @@
 
 The presentation for the Enable case study, and the script for the live section.
 
-- **`index.html`** — the deck. 20 slides, 16:9, keyboard driven.
+- **`index.html`** — the deck. 19 slides, 16:9, keyboard driven.
   `←` `→` or space to move · `F` fullscreen · `N` presenter notes (localhost only).
-  This version opens on the Enable title card and ends on the outcomes slide; the live prototype follows it and the deck does not resume.
+  This version opens on the Enable title card and ends on the measured-outcomes slide; the live prototype follows it and the deck does not resume.
 - **`demo-script.md`** — the four journeys driven live in the prototype, with the state
   to start from, the exact path, and the line to land on each.
 - **`assets/screens/`** — captures from the prototype at 1440×900 at 2×.
