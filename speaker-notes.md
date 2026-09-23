@@ -203,15 +203,9 @@ over it, and that is what makes the whole thing auditable.
 
 ⚠ **Say the method for every number, or drop the number.** See the open list below.
 
-### 25 · Handoff
-
-> "Rather than describe it, let me use it."
-
-Switch windows. `demo-script.md` from here. Come back to slide 26.
-
----
-
 ## LIVE — twenty minutes
+
+No handoff slide: after slide 24, switch windows. `demo-script.md` from here. Come back to slide 25.
 
 **J1** the day arrives · **J2** a record, and who may see it · **J3** ingestion ·
 **J4** an answer, and a refusal.
@@ -223,13 +217,13 @@ this is the only place it gets told.
 
 ## BACK — twelve minutes
 
-### 26 · The map
+### 25 · The map
 
 > "Three design challenges we worked through. Each one runs the same beats: what we
 > tried first, what came back from the desk, and where we landed. After the three
 > there is one more thing, which is a mistake of mine nobody caught."
 
-### 27–30 · Challenge 1 — a person in the loop on the way in
+### 26–29 · Challenge 1 — a person in the loop on the way in
 
 > "The material arrives unstructured, from a dozen sources in a dozen formats, and
 > somebody has to agree how it maps onto a record.
@@ -256,7 +250,7 @@ this is the only place it gets told.
 > one is recorded as silence rather than guessed at. You validate rather than type. And confirming stamps the record with your name and the
 > date — every value on this record traces to somebody who agreed to it."
 
-### 31–32 · Challenge 2 — a workspace, not a dashboard
+### 30–31 · Challenge 2 — a workspace, not a dashboard
 
 > "We built the layout every comparable tool uses: a left rail, and the conflict on
 > its own page. It worked.
@@ -274,7 +268,7 @@ this is the only place it gets told.
 > The cost was about seventy pixels of height, permanently, and a pattern rare enough
 > here that it only reads as considered if it behaves well."
 
-### 33–35 · Challenge 3 — changing a record at the right level
+### 32–34 · Challenge 3 — changing a record at the right level
 
 > "An advisor corrects a rate. That might be a note to themselves, or something their
 > desk needs, or the agency changing its official position — and whoever reads it next
@@ -302,7 +296,7 @@ this is the only place it gets told.
 > entitlement at every tier, because who you trust with a client is a different
 > question from who you trust with the numbers."
 
-### 36 · What I would do next
+### 35 · What I would do next
 
 Two minutes, then stop. Point at the document first — they saw it on slide eight as the
 thing an advisor assembles by hand across six systems.
@@ -319,7 +313,7 @@ thing an advisor assembles by hand across six systems.
 That last one closes the loop with the advisor on slide 17 whose rate changes were
 arriving by email.
 
-### 37 · To close
+### 36 · To close
 
 Do not re-explain these. They saw them before the demo.
 
@@ -334,7 +328,7 @@ Do not re-explain these. They saw them before the demo.
 Ending here rather than on the gap matters: the thing we never built is a gap in
 something that worked.
 
-### 38 · Questions
+### 37 · Questions
 
 Stop talking. Ten minutes.
 
