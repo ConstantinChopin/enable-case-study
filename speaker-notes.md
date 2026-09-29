@@ -1,7 +1,7 @@
 # Enable — speaker notes
 
-Thirty-six slides. Roughly **seven minutes** front, **twenty** live in the prototype,
-**twelve** back. The live section has its own script in `demo-script.md`.
+Forty slides. Roughly **eight minutes** front, **twenty** live in the prototype,
+**fourteen** back. The live section has its own script in `demo-script.md`.
 
 Press `N` on localhost to see the per-slide note on screen. This is the longer
 version, in your words, for rehearsing.
@@ -10,10 +10,17 @@ Rules for yourself on the day:
 - Do not read the slides. They are the evidence; you are the argument.
 - Every number you say aloud, say where it came from.
 - When you do not know, say you do not know. That is the product's own rule.
+- **Every decision in three moves:** the problem it answers, why this and not the
+  alternative, and what would change your mind. Never just what you did.
+- **The tool is never the subject of a decision.** You decided; the code carried it
+  out. "We brought the design system into Claude Code" is a sentence about a tool;
+  say why the system had to run in the prototype instead.
+- When a challenge lands, defend or propose. Never "that's not something I'm happy
+  with." If you agree, say what you would change and why, as a proposal.
 
 ---
 
-## FRONT — seven minutes
+## FRONT — eight minutes
 
 ### 1–4 · Prior work
 
@@ -80,17 +87,18 @@ Do not walk the eleven stages. **This is where you say why the wedge, and why no
 > they like. An advisor holds all three in their head, per option, per trip.
 >
 > That front stretch is where the knowledge work concentrates, it is where nobody else
-> was building, and none of it is billable.
->
-> We went there because we wanted to go to market fast and there was a real opening —
-> nobody was trying to be the single source of truth, everyone else owned a vertical.
-> And we were AI-native from the first commit, where the competition were older tools
-> that would need years to catch up to where we could start."
+> was building, and none of it is billable."
+
+**Hold on to "three at once".** Every surface slide later answers one part of it, and
+you should say which.
 
 ### 9 · The design partner
 
 > "A travel agency in Boston. Weekly, for eight months. Every decision in the back
 > half of this deck traces to something one of these people said in a room."
+
+Point at the right-hand group: two of them are not employees. Their client lists are
+their own asset. That is why the traveller, later, is private by default.
 
 ### 10 · What the agency bought
 
@@ -103,43 +111,66 @@ Do not walk the eleven stages. **This is where you say why the wedge, and why no
 
 The record is live — you can scroll it.
 
-### 11–15 · The surfaces
+### 11–16 · The surfaces
 
-One slide each, so your arrow keys walk them. Ten to fifteen seconds apiece. The
-numbers match the diagram you were just on. The record is not among them — you
-have just had it live on the previous slide.
+One slide each, so your arrow keys walk them. Fifteen seconds apiece. Each heading
+is the decision; say the problem it answers first, then point.
 
-> **Ask** — "The door people expect. It answers out of the model rather than the web,
-> and every line is cited to a record it can name."
+> **Ask** — "The third quote on the calls slide is the reason for this screen: it’s
+> just information from the Internet. So Ask answers only from what the agency holds,
+> every claim names its record and how old it is, and a question it cannot answer
+> gets ‘I don’t know’, never a guess from the open web."
 >
-> **The briefing** — "The morning screen. What changed overnight, what expires soon,
-> what is waiting on somebody. The agency lead asked for this one by name."
+> **The directory** — "Back to the three at once. Commission and amenities only exist
+> under a partner programme, so a property shows one tray per programme. Closed, they
+> compare: the rate and what guests get. Open, one shows its terms. The version before
+> showed one flat commission beside a row of programme names, a number nobody could
+> book against. Columns side by side came next, and they stop working at three."
 >
-> **The itinerary** — "The work in progress. Nothing is re-keyed — a rate here is the
-> same value the record holds, not a copy."
+> **The briefing** — "The agency lead asked for this one by name. The version before
+> was correct and impersonal: equal cards in a grid. This one is written to one
+> advisor, opens on her day in sentences, walks what she owes in that order, and
+> offers one first move. A grid cannot be ordered by anyone’s day."
 >
-> **The traveller** — "Who the work is for. Every preference with a source and a date,
-> and what the product suggests kept separate from what a person confirmed."
+> **The itinerary** — "The work in progress. Each line brings its programme’s terms
+> from the same link the record shows, is checked against what this traveller likes,
+> and a property the agency has closed cannot be added at all. The three things held
+> in one head are on the line."
 >
-> **The knowledge vault** — "And this is the way in. Everything the model knows
-> arrived through here or through a connection."
+> **The traveller** — "Who the work is for. Every preference with a source and a
+> date; what the product infers is labelled and never applied until a person confirms
+> it. And private to the advisor who holds the client, because for the independents
+> on slide nine the client list is the business."
+>
+> **The knowledge vault** — "And this is the way in. Everything the model knows came
+> through here or through a connection, with where it came from, when, and who may
+> read it, in a word, never a colour alone. An answer is only as trustworthy, and as
+> private, as what it was built from."
 
-### 16 · How we worked
+### 17 · How we worked, and who decided
 
-The constraint that explains the method. Do not apologise for having no Figma files.
+The constraint that explains the method, and the answer to "how much did the AI do".
+Do not apologise for having no Figma files.
 
-> "Our constraint was time. We had to validate an MVP fast, we were shipping weekly
-> and sometimes twice, and we had two calls a week with the design partner.
+> "Our constraint was time. Two calls a week with the design partner, and shipping
+> weekly, sometimes twice.
 >
-> We started in Figma. I was reviewing designs with the product manager and we were
-> not going fast enough for that cadence. So we moved to a code-first approach — the
-> prototype became the specification, and it kept moving.
+> We started in Figma. By the time a design was reviewed and agreed, it was answering
+> last week’s call. So the prototype became the specification, and there was always
+> something an advisor could use on Thursday.
 >
-> The PM owned the roadmap and held the scope so the engineers had something
-> workable. My job was to take what came out of those calls and shape it into
-> journeys that made sense to use."
+> Every design decision was mine to make and to write down: the problem it serves,
+> the evidence, the alternative I turned down, and what would change my mind. Claude
+> Code built what that log said. It never wrote the log.
+>
+> And each rule that has to hold on every screen has a check, because a rule nobody
+> checks drifts, and somebody else finds the drift before you do. You will see that
+> again at the end."
 
-### 17 · What the calls produced
+Offer the decision log or the Notion roadmap. Do not force it; only open it if they
+say yes.
+
+### 18 · What the calls produced
 
 Read the first two aloud. Point at the third. Read the agency lead's line slowly.
 
@@ -152,7 +183,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 >
 > So we built them somewhere to look."
 
-### 18–21 · The first build
+### 19–22 · The first build
 
 > "A conversational interface over their own material — Notion, Google Drive, exports
 > out of the intranet — with results as cards beside a generated answer.
@@ -161,7 +192,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 > a Japan itinerary and it returns cherry-blossom festivals cited to Reddit, when what
 > was needed was the agency's negotiated terms. It was wrong too often to use."
 
-### 22 · Retrieval was never the problem
+### 23 · Retrieval was never the problem
 
 **The intellectual move of the whole project. Say the headline, then stop.**
 
@@ -190,7 +221,7 @@ Walk the figure bottom to top — canonical, agency, personal, and the combined 
 on the right. Land on the refused overwrite: a change is stored **above** a layer, never
 over it, and that is what makes the whole thing auditable.
 
-### 23–24 · What changed
+### 24–25 · What changed
 
 > **For the advisors** — time from client request to a personalised first proposal,
 > time saved on daily administration, and the ratio underneath both: three to five
@@ -205,34 +236,36 @@ over it, and that is what makes the whole thing auditable.
 
 ## LIVE — twenty minutes
 
-No handoff slide: after slide 24, switch windows. `demo-script.md` from here. Come back to slide 25.
+No handoff slide: after slide 25, switch windows. `demo-script.md` from here. Come back to slide 26.
 
 **J1** the day arrives · **J2** a record, and who may see it · **J3** ingestion ·
 **J4** an answer, and a refusal.
 
 Protect J2. The conflict resolution lives here now — it is no longer a slide, so
-this is the only place it gets told.
+this is the only place it gets told. It now sits inside the Atelier tray of the
+Programmes chapter: open the record, scroll to Programmes, and the dispute is on the
+tray's own row.
 
 ---
 
-## BACK — twelve minutes
+## BACK — fourteen minutes
 
-### 25 · The map
+### 26 · The map
 
-> "Three design challenges we worked through. Each one runs the same beats: what we
-> tried first, what came back from the desk, and where we landed. After the three
-> there is one more thing, which is a mistake of mine nobody caught."
+> "Four design challenges we worked through. Each one runs the same beats: what we
+> tried first, what came back, and where we landed. The fourth is the one a reviewer
+> handed us."
 
-### 26–29 · Challenge 1 — a person in the loop on the way in
+### 27–30 · Challenge 1 — a person in the loop on the way in
 
 > "The material arrives unstructured, from a dozen sources in a dozen formats, and
 > somebody has to agree how it maps onto a record.
 >
 > An advisor forwards a rate sheet into the vault, or an administrator connects a
-> portal. The extractor proposes records off the back of it, and the vault tells you
-> so — three records waiting to be confirmed — which is the way through to the queue.
-> Each candidate keeps the file it came from. One is held rather than proposed,
-> because the source line was unreadable: the extractor declining to guess.
+> portal. The extractor proposes records off the back of it — three records waiting
+> to be confirmed. Each candidate keeps the file it came from. One has nothing read
+> from it at all, because the source line was unreadable: the extractor declining to
+> guess.
 >
 > The rule was not negotiable — nothing reaches an answer, a card or a search until a
 > named person confirms it. So the only question was what confirming one should cost.
@@ -250,25 +283,31 @@ this is the only place it gets told.
 > one is recorded as silence rather than guessed at. You validate rather than type. And confirming stamps the record with your name and the
 > date — every value on this record traces to somebody who agreed to it."
 
-### 30–31 · Challenge 2 — a workspace, not a dashboard
+### 31–32 · Challenge 2 — a workspace, not a dashboard
+
+This is where "unclear navigation" gets answered, before anyone raises it.
 
 > "We built the layout every comparable tool uses: a left rail, and the conflict on
 > its own page. It worked.
 >
 > But the rail cost about two hundred and thirty pixels of width permanently, on the
 > screens that need it most. And advisors did not move section to section like a
-> website — they moved workspace to workspace, all day, in a loop, closer to how they
-> use a phone than a site. Our users live in an iOS environment, and each room needed
-> to feel like its own small app rather than a section of a dashboard.
+> website — they moved room to room, all day, in a loop, closer to how they use a
+> phone than a site. Our users live in an iOS environment, and each room needed to
+> feel like its own small app rather than a section of a dashboard.
 >
-> So navigation went to the bottom, and the decision moved onto the record. Resolving
-> a rate stopped being a page of its own — it only makes sense while you can still see
-> the fields it sits among.
+> So navigation went to the bottom, and the decision moved onto the record.
 >
-> The cost was about seventy pixels of height, permanently, and a pattern rare enough
-> here that it only reads as considered if it behaves well."
+> A dock only works if you always know where you are. So a room has one name — the
+> same word in the dock, the crumb and the page title — and every list opens the same
+> way: select a row to preview it beside the list, open it to go in, and Back puts
+> you where you were.
+>
+> The cost was about seventy pixels of height, and a pattern rare in this category.
+> What would change it: if advisors lose their place between rooms, every room in the
+> dock gets its label before anything else moves."
 
-### 32–34 · Challenge 3 — changing a record at the right level
+### 33–35 · Challenge 3 — changing a record at the right level
 
 > "An advisor corrects a rate. That might be a note to themselves, or something their
 > desk needs, or the agency changing its official position — and whoever reads it next
@@ -283,20 +322,50 @@ this is the only place it gets told.
 > Scope decides the layer, so a private correction never becomes the agency's position
 > by accident, and the canonical value underneath stays readable.
 >
-> And agency-wide goes to a lead for review. An advisor can propose the agency's
-> position. They cannot set it.
+> And the whole agency waits for the agency owner to release it. An advisor can
+> propose the agency's position. They cannot set it.
 >
-> A reason is required, and the line above the button says what will happen before it
-> happens — live immediately, or waiting on review.
+> A reason is required, and the button says what will happen before it happens —
+> Save change, or Send for release.
 >
 > And then the same question about the other verb. Who a change is for, and who a
 > record is for, are the same question — one about writing, one about reading.
-> Private by default. Collaborator Full can edit and run the profiling but never
-> re-share. Basic is a name and a contact. And spend sits behind the commission
-> entitlement at every tier, because who you trust with a client is a different
-> question from who you trust with the numbers."
+> Private by default. The full profile lets a colleague edit every field but never
+> share it on or delete it. Name and contact only is for an introduction. And spend
+> sits behind the commission entitlement whatever you choose, because who you trust
+> with a client is a different question from who you trust with the numbers."
 
-### 35 · What I would do next
+### 36–37 · Challenge 4 — details that hold on every screen
+
+**Own it, then answer it. Do not apologise, and do not linger on 36.**
+
+> "A reviewer found three inconsistencies on one screen. A legend whose colours
+> disagreed with the states it named. Two counts on the same page written two
+> different ways. A selected row that did not look selected until you had already
+> acted on it. Each was in front of us, and none was caught, because nothing was
+> checking.
+>
+> So a detail that has to hold everywhere became a rule, and the rule got a check.
+>
+> Colour means severity and nothing else: ochre is a decision waiting, claret is a
+> blocker, every other state is a word. A legend cannot disagree with a colour that
+> only ever means one thing.
+>
+> One name for one thing: the dock, the crumb and the title say the same word, and a
+> count is written the same way wherever it appears.
+>
+> Selected is lifted, not tinted: the chosen row rises off the page, so it reads as
+> chosen before you act on it.
+>
+> And each rule has a check that runs before anyone looks: three hundred and twelve
+> assertions, across twenty-four screens and both roles, green before every capture
+> in this deck. The rule is mine. The check is how it stays true."
+
+Point at the screen as you say each one: the lifted row; the ochre on the commissions
+still waiting for a decision against the word "chased" on Aurelia; the same name in
+the crumb and the title.
+
+### 38 · What I would do next
 
 Two minutes, then stop. Point at the document first — they saw it on slide eight as the
 thing an advisor assembles by hand across six systems.
@@ -310,10 +379,10 @@ thing an advisor assembles by hand across six systems.
 > And their advisor writing notes into it while they are travelling, rather than
 > emailing them."
 
-That last one closes the loop with the advisor on slide 17 whose rate changes were
+That last one closes the loop with the advisor on slide 18 whose rate changes were
 arriving by email.
 
-### 36 · To close
+### 39 · To close
 
 Do not re-explain these. They saw them before the demo.
 
@@ -328,18 +397,88 @@ Do not re-explain these. They saw them before the demo.
 Ending here rather than on the gap matters: the thing we never built is a gap in
 something that worked.
 
-### 37 · Questions
+### 40 · Questions
 
 Stop talking. Ten minutes.
 
 ---
 
+## Questions you will be asked, and the answer
+
+Drafted from the decision log (`enable-analogue/docs/rebuild/decisions.md`). **Rewrite
+each answer in your own words before you rehearse it** — the point is that the
+reasoning is yours. Rehearse the follow-up too, not only the first answer: the panel
+expects you to go a level deeper unprompted.
+
+Every answer has the same three moves: the problem, why this and not the alternative,
+and what would change your mind.
+
+**"Could you have shipped something smaller first?"**
+Answer it before they have to push: "Yes. A forwarding address for
+partner emails, sending back the commission opportunities in them. I would ship it
+first today, as the vault's first door. We didn't then because a list can't know
+whether the property suits the traveller or whether the agency books the programme,
+and with one team it was one or the other." Never "we could have done both".
+
+**"How much of this did the AI decide?"**
+"None of the decisions. Each one is in the log with the problem it serves, the
+evidence, the alternative I turned down and what would change my mind. Claude Code
+built what the log said and runs the checks that keep it true." Then one example you
+made yourself, with its reason: commission was one flat rate on the record; you
+reorganised it by programme because a rate only exists under one, and moved from
+columns to trays when a property in several programmes stopped being readable.
+Offer to open the log.
+
+**"The navigation is unusual. Why not a sidebar?"**
+Width (230 pixels, on the record, which needs it most), the room-to-room loop, and an
+iOS habit. The alternative is the rail: you built it first, and it worked. Legibility
+comes from one name per room and one way to open anything. What would change it:
+advisors losing their place between rooms, and then the dock gets a label on every
+room first.
+
+**"Isn't the briefing just a dashboard?"**
+"A dashboard is equal cards, and it can't be ordered by anyone's day. This is written
+to one advisor, opens on her day in sentences with the figures inline, walks what she
+owes in that order, and offers one first move." The test it passes: someone who has
+never seen it names the advisor and her first task in one sentence. The alternative
+was the first version, five cards: correct, and impersonal.
+
+**"Why trays? Why not a comparison table of programmes?"**
+"A table compares rows of the same shape, and programme terms aren't: one has an
+incentive, one a negotiated perk, one a disputed rate. The closed trays are the
+comparison — programme, rate, what guests get — and one opens to its terms." Columns
+side by side came first and stop working at three programmes. What would change it:
+if advisors open every tray every time, add a view comparing the two they choose.
+
+**"Why not let the extractor confirm the fields it is sure about?"**
+"Because nothing reaches an answer until a named person agrees to it, and the name is
+the audit. Confidence tells the reviewer where to look, and confirming the sure ones
+is one act. A commission with no programme named is held however clearly it was read,
+because a rate without a programme cannot be checked." What would change it: a class
+of field that reads cleanly and is never corrected across a season of reviews could
+confirm in a batch, still with the reviewer's name on it.
+
+**"There's an inconsistency on this screen." (found live)**
+Do not concede and stop. Name it, name the rule it breaks, say whether a check covers
+it, and say the fix: "That's a count written two ways. The rule is one form per count;
+the lexicon check should have caught it, and I'll add the case." Then move on.
+
+**"What would you do differently?"**
+The forwarding address first. And stage five, the proposal (slide 38).
+
+---
+
 ## Open before you present
 
-1. **The metrics on 23 and 24.** Say the method for each figure or cut it. Any number
+1. **The metrics on 24 and 25.** Say the method for each figure or cut it. Any number
    you cannot source is worse than no number in front of these two.
-2. **The quotes on slide 17** are attributed by role because that is all the
+2. **The quotes on slide 18** are attributed by role because that is all the
    transcripts carry. If you know which advisor said which, name them.
-3. **Both repos are public.** The deck and the app.
-4. If you present from the deployed deck, the live record on slide 10 needs the app's
+3. **The smaller-version answer.** Confirm that forwarding was the smaller version
+   discussed, and when. The answer's shape holds either way; the facts must be yours.
+4. **The demo script predates the two-role build.** It still names a "colleague" role
+   and J. Dubois. Re-walk all four journeys against the current prototype before the
+   day.
+5. **Both repos are public.** The deck and the app.
+6. If you present from the deployed deck, the live record on slide 10 needs the app's
    Vercel deploy to be current. From localhost, both are running.
