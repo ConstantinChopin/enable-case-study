@@ -1,6 +1,6 @@
 # Enable — speaker notes
 
-Forty slides. Roughly **eight minutes** front, **twenty** live in the prototype,
+Forty-six slides. Roughly **eight minutes** front, **twenty** live in the prototype,
 **fourteen** back. The live section has its own script in `demo-script.md`.
 
 Press `N` on localhost to see the per-slide note on screen. This is the longer
@@ -37,7 +37,12 @@ Six seconds each. You name them aloud; nothing on the slides does.
 > "Enable. I was the founding product designer. A single source of truth for luxury
 > travel."
 
-### 6 · The problem
+### 6 · Part 1 — The problem (section page)
+
+Read the title and the sentence under it, then move on. The same on every section
+page: 6, 11, 19, 27, 30 and 43.
+
+### 7 · The problem
 
 Sixty seconds.
 
@@ -49,7 +54,7 @@ Sixty seconds.
 > Nobody was building the place where all of that meets. So the advisor is the
 > integration layer. They assemble that picture by hand, on every trip."
 
-### 7 · The tools they already had
+### 8 · The tools they already had
 
 **The top row is one property in three places.** Do not narrate all six.
 
@@ -70,7 +75,7 @@ app from last year. Point, do not narrate.
 If asked: the note is a reconstruction of the kind an advisor keeps; the other five are
 real. Contact details are redacted throughout.
 
-### 8 · Where we built
+### 9 · Where we built
 
 Do not walk the eleven stages. **This is where you say why the wedge, and why now.**
 
@@ -92,7 +97,7 @@ Do not walk the eleven stages. **This is where you say why the wedge, and why no
 **Hold on to "three at once".** Every surface slide later answers one part of it, and
 you should say which.
 
-### 9 · The design partner
+### 10 · The design partner
 
 > "A travel agency in Boston. Weekly, for eight months. Every decision in the back
 > half of this deck traces to something one of these people said in a room."
@@ -100,7 +105,7 @@ you should say which.
 Point at the right-hand group: two of them are not employees. Their client lists are
 their own asset. That is why the traveller, later, is private by default.
 
-### 10 · What the agency bought
+### 12 · What the agency bought
 
 > "One model that ingests everything and makes it available across several surfaces.
 > Six systems in, one model, and out to the record, Ask, the briefing, the itinerary,
@@ -111,7 +116,7 @@ their own asset. That is why the traveller, later, is private by default.
 
 The record is live — you can scroll it.
 
-### 11–16 · The surfaces
+### 13–18 · The surfaces
 
 One slide each, so your arrow keys walk them. Fifteen seconds apiece. Each heading
 is the decision; say the problem it answers first, then point.
@@ -140,14 +145,14 @@ is the decision; say the problem it answers first, then point.
 > **The traveller** — "Who the work is for. Every preference with a source and a
 > date; what the product infers is labelled and never applied until a person confirms
 > it. And private to the advisor who holds the client, because for the independents
-> on slide nine the client list is the business."
+> on slide ten the client list is the business."
 >
 > **The knowledge vault** — "And this is the way in. Everything the model knows came
 > through here or through a connection, with where it came from, when, and who may
 > read it, in a word, never a colour alone. An answer is only as trustworthy, and as
 > private, as what it was built from."
 
-### 17 · How we worked, and who decided
+### 20 · How we worked, and who decided
 
 The constraint that explains the method, and the answer to "how much did the AI do".
 Do not apologise for having no Figma files.
@@ -170,7 +175,7 @@ Do not apologise for having no Figma files.
 Offer the decision log or the Notion roadmap. Do not force it; only open it if they
 say yes.
 
-### 18 · What the calls produced
+### 21 · What the calls produced
 
 Read the first two aloud. Point at the third. Read the agency lead's line slowly.
 
@@ -183,7 +188,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 >
 > So we built them somewhere to look."
 
-### 19–22 · The first build
+### 22–25 · The first build
 
 > "A conversational interface over their own material — Notion, Google Drive, exports
 > out of the intranet — with results as cards beside a generated answer.
@@ -192,7 +197,7 @@ Read the first two aloud. Point at the third. Read the agency lead's line slowly
 > a Japan itinerary and it returns cherry-blossom festivals cited to Reddit, when what
 > was needed was the agency's negotiated terms. It was wrong too often to use."
 
-### 23 · Retrieval was never the problem
+### 26 · Retrieval was never the problem
 
 **The intellectual move of the whole project. Say the headline, then stop.**
 
@@ -221,7 +226,7 @@ Walk the figure bottom to top — canonical, agency, personal, and the combined 
 on the right. Land on the refused overwrite: a change is stored **above** a layer, never
 over it, and that is what makes the whole thing auditable.
 
-### 24–25 · What changed
+### 28–29 · What changed
 
 > **For the advisors** — time from client request to a personalised first proposal,
 > time saved on daily administration, and the ratio underneath both: three to five
@@ -236,7 +241,8 @@ over it, and that is what makes the whole thing auditable.
 
 ## LIVE — twenty minutes
 
-No handoff slide: after slide 25, switch windows. `demo-script.md` from here. Come back to slide 26.
+No handoff slide: after slide 29, switch windows. `demo-script.md` from here. Come back to slide 30, the
+section page for the design challenges.
 
 **J1** the day arrives · **J2** a record, and who may see it · **J3** ingestion ·
 **J4** an answer, and a refusal.
@@ -250,13 +256,13 @@ tray's own row.
 
 ## BACK — fourteen minutes
 
-### 26 · The map
+### 31 · The map
 
 > "Four design challenges we worked through. Each one runs the same beats: what we
 > tried first, what came back, and where we landed. The fourth is the one a reviewer
 > handed us."
 
-### 27–30 · Challenge 1 — a person in the loop on the way in
+### 32–35 · Challenge 1 — a person in the loop on the way in
 
 > "The material arrives unstructured, from a dozen sources in a dozen formats, and
 > somebody has to agree how it maps onto a record.
@@ -283,7 +289,7 @@ tray's own row.
 > one is recorded as silence rather than guessed at. You validate rather than type. And confirming stamps the record with your name and the
 > date — every value on this record traces to somebody who agreed to it."
 
-### 31–32 · Challenge 2 — a workspace, not a dashboard
+### 36–37 · Challenge 2 — a workspace, not a dashboard
 
 This is where "unclear navigation" gets answered, before anyone raises it.
 
@@ -307,7 +313,7 @@ This is where "unclear navigation" gets answered, before anyone raises it.
 > What would change it: if advisors lose their place between rooms, every room in the
 > dock gets its label before anything else moves."
 
-### 33–35 · Challenge 3 — changing a record at the right level
+### 38–40 · Challenge 3 — changing a record at the right level
 
 > "An advisor corrects a rate. That might be a note to themselves, or something their
 > desk needs, or the agency changing its official position — and whoever reads it next
@@ -335,9 +341,9 @@ This is where "unclear navigation" gets answered, before anyone raises it.
 > sits behind the commission entitlement whatever you choose, because who you trust
 > with a client is a different question from who you trust with the numbers."
 
-### 36–37 · Challenge 4 — details that hold on every screen
+### 41–42 · Challenge 4 — details that hold on every screen
 
-**Own it, then answer it. Do not apologise, and do not linger on 36.**
+**Own it, then answer it. Do not apologise, and do not linger on 41.**
 
 > "A reviewer found three inconsistencies on one screen. A legend whose colours
 > disagreed with the states it named. Two counts on the same page written two
@@ -365,9 +371,9 @@ Point at the screen as you say each one: the lifted row; the ochre on the commis
 still waiting for a decision against the word "chased" on Aurelia; the same name in
 the crumb and the title.
 
-### 38 · What I would do next
+### 44 · What I would do next
 
-Two minutes, then stop. Point at the document first — they saw it on slide eight as the
+Two minutes, then stop. Point at the document first — they saw it on slide nine as the
 thing an advisor assembles by hand across six systems.
 
 > "We built everything up to stage five and never built what stage five produces.
@@ -379,10 +385,10 @@ thing an advisor assembles by hand across six systems.
 > And their advisor writing notes into it while they are travelling, rather than
 > emailing them."
 
-That last one closes the loop with the advisor on slide 18 whose rate changes were
+That last one closes the loop with the advisor on slide 21 whose rate changes were
 arriving by email.
 
-### 39 · To close
+### 45 · To close
 
 Do not re-explain these. They saw them before the demo.
 
@@ -397,7 +403,7 @@ Do not re-explain these. They saw them before the demo.
 Ending here rather than on the gap matters: the thing we never built is a gap in
 something that worked.
 
-### 40 · Questions
+### 46 · Questions
 
 Stop talking. Ten minutes.
 
@@ -464,15 +470,15 @@ it, and say the fix: "That's a count written two ways. The rule is one form per 
 the lexicon check should have caught it, and I'll add the case." Then move on.
 
 **"What would you do differently?"**
-The forwarding address first. And stage five, the proposal (slide 38).
+The forwarding address first. And stage five, the proposal (slide 44).
 
 ---
 
 ## Open before you present
 
-1. **The metrics on 24 and 25.** Say the method for each figure or cut it. Any number
+1. **The metrics on 28 and 29.** Say the method for each figure or cut it. Any number
    you cannot source is worse than no number in front of these two.
-2. **The quotes on slide 18** are attributed by role because that is all the
+2. **The quotes on slide 21** are attributed by role because that is all the
    transcripts carry. If you know which advisor said which, name them.
 3. **The smaller-version answer.** Confirm that forwarding was the smaller version
    discussed, and when. The answer's shape holds either way; the facts must be yours.
@@ -480,5 +486,5 @@ The forwarding address first. And stage five, the proposal (slide 38).
    and J. Dubois. Re-walk all four journeys against the current prototype before the
    day.
 5. **Both repos are public.** The deck and the app.
-6. If you present from the deployed deck, the live record on slide 10 needs the app's
+6. If you present from the deployed deck, the live record on slide 12 needs the app's
    Vercel deploy to be current. From localhost, both are running.
